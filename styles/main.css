@@ -110,6 +110,12 @@ img {
     color: white;
     left: 120;
 }
+.sectiona {
+    position: relative;
+    top: 40%;
+    
+    
+}
 
 .audiotitle {
     overlay: auto;
