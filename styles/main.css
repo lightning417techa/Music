@@ -93,7 +93,6 @@ img {
 .percent {
     position: relative;
     /*top: 15%; /*1%*/
-    margin-bottom: 0%;
     /*margin-right: 15%;*/
     /*margin-left: auto;*/
     color: white;
@@ -103,7 +102,6 @@ img {
 .percentt {
     position: relative;
     /*top: 10%; /* -9$*/
-    margin-bottom: 0%;
     /*margin-right: auto;*/
     /*margin-left: 15%;*/
     color: white;
