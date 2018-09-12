@@ -94,8 +94,8 @@ img {
 .percent {
     margin-top: 1%; /*1%*/
     margin-bottom: 0%;
-    margin-left: 75%;
-    margin-right: auto;
+    margin-right: -75%;
+    margin-left: auto;
     color: white;
     float: right;
 }
@@ -103,8 +103,8 @@ img {
 .percentt {
     margin-top: -1%; /* -9$*/
     margin-bottom: 0%;
-    margin-left: auto;
-    margin-right: 75%;
+    margin-right: auto;
+    margin-left: -75%;
     color: white;
     float: left;
 }
