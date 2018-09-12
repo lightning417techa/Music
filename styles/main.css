@@ -99,7 +99,7 @@ img {
     /*margin-left: auto;*/
     color: white;
     float: right;
-    right: 0;
+    right: 20;
 }
 
 .percentt {
@@ -110,7 +110,7 @@ img {
     /*margin-left: 15%;*/
     color: white;
     float: left;
-    left: 0;
+    left: 20;
 }
 
 .audiotitle {
