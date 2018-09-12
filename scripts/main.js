@@ -1,4 +1,3 @@
-alert("hi");
 var btnv = 0;
 function Dropdown() {
 var i = 0;
