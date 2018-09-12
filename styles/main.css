@@ -16,10 +16,9 @@ p {
 }
 
 .musicimg {
-    align-items: center; 
     position: absolute;
-    margin-top: 4%;
-    margin-bottom: 0%;
+    top: 4%;
+    bottom: 0%;
     width: 300px;
     height: 300px;
 }
@@ -92,7 +91,7 @@ img {
 }
 
 .percent {
-    position: absolute;
+    position: relative;
     top: 10%; /*1%*/
     margin-bottom: 0%;
     /*margin-right: 15%;*/
@@ -102,7 +101,7 @@ img {
 }
 
 .percentt {
-    position: absolute;
+    position: relative;
     top: 10%; /* -9$*/
     margin-bottom: 0%;
     /*margin-right: auto;*/
