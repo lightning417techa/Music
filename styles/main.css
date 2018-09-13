@@ -11,6 +11,7 @@ html {
     min-height:460px; /*400px or 450*/
     background:#333;
     overflow:auto;
+    margin:20px auto;
     border-radius:10px;
     box-shadow:0 10px 8px -8px #333;
     align-items: center; 
