@@ -47,16 +47,6 @@ var percent = document.getElementById("currentlbl");
 audiotitle.innerHTML = x.title;
 //inputslider
 var slider = document.getElementById("myRange");
-//Firebase
-var config = {
-    apiKey: "AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ",
-    authDomain: "fitbit-flex2-integration.firebaseapp.com",
-    databaseURL: "https://fitbit-flex2-integration.firebaseio.com",
-    projectId: "fitbit-flex2-integration",
-    storageBucket: "fitbit-flex2-integration.appspot.com",
-    messagingSenderId: "247113062436"
-  };
-  firebase.initializeApp(config);
 
 slider.oninput = function() {
   percent.innerHTML = this.value + "%";
@@ -144,7 +134,7 @@ function playAudio() {
       input2.style.display="block";
       num = 0;
       d = dateFormat + "playing";
-      writeNewPost();
+      
     } else {
       x.pause();
       //text.innerHTML = "play";
@@ -153,7 +143,7 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-      writeNewPost();
+      
     }}
 
 
@@ -184,27 +174,3 @@ function sToTime(t) {
 function padZero(v) {
   return (v < 10) ? "0" + v : v;
 }
-
-//Firebase Function
-var ip;
-$.getJSON('https://geoip-db.com/json/geoip.php?jsonp=?') 
-         .done (function(location) {
-           ip = location.IPv4;
-         });
-
-
-function writeNewPost() {
-      var postData = dateFormat + " IP of Sender " + ip + "_song-" + i;
-     var PostData = {
-       d : "sent from LanyxSoft Music player" };
-     var newPostKey = firebase.database().ref().push().key;
-     var updates = {};
-     updates['/User-inputs/' + newPostKey] = postData;
-     return firebase.database().ref().update(updates);
-    var ref = firebase.database().ref("User-input");
-ref.on("value", function(snapshot) {
-    var childData = snapshot.val();
-    var key = Object.keys(childData)[0];
-    console.log(childData[key].id);
-    var print = document.getElementbyId("print").innerHTML= childData;
-});}
