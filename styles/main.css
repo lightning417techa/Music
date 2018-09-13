@@ -93,12 +93,12 @@ img {
     margin-right: auto;
 }
 
-.percent {
+/*.percent {
     position: relative;
     /*top: 15%; /*1%*/
     /*margin-right: 15%;*/
     /*margin-left: auto;*/
-    margin-bottom: -2%;
+    /*margin-bottom: -2%;
     color: white;
     left: -25%;
     
