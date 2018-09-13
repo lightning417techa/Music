@@ -55,7 +55,7 @@ p {
     -webkit-appearance: none;
     width: 90%;
     margin-top: 5%; /*2%*/
-    height: 6px; /*15px*/
+    height: 5px; /*15px*/
     border-radius: 5px;
     background: solid white; /*#4CAF50*/
     
@@ -107,7 +107,7 @@ img {
     /*margin-left: 15%;*/
     top: 5%;
     color: white;
-    left: -20%;
+    left: 20%;
 }
 .sectiona {
     position: relative;
