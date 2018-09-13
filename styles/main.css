@@ -95,6 +95,7 @@ img {
     /*top: 15%; /*1%*/
     /*margin-right: 15%;*/
     /*margin-left: auto;*/
+    top: 5%;
     color: white;
     right: -20%;
 }
@@ -104,6 +105,7 @@ img {
     /*top: 10%; /* -9$*/
     /*margin-right: auto;*/
     /*margin-left: 15%;*/
+    top: 5%;
     color: white;
     left: -20%;
 }
