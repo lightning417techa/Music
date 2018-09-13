@@ -7,9 +7,6 @@ html {
 
 .mscontainer {
     position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;  
     width: 330px;
     min-height:460px; /*400px or 450*/
     background:#333;
