@@ -17,7 +17,8 @@ var songs = {
   16 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/post_malone_-_rockstar_ft._21_savage__official_audio_.mp3",
   17 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/thunder.mp3",
   18 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/alan_walker_-_fade_%5Bncs_release%5D.mp3",
-  19 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/10__official_audio_.mp3"
+  19 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/10__official_audio_.mp3",
+  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/lil_dicky_-_freaky_friday__lyrics__ft._chris_brown.mp3"
 }
 
 var titles = {
@@ -39,7 +40,8 @@ var titles = {
   16 : "Rockstar",
   17 : "Thunder",
   18 : "Faded",
-  19 : "6/10"
+  19 : "6/10",
+  20 : "Freaky Friday"
 }
 
 var albumart = {
@@ -83,5 +85,6 @@ var artists = {
   16 : "Post Malone ft. 21 Savage",
   17 : "Imagine Dragons",
   18 : "Alan Walker",
-  19 : "Dodie Clark"
+  19 : "Dodie Clark",
+  20 : "lil Dicky (ft: Chris Brown)"
 }
