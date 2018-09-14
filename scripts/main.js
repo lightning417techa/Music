@@ -60,6 +60,7 @@ function Shuffle() {
   audiotitle.innerHTML = x.title;
   audioartist.innerHTML = artists[s];
   
+  alert(albumart[s]);
   if (albumart[s] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
      } else {
