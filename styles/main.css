@@ -182,32 +182,27 @@ img {
 
 .dropbtn {
   background-color: none;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-    
-    position: absolute;
-    bottom: -2%;
-    color: white;
-    display: inline-block;
-    right: 20px;
+     color: white;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     bottom: -2%;
+     
+     position: absolute;
+     display: inline-block;
+     right: 20px;
 }
 
 .dropbtn2 {
   background-color: none;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
-  
-    position: absolute;
-    bottom: -2%;
-    color: white;
-    display: inline-block;
-    left: 20px;
+     
+  position: absolute;
+  display: inline-block;
+  left: 20px;
 }
 
 .dropdown-btn-container {
