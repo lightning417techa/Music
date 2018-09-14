@@ -187,8 +187,12 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  right: 20px;
+    
+    position: absolute;
+    bottom: -2%;
+    color: white;
+    display: inline-block;
+    right: 20px;
 }
 
 .dropbtn2 {
@@ -198,8 +202,12 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  left: 20px;
-  position: absolute;
+  
+    position: absolute;
+    bottom: -2%;
+    color: white;
+    display: inline-block;
+    left: 20px;
 }
 
 .dropdown-btn-container {
