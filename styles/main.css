@@ -209,7 +209,7 @@ img {
     
     position: absolute;
     display: inline-block;
-    right: 20px;
+    left: 20px;
 }
 
 .dropdown-btn-container {
