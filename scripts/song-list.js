@@ -64,7 +64,7 @@ var albumart = {
   17 : "",
   18 : "",
   19 : "",
-  20 : "images/60776318-CEE7-4556-B8B8-445EA575781B.png"
+  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p157.png"
 }
 
 var artists = {
