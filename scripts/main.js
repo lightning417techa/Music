@@ -59,10 +59,7 @@ function Shuffle() {
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
   audioartist.innerHTML = artists[s];
-  
-  image.src = albumart[s];
-  alert(albumart[s]);
-  
+  image.src = albumart[s];  
   x.src = songs[s];
   x.play();
   num = 1;
@@ -79,8 +76,11 @@ function keys() {
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
      
-     image.src = albumart[i];
-     alert(albumart[i]);
+     if (albumart[i] == "") {
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+     } else {
+       image.src = albumart[i];
+     }
      
      x.src = songs[i];
      x.play(); 
