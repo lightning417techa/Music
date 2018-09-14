@@ -63,7 +63,8 @@ var albumart = {
   16 : "",
   17 : "",
   18 : "",
-  19 : ""
+  19 : "",
+  20 : "/images/60776318-CEE7-4556-B8B8-445EA575781B.png"
 }
 
 var artists = {
