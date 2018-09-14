@@ -300,9 +300,9 @@ img {
     text-align: center;
     float: center;
     overflow: auto;
-    margin-left: 26%;
-    margin-right: auto;
-    margin-top: -7%; /*-9.1%%*/
+    left: 26%;
+    right: auto;
+    margin-top: 7%; /*-9.1%%*/
     align-items: center; 
     justify-content: center;
     margin-bottom: 0%;
