@@ -186,7 +186,6 @@ img {
      font-size: 16px;
      border: none;
      cursor: pointer;
-     bottom: 5%;
      position: absolute;
      display: inline-block;
      right: 0;
@@ -223,6 +222,7 @@ img {
 .dropdown {
   position: relative;
   display: block;
+    margin-top: 2%;
   align-items: center;
   height: 55px; /*51px*/
 }
