@@ -59,7 +59,10 @@ function Shuffle() {
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
   audioartist.innerHTML = artists[s];
+  
   image.src = albumart[s];
+  alert(albumart[s]);
+  
   x.src = songs[s];
   x.play();
   num = 1;
@@ -75,7 +78,10 @@ function keys() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
+     
      image.src = albumart[i];
+     alert(albumart[i]);
+     
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -87,7 +93,10 @@ function next() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
+  
      image.src = albumart[i];
+     alert(albumart[i]);
+  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -99,7 +108,10 @@ function rewind() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
+ 
      image.src = albumart[i];
+     alert(albumart[s]);
+  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -111,7 +123,10 @@ function Playbutton(clicked_id) {
   x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
+     
      image.src = albumart[i];
+     alert(albumart[si);
+  
      x.src = songs[i];
      x.play();
      num = 1;
