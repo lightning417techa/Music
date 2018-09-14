@@ -93,10 +93,7 @@ function next() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
-  
      image.src = albumart[i];
-     alert(albumart[i]);
-  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -108,10 +105,7 @@ function rewind() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
- 
      image.src = albumart[i];
-     alert(albumart[s]);
-  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -123,10 +117,7 @@ function Playbutton(clicked_id) {
   x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
-     
      image.src = albumart[i];
-     alert(albumart[si);
-  
      x.src = songs[i];
      x.play();
      num = 1;
