@@ -190,8 +190,7 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin-left: 80%;
-  /*80*/
+  right: 20px;
   margin-top: -11.3%;
 }
 
@@ -202,10 +201,8 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  margin-right: 80%;
-  /*80*/
+  left: 20px;
   position: absolute;
-  left: 0;
 }
 
 .dropdown-btn-container {
