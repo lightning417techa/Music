@@ -187,7 +187,7 @@ img {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    bottom: 4%;
+    bottom: -2%;
     
     position: absolute;
     display: inline-block;
