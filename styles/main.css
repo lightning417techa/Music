@@ -93,27 +93,26 @@ img {
     margin-right: auto;
 }
 
-.percent {
+.percent-container {
     position: relative;
-    /*top: 15%; /*1%*/
-    /*margin-right: 15%;*/
-    /*margin-left: auto;*/
-    /*margin-bottom: -2%;*/
+    height: 30px;
+}
+
+.percent {
+    position: absolute;
     top: 2%;
     color: white;
-    left: -25%; /* -25%*/
-    
+    display: inline-block;
+    left: 20px;
 }
 
 .percentt {
-    position: relative;
-    /*top: 10%; /* -9$*/
-    /*margin-right: auto;*/
-    /*margin-left: 15%;*/
-    top: -9%; /*5%*/
+    position: absolute;
     color: white;
-    left: 20%;
+    display: inline-block;
+    right: 20px;
 }
+
 .sectiona {
     position: relative;
     top: 40%;
