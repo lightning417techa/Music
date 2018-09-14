@@ -188,8 +188,7 @@ img {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    margin-left: 80%; /*80*/
-    margin-bottom: -6.1%;
+    bottom: -6.1%;
     
     position: absolute;
     display: inline-block;
@@ -204,8 +203,6 @@ img {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    /*margin-right: 80%; 80
-    margin-bottom: -6.1%;*/
     
     position: absolute;
     display: inline-block;
