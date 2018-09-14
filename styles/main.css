@@ -181,30 +181,30 @@ img {
 }
 
 .dropbtn {
-    /*position: -webkit-sticky;*/
-    background-color: none;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    bottom: -2%;
-    
-    position: absolute;
-    display: inline-block;
-    right: 20px;
+    position: -webkit-sticky;
+  position: sticky;
+  background-color: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 80%;
+  /*80*/
+  margin-top: -11.3%;
 }
 
 .dropbtn2 {
-    /*position: -webkit-sticky;*/
-    background-color: none;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    
-    position: absolute;
-    display: inline-block;
-    left: 20px;
+  background-color: none;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 80%;
+  /*80*/
+  position: absolute;
+  left: 0;
 }
 
 .dropdown-btn-container {
