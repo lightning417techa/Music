@@ -225,7 +225,6 @@ img {
 }
 
 .dropdown-content {
-    bottom: -2%;
     display: none;
     position: absolute;
     background-color: none;
