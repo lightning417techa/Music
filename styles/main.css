@@ -199,6 +199,7 @@ img {
   font-size: 16px;
   border: none;
   cursor: pointer;
+    bottom: -2%;
     
   position: absolute;
   display: inline-block;
