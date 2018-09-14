@@ -217,7 +217,6 @@ img {
     cursor: pointer; 
     float: center; 
     overflow: auto;
-    bottom: -5px;
 }
 
 .dropdown {
