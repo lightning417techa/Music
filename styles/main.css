@@ -208,9 +208,9 @@ img {
 }
 
 .dropdown-btn-container {
-    position: relative;
+    /*position: relative;
     bottom: 2%;
-    height: 30px;
+    height: 30px;*/
 }
 
 .dropbtnpos {
@@ -221,9 +221,10 @@ img {
 }
 
 .dropdown {
-    position: relative;
-    display: block;
-    align-items: center;
+  position: relative;
+  display: block;
+  align-items: center;
+  height: 51px;
 }
 
 .dropdown-content {
