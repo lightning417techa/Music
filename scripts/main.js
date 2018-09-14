@@ -59,7 +59,13 @@ function Shuffle() {
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
   audioartist.innerHTML = artists[s];
-  image.src = albumart[s];  
+  
+  if (albumart[s] == "") {
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+     } else {
+       image.src = albumart[s];
+     }
+  
   x.src = songs[s];
   x.play();
   num = 1;
@@ -93,7 +99,13 @@ function next() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
-     image.src = albumart[i];
+     
+     if (albumart[i] == "") {
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+     } else {
+       image.src = albumart[i];
+     }
+  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -105,7 +117,13 @@ function rewind() {
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
-     image.src = albumart[i];
+     
+     if (albumart[i] == "") {
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+     } else {
+       image.src = albumart[i];
+     }
+  
      x.src = songs[i];
      x.play(); 
      num = 1;
@@ -117,7 +135,13 @@ function Playbutton(clicked_id) {
   x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
-     image.src = albumart[i];
+     
+     if (albumart[i] == "") {
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+     } else {
+       image.src = albumart[i];
+     }
+  
      x.src = songs[i];
      x.play();
      num = 1;
