@@ -190,6 +190,7 @@ img {
      position: absolute;
      display: inline-block;
      right: 0;
+    z-index: 5;
 }
 
 .dropbtn2 {
@@ -202,6 +203,7 @@ img {
   position: absolute;
   display: inline-block;
   left: 0;
+    z-index: 5;
 }
 
 .dropdown-btn-container {
