@@ -255,8 +255,8 @@ img {
 
 .playlistnames {
     color: white;
-    text-align: left;
-    border: 0.7px solid white;
+    text-align: center;
+    /*border: 0.7px solid white;*/
 }
 
 .Playlistartist {
