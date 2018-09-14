@@ -209,6 +209,8 @@ img {
 .dropdown-btn-container {
     /*position: relative;
     bottom: 2%;
+    display: block;
+    align-items: center;
     height: 30px;*/
 }
 
