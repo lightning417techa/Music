@@ -62,7 +62,7 @@ function Shuffle() {
   
   alert(albumart[s]);
   if (albumart[s] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[s];
      }
@@ -84,7 +84,7 @@ function keys() {
      audioartist.innerHTML = artists[i];
      
      if (albumart[i] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[i];
      }
@@ -102,7 +102,7 @@ function next() {
      audioartist.innerHTML = artists[i];
      
      if (albumart[i] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[i];
      }
@@ -120,7 +120,7 @@ function rewind() {
      audioartist.innerHTML = artists[i];
      
      if (albumart[i] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[i];
      }
@@ -138,7 +138,7 @@ function Playbutton(clicked_id) {
      audioartist.innerHTML = artists[i];
      
      if (albumart[i] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p162.png";
+       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[i];
      }
