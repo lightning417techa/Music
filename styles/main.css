@@ -225,11 +225,11 @@ img {
   position: relative;
   display: block;
   align-items: center;
-  height: 51px;
+  /*height: 51px;*/
 }
 
 .dropdown-content {
-    top: 2%;
+    bottom: -2%;
     display: none;
     position: absolute;
     background-color: none;
