@@ -113,13 +113,6 @@ img {
     right: 20px;
 }
 
-.sectiona {
-    position: relative;
-    top: 40%;
-    
-    
-}
-
 .audiotitle {
     overlay: auto;
     margin-bottom: 4%;
@@ -312,4 +305,9 @@ img {
     cursor: pointer;
     margin-right: 80%; /*80*/
     margin-bottom: -6.1%;
+}
+
+.dropdown-btn-container {
+    position: relative;
+    height: 30px;
 }
