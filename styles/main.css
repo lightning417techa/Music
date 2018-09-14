@@ -207,11 +207,9 @@ img {
 }
 
 .dropdown-btn-container {
-    /*position: relative;
-    bottom: 2%;
+    position: relative;
     display: block;
     align-items: center;
-    height: 30px;*/
 }
 
 .dropbtnpos {
