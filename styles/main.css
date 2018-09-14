@@ -222,7 +222,6 @@ img {
 .dropdown {
   position: relative;
   display: block;
-    margin-top: 2%;
   align-items: center;
   height: 55px; /*51px*/
 }
