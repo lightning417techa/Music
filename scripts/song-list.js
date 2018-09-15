@@ -18,7 +18,9 @@ var songs = {
   17 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/thunder.mp3",
   18 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/alan_walker_-_fade_%5Bncs_release%5D.mp3",
   19 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/10__official_audio_.mp3",
-  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/lil_dicky_-_freaky_friday__lyrics__ft._chris_brown.mp3"
+  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/lil_dicky_-_freaky_friday__lyrics__ft._chris_brown.mp3",
+  21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bastille_-_pompeii__lyrics_.mp3",
+  22 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/preme_-_jackie_chan__audio__ft._post_malone.mp3"
 }
 
 var titles = {
@@ -41,7 +43,9 @@ var titles = {
   17 : "Thunder",
   18 : "Faded",
   19 : "6/10",
-  20 : "Freaky Friday"
+  20 : "Freaky Friday",
+  21 : "Pompeii",
+  22 : "Jackie Chan"
 }
 
 var albumart = {
@@ -64,7 +68,9 @@ var albumart = {
   17 : "",
   18 : "",
   19 : "",
-  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p157.png"
+  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p157.png",
+  21 : "",
+  22 : ""
 }
 
 var artists = {
@@ -87,5 +93,7 @@ var artists = {
   17 : "Imagine Dragons",
   18 : "Alan Walker",
   19 : "Dodie Clark",
-  20 : "lil Dicky (ft: Chris Brown)"
+  20 : "lil Dicky (ft: Chris Brown)",
+  21 : "Bastille",
+  22 : "Post Malone"
 }
