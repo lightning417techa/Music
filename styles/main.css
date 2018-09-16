@@ -23,12 +23,20 @@ html {
   min-height:480px; /*460px or 450*/
   background: #333;
   overflow: auto;
-  /*margin: 20px auto;*/ /*20px auto;*/
-    left: 0;
+  margin: 20px auto;*/ /*20px auto;
   border-radius: 10px;
   box-shadow: 0 10px 8px -8px #333;
   align-items: center;
   text-align: center;
+}
+
+/*animations*/
+@keyframes Minimize-Player {
+    0%   {top:0px;}
+    25%  {top:0px;}
+    50%  {}
+    75%  {}
+    100% {margin: 20px auto; bottom:0;}
 }
 
 .musicimg {
