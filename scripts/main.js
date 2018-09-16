@@ -53,17 +53,31 @@ slider.oninput = function() {
   x.currentTime = slider.value;
 }
 
-var mql = window.matchMedia("(orientation: portrait)");
-mql.addListener(function(m) {
-    if(m.matches) {
-        // Changed to portrait
-      alert("portrait");
+switch (window.orientation) {  
+    case 0:  
+    
+        // Portrait 
+    alert("0 por");
+        break; 
+        
+    case 180:  
+    
+    alert("180 port");
+        // Portrait (Upside-down)
+        break; 
+  
+    case -90:  
+    
+    alert("-90 land");
+        // Landscape (Clockwise)
+        break;  
+  
+    case 90:  
+    
+    alert("90 land");
+        // Landscape  (Counterclockwise)
+        break;
     }
-    else {
-        // Changed to landscape
-      alert("landscape");
-    }
-});
 
 function Shuffle() {
   var s = Math.floor(Math.random() * 22) + 1;
