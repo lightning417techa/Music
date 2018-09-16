@@ -53,6 +53,18 @@ slider.oninput = function() {
   x.currentTime = slider.value;
 }
 
+var mql = window.matchMedia("(orientation: portrait)");
+mql.addListener(function(m) {
+    if(m.matches) {
+        // Changed to portrait
+      alert("portrait");
+    }
+    else {
+        // Changed to landscape
+      alert("landscape");
+    }
+});
+
 function Shuffle() {
   var s = Math.floor(Math.random() * 22) + 1;
 
