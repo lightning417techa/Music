@@ -65,11 +65,11 @@ switch (window.orientation) {
     break; 
   case -90:  
     // Landscape (Clockwise)
-    document.getElementById("container").setAttribute("style", "animation-name: Minimize-Player; animation-duration: 1s; animation-iteration-count: 1; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+    document.getElementById("container").setAttribute("style", " position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     break;  
   case 90:  
     // Landscape  (Counterclockwise)
-    document.getElementById("container").setAttribute("style", "animation-name: Minimize-Player; animation-duration: 1s; animation-iteration-count: 1; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+    document.getElementById("container").setAttribute("style", " position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     break;
     }
 }
