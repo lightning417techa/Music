@@ -31,13 +31,13 @@ html {
 }
 
 /*animations*/
-@keyframes Minimize-Player {
+/*@keyframes Minimize-Player {
     0%   {top:0px;}
     25%  {top:0px;}
     50%  {}
     75%  {}
     100% {margin: 20px auto; bottom:0;}
-}
+}*/
 
 .musicimg {
     position: absolute;
