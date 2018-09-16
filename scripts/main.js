@@ -53,6 +53,7 @@ slider.oninput = function() {
   x.currentTime = slider.value;
 }
 
+function readDeviceOrientation() {
 switch (window.orientation) {  
     case 0:  
     
@@ -78,6 +79,8 @@ switch (window.orientation) {
         // Landscape  (Counterclockwise)
         break;
     }
+}
+window.onorientationchange = readDeviceOrientation;
 
 function Shuffle() {
   var s = Math.floor(Math.random() * 22) + 1;
