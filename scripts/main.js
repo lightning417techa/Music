@@ -55,29 +55,19 @@ slider.oninput = function() {
 
 function readDeviceOrientation() {
 switch (window.orientation) {  
-    case 0:  
-    
-        // Portrait 
-    alert("0 por");
-        break; 
-        
-    case 180:  
-    
-    alert("180 port");
-        // Portrait (Upside-down)
-        break; 
-  
-    case -90:  
-    
-    alert("-90 land");
-        // Landscape (Clockwise)
-        break;  
-  
-    case 90:  
-    
-    alert("90 land");
-        // Landscape  (Counterclockwise)
-        break;
+  case 0:  
+    // Portrait 
+    document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");                                                                                           
+    break;      
+  case 180:  
+    // Portrait (Upside-down)
+    break; 
+  case -90:  
+    // Landscape (Clockwise)
+    break;  
+  case 90:  
+    // Landscape  (Counterclockwise)
+    break;
     }
 }
 window.onorientationchange = readDeviceOrientation;
