@@ -27,6 +27,7 @@ body {
   background: #333;
   overflow: auto;
   right: 0;
+  float: right;
   border-radius: 10px;
   box-shadow: 0 10px 8px -8px #333;
   align-items: center;
