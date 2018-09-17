@@ -211,6 +211,7 @@ function Playbutton(clicked_id) {
   var analyser = ctx.createAnalyser();
   // we have to connect the MediaElementSource with the analyser 
   audioSrc.connect(analyser);
+  audioSrc.connect(ctx.destination);
   // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec)
  
   // frequencyBinCount tells you how many values you'll receive from the analyser
