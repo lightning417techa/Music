@@ -73,6 +73,7 @@ switch (window.orientation) {
     break;
     }
 }
+readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 function Shuffle() {
