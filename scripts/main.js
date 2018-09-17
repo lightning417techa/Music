@@ -68,7 +68,7 @@ switch (window.orientation) {
     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto;  left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     //document.getElementById("container").style.WebkitAnimation = "Minimize-Player 3s 1"
     //document.getElementById("container").style.animation = "Minimize-Player 3s 1";
-    document.getElementsByClassName('mscontainer')classList.add('transition');
+    document.getElementsByClassName('mscontainer').classList.add('transition');
     break;  
   case 90:  
     // Landscape  (Counterclockwise)
