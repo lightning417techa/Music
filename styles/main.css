@@ -20,6 +20,20 @@ body {
   text-align: center;
 }
 
+.PlaylistContainer {
+  position: relative;
+  width: 400px;
+  min-height:100%; /*460px or 450*/
+  background: #333;
+  overflow: auto;
+  margin: 20px auto;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 8px -8px #333;
+  align-items: center;
+  text-align: center;
+}
+
 .mscontainer {
   position: relative;
   width: 330px;
