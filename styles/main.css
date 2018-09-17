@@ -34,13 +34,16 @@ body {
 }
 
 /*animations*/
-/*@keyframes Minimize-Player {
-    0%   {top:0px;}
-    25%  {top:0px;}
-    50%  {}
-    75%  {}
-    100% {margin: 20px auto; bottom:0;}
-}*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes Minimize-Player {
+    from {margin: 20px auto;}
+    to {margin: 0px auto; bottom: 0; height: 100px;}
+}
+
+@keyframes Minimize-Player {
+    from {margin: 20px auto;}
+    to {margin: 0px auto; bottom: 0; height: 100px;}
+}
 
 .musicimg {
     position: absolute;
