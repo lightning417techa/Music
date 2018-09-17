@@ -19,7 +19,10 @@
     waveColor: 'green',
     progressColor: 'cyan'
     });
-    wavesurfer.load('audio.wav');
+    wavesurfer.load('https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello_-_alone.mp3');
+    wavesurfer.on('ready', function () {
+    wavesurfer.play();
+    });
   </script>
   
   <div class="mscontainer" id="container">
