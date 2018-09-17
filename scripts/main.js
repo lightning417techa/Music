@@ -45,12 +45,23 @@ var image = document.getElementById("AlbumArt");
 var x = document.getElementById("myAudio"); 
 var percent = document.getElementById("currentlbl");
 audiotitle.innerHTML = x.title;
+
 //inputslider
 var slider = document.getElementById("myRange");
 
 slider.oninput = function() {
   percent.innerHTML = this.value + "%";
   x.currentTime = slider.value;
+}
+
+//device orientation functions
+function zoomOutMobile() {
+  var viewport = document.querySelector('meta[name="viewport"]');
+
+  if ( viewport ) {
+    viewport.content = "initial-scale=0.1";
+    viewport.content = "width=1200";
+  }
 }
 
 function readDeviceOrientation() {
@@ -69,11 +80,13 @@ switch (window.orientation) {
      // Landscape (Clockwise)
        //alert("Landscape (Clockwise) -90°");
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+     zoomOutMobile();
      break;  
    case 90:  
      // Landscape  (Counterclockwise)
        //alert("Landscape (Counter-Clockwise) 90°");
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+     zoomOutMobile();
      break;
      }
  }
