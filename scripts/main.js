@@ -57,27 +57,23 @@ function readDeviceOrientation() {
 switch (window.orientation) {  
   case 0:  
     // Portrait 
-      //alert("Portrait 0°");
     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");                                                                                           
     break;      
   case 180:  
     // Portrait (Upside-down)
-      //alert("Portrait (Upside Down) 180°");
     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     break; 
   case -90:  
     // Landscape (Clockwise)
-      //alert("Landscape (Clockwise) -90°");
     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto;  left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-    document.getElementById("container").style.WebkitAnimation = "Minimize-Player 3s 1"
-    document.getElementById("container").style.animation = "Minimize-Player 3s 1";
+    //document.getElementById("container").style.WebkitAnimation = "Minimize-Player 3s 1"
+    //document.getElementById("container").style.animation = "Minimize-Player 3s 1";
     break;  
   case 90:  
     // Landscape  (Counterclockwise)
-      //alert("Landscape (Counter-Clockwise) 90°");
     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto;  left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-    document.getElementById("container").style.WebkitAnimation = "-webkit-animation: Minimize-Player 3s 1";
-    document.getElementById("container").style.animation = "animation: Minimize-Player 3s 1";
+    //document.getElementById("container").style.WebkitAnimation = "-webkit-animation: Minimize-Player 3s 1";
+    //document.getElementById("container").style.animation = "animation: Minimize-Player 3s 1";
     break;
     }
 }
