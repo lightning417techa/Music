@@ -223,7 +223,7 @@ function Playbutton(clicked_id) {
      // update data in frequencyData
      analyser.getByteFrequencyData(frequencyData);
      // render frame based on values in frequencyData
-     // console.log(frequencyData)
+     console.log(frequencyData)
   }
   renderFrame();
   
