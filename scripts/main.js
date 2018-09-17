@@ -14,35 +14,6 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 function drop() {
 }
 
-
-
-/*window.onload = function() {
-  var ctx = new AudioContext();
-  var audio = document.getElementById('myAudio');
-  var audioSrc = ctx.createMediaElementSource(audio);
-  var analyser = ctx.createAnalyser();
-  // we have to connect the MediaElementSource with the analyser 
-  audioSrc.connect(analyser);
-  // we could configure the analyser: e.g. analyser.fftSize (for further infos read the spec)
- 
-  // frequencyBinCount tells you how many values you'll receive from the analyser
-  var frequencyData = new Uint8Array(analyser.frequencyBinCount);
- 
-  // we're ready to receive some data!
-  // loop
-  function renderFrame() {
-     requestAnimationFrame(renderFrame);
-     // update data in frequencyData
-     analyser.getByteFrequencyData(frequencyData);
-     // render frame based on values in frequencyData
-     // console.log(frequencyData)
-  }
-  audio.start();
-  renderFrame();
-};*/
-
-
-
 window.onclick = function(event, clicked_id) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -97,12 +68,12 @@ switch (window.orientation) {
   case -90:  
     // Landscape (Clockwise)
       //alert("Landscape (Clockwise) -90°");
-    document.getElementById("container").setAttribute("style", " position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+    document.getElementById("container").setAttribute("style", "-webkit-animation: Minimize-Player 3s; animation: Minimize-Player 3s; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     break;  
   case 90:  
     // Landscape  (Counterclockwise)
       //alert("Landscape (Counter-Clockwise) 90°");
-    document.getElementById("container").setAttribute("style", " position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+    document.getElementById("container").setAttribute("style", " -webkit-animation: Minimize-Player 3s; animation: Minimize-Player 3s; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
     break;
     }
 }
