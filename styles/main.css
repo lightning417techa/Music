@@ -32,14 +32,6 @@ body {
   align-items: center;
   text-align: center;
 }
-.mscontainer.transition {
--webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
-  margin-left: 50% !important;
-}
 
 /*animations*/
 /* Safari 4.0 - 8.0 */
