@@ -4,6 +4,9 @@ p {
 html {
     align-items: center;
 }
+body {
+    background: black;
+}
 
 .help {
   position: relative;
