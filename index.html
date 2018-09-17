@@ -3,6 +3,7 @@
 <html>
   <head>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.6/wavesurfer.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <meta name="HandheldFriendly" content="True">
@@ -11,6 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <body>
+  <div id="waveform"></div>
+  <script>
+    var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'green',
+    progressColor: 'cyan'
+    });
+    wavesurfer.load('audio.wav');
+  </script>
+  
   <div class="mscontainer" id="container">
     <audio id="myAudio" title="">
       <source src="https://iplock.weebly.com/uploads/9/5/7/3/95731436/i_like_me_better__bass_boosted_.m4a">  <!--https://iplock.weebly.com/uploads/9/5/7/3/95731436/i_like_me_better__bass_boosted_.m4a-->
