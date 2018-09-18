@@ -34,6 +34,39 @@ body {
   text-align: center;
 }
 
+.PlaylistContainer-dropdown {
+  position: relative;
+  display: block;
+  align-items: center;
+  height: 55px; /*51px*/
+}
+
+.PlaylistContainer-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    width: 331px;
+    overflow: auto;
+    margin-left: 0%;
+}
+
+.PlaylistContainer-dropdown-content a {
+    color: white;
+    /*padding: 16px 50px;*/
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    border-top: 0.9px solid #9B9898;
+}
+
+.PlaylistContainer-dropdown a:hover {background-color: #ddd; color: black;} /*#ddd*/
+
+.PlaylistContainer-dropdown-content li {list-style: none;}
+
+
+
+
 
 
 .mscontainer {
