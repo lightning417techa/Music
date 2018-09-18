@@ -22,7 +22,7 @@ body {
 
 .PlaylistContainer {
   position: relative;
-  width: 60%;
+  width: 65%;
   min-height:100%; /*460px or 450*/
   background: #333;
   overflow: auto;
