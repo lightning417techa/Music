@@ -11,11 +11,10 @@ body {
 .AudioVisContainer {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 50%;
   align-items: center;
   text-align: center;
-  min-height: 400px;
-  width: 500px;
+  min-height: 50px;
   border-radius: 10px;
   background: white;
 }
