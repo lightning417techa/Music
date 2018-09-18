@@ -88,8 +88,7 @@ switch (window.orientation) {
      zoomOutMobile();
      let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     let newContent = document.createTextNode("Hi there and greetings!"); 
-     newDiv.appendChild(newContent);
+     newDiv.innerHTML = "hello this is a test";
      document.getElementById("SongBtns").appendChild(newDiv);
      break;
      }
