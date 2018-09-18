@@ -52,6 +52,8 @@ body {
     position: relative;
     border-radius: 10px;
     background: white;
+    float: left;
+    left: 0;
 }
 
 /*animations*/
