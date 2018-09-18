@@ -8,7 +8,7 @@ document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
 document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("PlaylistDropdown").classList.toggle("show");
   let screenw = window.innerWidth;
-  document.getElementById("MiniPlayer").style.width = "400px";
+  document.getElementById("MiniPlayer").style.setAttribute("style","width: 400px; bottom: 0;");
   
 } else {
 i--;
