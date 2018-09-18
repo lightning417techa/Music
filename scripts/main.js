@@ -101,17 +101,17 @@ window.onorientationchange = readDeviceOrientation;
 
 
 function search() {
-  var input, filter, ul, li, a, i;
+  var input, filter, ul, li, a, w;
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
     ul = document.getElementById("PlaylistDropdown");
     li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+    for (w = 0; w < li.length; w++) {
+        a = li[w].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            li[w].style.display = "";
         } else {
-            li[i].style.display = "none";
+            li[w].style.display = "none";
         }
     }
 }
