@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-.PlaylistContainer.a:hover {background-color: #ddd; color: black;}
+.PlaylistContainer a:hover {background-color: #ddd; color: black;}
 .PlaylistContainer-content {
     display: none;
     position: absolute;
