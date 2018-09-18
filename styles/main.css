@@ -39,6 +39,7 @@ body {
   display: block;
   align-items: center;
   height: 55px; /*51px*/
+  width: 100%;
   top: 2%;
 }
 
