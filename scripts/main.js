@@ -6,6 +6,8 @@ i++;
 document.getElementById("Dropbutton").classList.toggle("dropbtnclick");
 document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
 document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("PlaylistDropdown").classList.toggle("show");
+  
 } else {
 i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
