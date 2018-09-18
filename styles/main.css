@@ -8,6 +8,17 @@ body {
     background: black;
 }
 
+.AudioVisContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  width: 500px;
+  background: white;
+}
+
 .help {
   position: relative;
   width: 280px;
