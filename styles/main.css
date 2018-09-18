@@ -9,7 +9,7 @@ body {
 }
 
 .MiniPlayerContainer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   align-items: center;
   text-align: center;
