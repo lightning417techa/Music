@@ -94,7 +94,7 @@ body {
 }
 
 .MusicSearch {
-    width: 96.5%;
+    width: 50%; /*96.5%;*/
     position: relative;
     border-radius: 10px;
     background: white;
