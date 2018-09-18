@@ -39,10 +39,11 @@ body {
   display: block;
   align-items: center;
   height: 55px; /*51px*/
+  top: 2%;
 }
 
 .PlaylistContainer-dropdown-content {
-    display: none;
+    /*display: none;*/
     position: absolute;
     background-color: none;
     width: 331px;
