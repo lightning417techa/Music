@@ -16,6 +16,9 @@ body {
   text-align: center;
   min-height: 400px;
   width: 500px;
+  z-index: 6;
+  border-radius: 10px;
+  overflow: auto;
   background: white;
 }
 
