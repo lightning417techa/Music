@@ -105,7 +105,7 @@ function search() {
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
     ul = document.getElementById("PlaylistDropdown");
-    li = ul.getElementsByTagName("a");
+    li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
