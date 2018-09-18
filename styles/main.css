@@ -34,6 +34,28 @@ body {
   text-align: center;
 }
 
+.PlaylistContainer.a:hover {background-color: #ddd; color: black;}
+.PlaylistContainer-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    width: 331px;
+    overflow: auto;
+    margin-left: 0%;
+}
+
+.PlaylistContainer-content a {
+    color: white;
+    /*padding: 16px 50px;*/
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    border-top: 0.9px solid #9B9898;
+
+
+
+
 .mscontainer {
   position: relative;
   width: 330px;
