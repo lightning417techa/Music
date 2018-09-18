@@ -26,7 +26,7 @@ body {
   min-height:100%; /*460px or 450*/
   background: #333;
   overflow: auto;
-  right: 0;
+  right: 5px;
   float: right;
   border-radius: 10px;
   box-shadow: 0 10px 8px -8px #333;
