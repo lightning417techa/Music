@@ -7,6 +7,7 @@ document.getElementById("Dropbutton").classList.toggle("dropbtnclick");
 document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
 document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("PlaylistDropdown").classList.toggle("show");
+  document.getElementById("MiniPlayer").style.setAttribute("style","width: 400px; bottom: 0; position:absolute; top:100vh; transform:translateY(-100%);");
   
 } else {
 i--;
