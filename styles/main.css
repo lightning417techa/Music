@@ -47,6 +47,12 @@ body {
   text-align: center;
 }
 
+.MusicSearch {
+    width: 100%;
+    position: fixed;
+    border-radius: 10px;
+}
+
 /*animations*/
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes Minimize-Player {
