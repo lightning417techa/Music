@@ -142,7 +142,7 @@ var artists = {
   33 : ""
 }
 
-var durations {
+var TrackDurations {
   1 : "1 minute",
   2 : "",
   3 : "",
