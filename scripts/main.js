@@ -197,9 +197,9 @@ function createCanvas ( w, h ) {
     
     var VisualizerDuration = document.createElement('input');
     VisualizerDuration.id = "VisualizerSlider";
-    VisualizerDuration.setAttribute("style", "width: 100px; height: 20px; color: white; position: relative; left: 0; z-index: 10;");
+    VisualizerDuration.setAttribute("style", "width: 500px; height: 20px; color: white; position: relative; left: 0; z-index: 10;");
     VisualizerDuration.setAttribute("type", "range");
-    return VisualizerDuration;
+    document.getElementById('VisualizerCanvas').appendChild(VisualizerDuration);
     return newCanvas;
 };
 
