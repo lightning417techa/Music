@@ -20,7 +20,12 @@ var songs = {
   19 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/10__official_audio_.mp3",
   20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/lil_dicky_-_freaky_friday__lyrics__ft._chris_brown.mp3",
   21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bastille_-_pompeii__lyrics_.mp3",
-  22 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/preme_-_jackie_chan__audio__ft._post_malone.mp3"
+  22 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/preme_-_jackie_chan__audio__ft._post_malone.mp3",
+  23 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/guns_for_hands_instrumental_mp3.mp3",
+  24 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/owl_city_-_fireflies__lyrics_.mp3",
+  25 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/logic_-_ballin__ft._castro___prod._arthur_mcarthur_.mp3",
+  26 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/live_it_up.mp3",
+  27 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/geronimo.mp3"
 }
 
 var titles = {
@@ -45,7 +50,12 @@ var titles = {
   19 : "6/10",
   20 : "Freaky Friday",
   21 : "Pompeii",
-  22 : "Jackie Chan"
+  22 : "Jackie Chan",
+  23 : "Guns For Hands",
+  24 : "Fireflies",
+  25 : "Ballin'",
+  26 : "Live it Up",
+  27 : "Geronimo"
 }
 
 var albumart = {
@@ -70,7 +80,12 @@ var albumart = {
   19 : "",
   20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p157.png",
   21 : "",
-  22 : ""
+  22 : "",
+  23 : "",
+  24 : "",
+  25 : "",
+  26 : "",
+  27 : ""
 }
 
 var artists = {
@@ -95,5 +110,10 @@ var artists = {
   19 : "Dodie Clark",
   20 : "lil Dicky (ft: Chris Brown)",
   21 : "Bastille",
-  22 : "Post Malone"
+  22 : "Post Malone",
+  23 : "Twentyone Pilots",
+  24 : "Owl City",
+  25 : "Logic ft. Castro",
+  26 : "Owl City",
+  27 : "Shepherd"
 }
