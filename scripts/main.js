@@ -194,12 +194,6 @@ function createCanvas ( w, h ) {
     var newCanvas = document.createElement('canvas');
     newCanvas.width  = w; newCanvas.height = h;
     newCanvas.id = "VisualizerCanvas";
-  
-    var VisualizerDuration = document.createElement('input');
-     VisualizerDuration.id = "VisualizerSlider";
-     VisualizerDuration.width = w; VisualizerDuration.height = h;
-     VisualizerDuration.setAttribute("type", "range");
-    return VisualizerDuration;
     return newCanvas;
 };
 
