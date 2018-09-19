@@ -199,8 +199,8 @@ function createCanvas ( w, h ) {
     VisualizerDuration.id = "VisualizerSlider";
     VisualizerDuration.setAttribute("style", "width: 500px; height: 20px; color: white; position: relative; left: 0; z-index: 10;");
     VisualizerDuration.setAttribute("type", "range");
-    document.getElementById('VisualizerCanvas').appendChild(VisualizerDuration);
     return newCanvas;
+    document.getElementById('VisualizerCanvas').appendChild(VisualizerDuration);
 };
 
 function Shuffle() {
