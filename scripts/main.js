@@ -192,10 +192,7 @@ function displayBuffer(buff /* is an AudioBuffer */) {
 
 function createCanvas ( w, h ) {
     var newCanvas = document.createElement('canvas');
-    newCanvas.width  = w; newCanvas.height = h; newCanvas.id = "canvas";
-    var prog = document.createElement('input');
-    prog.setAttribute("style", "type: range; width: 100%; color: white;");
-    document.getElementById("canvas").appendChild(prog);
+    newCanvas.width  = w; newCanvas.height = h;
     return newCanvas;
 };
 
@@ -284,7 +281,7 @@ function Playbutton(clicked_id) {
     
      let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.innerHTML = "Song: " + x.title + "Author: " + artists[i] + "Duration: " + sToTime(e.target.duration);
+     newDiv.innerHTML = "Song: " + x.title + "Author: " + artists[i] + "Duration: " + sToTime(i.duration);
      document.getElementById("SongBtns").appendChild(newDiv);
      
      if (albumart[i] == "") {
