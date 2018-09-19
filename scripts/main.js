@@ -200,6 +200,7 @@ function createCanvas ( w, h ) {
     VisualizerDuration.setAttribute("style", "width: 500px; height: 20px; bottom: 0px; color: white; position: relative; left: 0; z-index: 10;");
     VisualizerDuration.setAttribute("type", "range");
     return newCanvas;
+    return VisualizerDuration;
 };
 
 function Shuffle() {
