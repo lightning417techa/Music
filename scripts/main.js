@@ -195,7 +195,7 @@ function createCanvas ( w, h ) {
     newCanvas.width  = w; newCanvas.height = h; newCanvas.id = "canvas";
     var prog = document.createElement('input');
     prog.setAttribute("style", "type: range; width: 100%; color: white;");
-    newCanvas.appendChild(prog);
+    document.getElementById("canvas").appendChild(prog);
     return newCanvas;
 };
 
