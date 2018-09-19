@@ -143,7 +143,7 @@ var artists = {
 }
 
 var durations {
-  1 : "",
+  1 : "1 minute",
   2 : "",
   3 : "",
   4 : "",
