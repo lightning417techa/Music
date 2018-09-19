@@ -282,6 +282,7 @@ function Playbutton(clicked_id) {
      let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.innerHTML = "Song: " + x.title + "Author: " + artists[i] + "Duration: " + x.duration;
+     document.getElementById("SongBtns").appendChild(newDiv);
      
      if (albumart[i] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
