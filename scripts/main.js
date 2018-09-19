@@ -194,13 +194,7 @@ function createCanvas ( w, h ) {
     var newCanvas = document.createElement('canvas');
     newCanvas.width  = w; newCanvas.height = h;
     newCanvas.id = "VisualizerCanvas";
-    
-    var VisualizerDuration = document.createElement('input');
-    VisualizerDuration.id = "VisualizerSlider";
-    VisualizerDuration.setAttribute("style", "width: 500px; height: 20px; bottom: 0px; color: white; position: relative; left: 0;");
-    VisualizerDuration.setAttribute("type", "range");
     return newCanvas;
-    return VisualizerDuration;
 };
 
 function Shuffle() {
