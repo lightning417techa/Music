@@ -193,6 +193,12 @@ function displayBuffer(buff /* is an AudioBuffer */) {
 function createCanvas ( w, h ) {
     var newCanvas = document.createElement('canvas');
     newCanvas.width  = w; newCanvas.height = h;
+    newCanvas.id = "VisualizerCanvas";
+    
+    var VisualizerDuration = document.createElement('input');
+    VisualizerDuration.id = "VisualizerSlider";
+    VisualizerDuration.setAttribute("style", "width: 100%;");
+    newCanvas.appendChild(VisualizerDuration);
     return newCanvas;
 };
 
