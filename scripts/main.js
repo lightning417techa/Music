@@ -192,7 +192,10 @@ function displayBuffer(buff /* is an AudioBuffer */) {
 
 function createCanvas ( w, h ) {
     var newCanvas = document.createElement('canvas');
-    newCanvas.width  = w;     newCanvas.height = h;
+    newCanvas.width  = w; newCanvas.height = h; newCanvas.id = "canvas";
+    var prog = document.createElement('input');
+    prog.style.setAttribute("style", "type: range; width: 100%; color: white;");
+    newCanvas.appendChild(prog);
     return newCanvas;
 };
 
