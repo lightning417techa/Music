@@ -201,6 +201,10 @@ function Playbutton(clicked_id) {
   x.title = titles[i];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
+    
+     let newDiv = document.createElement("a");
+     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
+     newDiv.innerHTML = "Song: " + x.title + "Author: " + artists[i] + "Duration: " + x.duration;
      
      if (albumart[i] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
