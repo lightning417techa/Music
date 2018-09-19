@@ -294,7 +294,7 @@ function Playbutton(clicked_id) {
      x.play();
      num = 1;
      playAudio();  
-     loadMusic(x.src);
+     loadMusic("https://raw.githubusercontent.com/lightning417techa/Music/master/images/lil%20dicky%20-%20freaky%20friday%20(lyrics)%20ft.%20chris%20brown.mp3");
 
 }
 
