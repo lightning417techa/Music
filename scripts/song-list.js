@@ -25,7 +25,13 @@ var songs = {
   24 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/owl_city_-_fireflies__lyrics_.mp3",
   25 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/logic_-_ballin__ft._castro___prod._arthur_mcarthur_.mp3",
   26 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/live_it_up.mp3",
-  27 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/geronimo.mp3"
+  27 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/geronimo.mp3",
+  28 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/cardi_b_bad_bunny__amp__j_balvin_-_i_like_it_[official_music_video].mp3",
+  29 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/mkto_-_classic.mp3",
+  30 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/owl_city_-_verge_ft._aloe_blacc.mp3",
+  31 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/walk_the_moon_-_one_foot__official_video_.mp3",
+  32 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello__amp__logic_-_everyday__audio_.mp3",
+  33 : ""
 }
 
 var titles = {
@@ -55,7 +61,13 @@ var titles = {
   24 : "Fireflies",
   25 : "Ballin'",
   26 : "Live it Up",
-  27 : "Geronimo"
+  27 : "Geronimo",
+  28 : "I Like it",
+  29 : "Classic",
+  30 : "Verge",
+  31 : "One Foot",
+  32 : "Everyday",
+  33 : ""
 }
 
 var albumart = {
@@ -85,7 +97,13 @@ var albumart = {
   24 : "",
   25 : "",
   26 : "",
-  27 : ""
+  27 : "",
+  28 : "",
+  29 : "",
+  30 : "",
+  31 : "",
+  32 : "",
+  33 : ""
 }
 
 var artists = {
@@ -108,12 +126,18 @@ var artists = {
   17 : "Imagine Dragons",
   18 : "Alan Walker",
   19 : "Dodie Clark",
-  20 : "lil Dicky (ft: Chris Brown)",
+  20 : "lil Dicky ft. Chris Brown",
   21 : "Bastille",
   22 : "Post Malone",
   23 : "Twentyone Pilots",
   24 : "Owl City",
   25 : "Logic ft. Castro",
   26 : "Owl City",
-  27 : "Shepherd"
+  27 : "Shepherd",
+  28 : "Cardi B ft. Bad Bunny",
+  29 : "MKTO",
+  30 : "Owl City",
+  31 : "Walk The Moon",
+  32 : "Marshmello ft. Logic",
+  33 : ""
 }
