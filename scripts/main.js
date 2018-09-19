@@ -302,7 +302,7 @@ function Playbutton(clicked_id) {
 function startup() {
     input2.style.display="none";
 }
-startup();
+startup()
 
 function playAudio() { 
     x.play();
