@@ -9,6 +9,10 @@ body {
     background: black;
 }
 
+.albumList {
+  width: 100%;
+}
+
 .MiniPlayerContainer {
   position: absolute;
   align-items: center;
