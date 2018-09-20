@@ -9,12 +9,13 @@ body {
     background: black;
 }
 
+/*AlbumList*/
 .AlbumList {
   width: 100%;
   height: 5%;
   bacground-color: black;
-    overflow-x: auto;
-    white-space: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 .AlbumList > .column {
   padding: 0 8px;
@@ -23,21 +24,18 @@ body {
   display: inline-block;
   float: none;
 }
-
 .AlbumList:after {
   content: "";
   display: table;
   clear: both;
   text-align: center;
 }
-
 .column {
   float: left;
   width: 25%;
   align-items: center;
   text-align: center;
 }
-
 .AlbumList-AlbumSection {
   position: absolute;
   background-color: gray;
@@ -49,6 +47,7 @@ body {
   align-items: center;
 }
 
+/*MiniPlayerController*/
 .MiniPlayerContainer {
   position: absolute;
   align-items: center;
@@ -73,6 +72,7 @@ body {
   text-align: center;
 }
 
+/*PlaylistController*/
 .PlaylistContainer {
   position: relative;
   width: 65%;
@@ -86,7 +86,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
 .PlaylistContainer-dropdown {
   position: relative;
   display: block;
@@ -95,7 +94,6 @@ body {
   width: 100%;
   top: 29px;
 }
-
 .PlaylistContainer-dropdown-content {
     /*display: none;*/
     position: absolute;
@@ -104,7 +102,6 @@ body {
     overflow: auto;
     margin-left: 0%;
 }
-
 .PlaylistContainer-dropdown-content li a {
     color: white;
     /*padding: 16px 50px;*/
@@ -114,16 +111,21 @@ body {
     display: block;
     border-top: 0.9px solid #9B9898;
 }
-
 .PlaylistContainer-dropdown a:hover {background-color: #ddd; color: black;} /*#ddd*/
-
 .PlaylistContainer-dropdown-content li {list-style: none;}
+.MusicSearch {
+    width: 96.5%; /*96.5%;*/
+    height: 30px;
+    position: relative;
+    border-radius: 10px;
+    background: white;
+    color: gray;
+    float: left;
+    left: 0;
+}
 
 
-
-
-
-
+/*MainController (mscontainer)*/
 .mscontainer {
   position: relative;
   width: 330px;
@@ -136,16 +138,12 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.MusicSearch {
-    width: 96.5%; /*96.5%;*/
-    height: 30px;
-    position: relative;
-    border-radius: 10px;
-    background: white;
-    color: gray;
-    float: left;
-    left: 0;
+.musicimg {
+    position: absolute;
+    top: 4%;
+    bottom: 0%;
+    width: 300px;
+    height: 300px;
 }
 
 /*animations*/
@@ -154,18 +152,9 @@ body {
     from {}
     to {bottom: 0; height: 100px;}
 }
-
 @keyframes Minimize-Player {
     from {}
     to {bottom: 0; height: 100px;}
-}
-
-.musicimg {
-    position: absolute;
-    top: 4%;
-    bottom: 0%;
-    width: 300px;
-    height: 300px;
 }
 
 /*play/pause button*/ 
