@@ -29,7 +29,7 @@ body {
   width: 25%;
   text-align: center;
 }
-.column p {
+p.album {
   float: center;
   text-align: center;
 }
