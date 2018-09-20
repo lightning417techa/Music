@@ -13,6 +13,7 @@ body {
   position: absolute;
   align-items: center;
   text-align: center;
+  display: inline-block;
   min-height: 50px;
   bottom: 0;
   /*display: none;*/
