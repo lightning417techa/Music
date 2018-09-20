@@ -80,7 +80,7 @@ body {
     margin-left: 0%;
 }
 
-.PlaylistContainer-dropdown-content-list-a {
+.PlaylistContainer-dropdown-content li a {
     color: white;
     /*padding: 16px 50px;*/
     padding: 10px 50px;
