@@ -14,7 +14,7 @@ body {
   height: 5%;
   bacground-color: black;
   overflow: scroll;
-  display: block;
+  display: inline-block;
 }
 .AlbumList > .column {
   padding: 0 8px;
