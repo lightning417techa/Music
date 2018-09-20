@@ -11,8 +11,10 @@ body {
 
 .AlbumList {
   width: 100%;
-    height: 5%;
-    bacground-color: black;
+  height: 5%;
+  bacground-color: black;
+  overflow: scroll;
+  display: block;
 }
 .AlbumList > .column {
   padding: 0 8px;
