@@ -14,9 +14,6 @@ body {
     height: 5%;
     bacground-color: black;
 }
-.AlbumList li p {
-   text-align: center;
-}
 .AlbumList > .column {
   padding: 0 8px;
 }
@@ -30,6 +27,7 @@ body {
 .column {
   float: left;
   width: 25%;
+  text-align: center;
 }
 
 .AlbumList-AlbumSection {
