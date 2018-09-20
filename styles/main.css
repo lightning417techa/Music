@@ -14,7 +14,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 50px;
-  bottom: -50px;
+  bottom: 0;
   /*display: none;*/
   border-radius: 10px;
   background: white;
