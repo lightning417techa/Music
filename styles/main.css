@@ -16,12 +16,14 @@ body {
 }
 .AlbumList > .column {
   padding: 0 8px;
+  text-align: center;
 }
 
 .AlbumList:after {
   content: "";
   display: table;
   clear: both;
+  text-align: center;
 }
 
 .column {
@@ -37,6 +39,7 @@ body {
   height: 200px;
   overflow: auto;
   margin-left: 0%;
+  text-align: center;
 }
 
 .MiniPlayerContainer {
