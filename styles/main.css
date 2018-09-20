@@ -5,6 +5,9 @@ html {
     align-items: center;
     margin: 0;
 }
+footer {
+    botttom: 0;
+}
 body {
     background: black;
 }
