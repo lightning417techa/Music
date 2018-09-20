@@ -29,10 +29,6 @@ body {
   width: 25%;
   text-align: center;
 }
-p.album {
-  float: center;
-  text-align: center;
-}
 
 .AlbumList-AlbumSection {
   position: absolute;
