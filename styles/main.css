@@ -10,9 +10,23 @@ body {
 }
 
 .AlbumList {
-  width: 200%;
+  width: 100%;
     height: 5%;
     bacground-color: black;
+}
+.AlbumList > .column {
+  padding: 0 8px;
+}
+
+.AlbumList:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
 }
 
 .AlbumList-AlbumSection {
