@@ -101,13 +101,13 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 function search() {
-  var input, filter, ui, li, a, w, dv, al;
+  var input, filter, ui, li, a, w;
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
     ui = document.getElementById("PlaylistDropdown");
     li = ui.getElementsByTagName("li");
-    al = document.getElementById("albums");
-    dv = al.getElementsByTagName("div");
+    
+    searchalbum();
     //function for dd
     for (w = 0; w < li.length; w++) {
         a = li[w].getElementsByTagName("a")[0];
@@ -116,7 +116,15 @@ function search() {
         } else {
             li[w].style.display = "none";
     }}    
-  
+}
+
+function searchalbum() {
+  var input, filter, al, dv, a, w;
+    input = document.getElementById("SearchBox");
+    filter = input.value.toUpperCase();
+    al = document.getElementById("albums");
+    dv = al.getElementsByTagName("div");
+    
     //function for al
      for (w = 0; w < dv.length; w++) {
          a = dv[w].getElementsByTagName("div")[0];
