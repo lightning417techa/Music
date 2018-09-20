@@ -10,7 +10,7 @@ body {
 }
 
 .MiniPlayerContainer {
-  position: relative;
+  position: absolute;
   align-items: center;
   text-align: center;
   min-height: 50px;
