@@ -102,13 +102,11 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 function search() {
-  var input, filter, dd, al, li, li2, a, w;
+  var input, filter, dd, li, a, w;
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
     dd = document.getElementById("PlaylistDropdown");
-    al = document.getElementById("albums");
     li = dd.getElementsByTagName("li");
-    li2 = al.getElementsByTagName("li");
     //function for dd
     for (w = 0; w < li.length; w++) {
         a = li[w].getElementsByTagName("a")[0];
