@@ -20,6 +20,8 @@ body {
   padding: 0 8px;
   text-align: center;
   align-items: center;
+    overflow-x: auto;
+  white-space: nowrap;
 }
 
 .AlbumList:after {
