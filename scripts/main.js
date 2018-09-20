@@ -8,7 +8,7 @@ document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
 document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("PlaylistDropdown").classList.toggle("show");
   document.getElementById("SearchBox").setAttribute("style", "height: 30px;");
-  document.getElementById("MiniPlayer").style.setAttribute("style","display: none; width: 200px; position:relative; bottom: 0;");
+  document.getElementById("MiniPlayer").style.setAttribute("style"," width: 200px; position:relative; bottom: 0;");
   
 } else {
 i--;
