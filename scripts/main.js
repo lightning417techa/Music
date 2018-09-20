@@ -102,19 +102,29 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 function search() {
-  var input, filter, ul, li, a, w;
+  var input, filter, dd, al, li, li2, a, w;
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("PlaylistDropdown");
-    li = ul.getElementsByTagName("li");
+    dd = document.getElementById("PlaylistDropdown");
+    al = document.getElementById("albums");
+    li = dd.getElementsByTagName("li");
+    li2 = al.getElementsByTagName("li");
+    //function for dd
     for (w = 0; w < li.length; w++) {
         a = li[w].getElementsByTagName("a")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             li[w].style.display = "";
         } else {
             li[w].style.display = "none";
-        }
-    }
+    }}
+    //function for al
+    for (w = 0; w < li2.length; w++) {
+        a = li2[w].getElementsByTagName("p")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li2[w].style.display = "";
+        } else {
+            li2[w].style.display = "none";
+    }}
 }
 
 function Shuffle() {
