@@ -107,7 +107,6 @@ function search() {
     ui = document.getElementById("PlaylistDropdown");
     li = ui.getElementsByTagName("li");
     
-    searchalbum();
     //function for dd
     for (w = 0; w < li.length; w++) {
         a = li[w].getElementsByTagName("a")[0];
@@ -116,23 +115,6 @@ function search() {
         } else {
             li[w].style.display = "none";
     }}    
-}
-
-function searchalbum() {
-  var input, filter, al, dv, a, w;
-    input = document.getElementById("SearchBox");
-    filter = input.value.toUpperCase();
-    al = document.getElementById("albums");
-    dv = al.getElementsByTagName("div");
-    
-    //function for al
-     for (w = 0; w < dv.length; w++) {
-         a = dv[w].getElementsByTagName("div")[0];
-         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-             dv[w].style.display = "";
-         } else {
-             dv[w].style.display = "none";
-     }}
 }
 
 function Shuffle() {
