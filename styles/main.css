@@ -15,6 +15,15 @@ body {
     bacground-color: black;
 }
 
+.AlbumList-AlbumSection {
+  position: absolute;
+  background-color: gray;
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+  margin-left: 0%;
+}
+
 .MiniPlayerContainer {
   position: absolute;
   align-items: center;
