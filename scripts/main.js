@@ -119,7 +119,7 @@ function search() {
     }}
     //function for al
     for (w = 0; w < li2.length; w++) {
-        a = li2[w].getElementsByTagName("p")[0];
+        a = li2[w].getElementsByTagName("div")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             li2[w].style.display = "";
         } else {
