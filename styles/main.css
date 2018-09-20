@@ -84,7 +84,7 @@ body {
 .mscontainer {
   position: relative;
   width: 330px;
-  min-height:480px; /*460px or 450*/
+  min-height:550px; /*460px or 450*/
   background: #333;
   overflow: auto;
   margin: 20px auto;
