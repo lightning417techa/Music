@@ -30,7 +30,7 @@ function Update() {
   Updatebutton.id = "UBTN";
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = "UpdateContinue";
+  Updatebutton.onclick = UpdateContinue();
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
