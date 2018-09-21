@@ -204,7 +204,8 @@ function Playbutton(clicked_id) {
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.innerHTML = x.title + " -- " + artists[i];
      newDiv.id = "33";
-     newDiv.onclick = Playbutton(this.id);
+     newDiv.onclick = Playbutton(newDiv.id);
+     alert(newDiv.id);
      document.getElementById("SongBtns").appendChild(newDiv);
      
      if (albumart[i] == "") {
