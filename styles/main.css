@@ -36,10 +36,11 @@ body {
 .UpdateCB {
   z-index: 7;
   position: relative;
-  left: 5%;
-  width: 100px;
+  left: 50%;
+  bottom: 5%;
+  width: 300px;
   height: 50px;
-  background-color: blue;
+  background-color: #0144FE;
 }
 
 /*AlbumList*/
