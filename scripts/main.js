@@ -15,6 +15,15 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
+function startUI() {
+  let newDiv = document.createElement("a");
+     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
+     newDiv.id = "33";
+     newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
+     document.getElementById("SongBtns").appendChild(newDiv);
+     newDiv.onclick = Playbutton(newDiv.id);
+}
+
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
@@ -44,7 +53,7 @@ function Update() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
+  Updatebutton.onclick = function() {startUI(); document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
@@ -249,16 +258,9 @@ function Playbutton(clicked_id) {
 
 
 function startup() {
-    //input2.style.display="none";
-     
-     let newDiv = document.createElement("a");
-     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.id = "33";
-     newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
-     document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = Playbutton(newDiv.id);
+    input2.style.display="none";
 }
-startup();
+startup()
 
 function playAudio() { 
     x.play();
