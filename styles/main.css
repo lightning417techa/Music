@@ -37,8 +37,7 @@ body {
   z-index: 7;
   position: relative;
   left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 10%;
   width: 300px;
   height: 50px;
   background-color: #0144FE;
