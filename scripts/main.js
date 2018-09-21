@@ -30,7 +30,7 @@ function Update() {
   let Updateimage = document.createElement("img");
   Updateimage.id = "UIMG";
   Updateimage.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-  Updateimage.style.width = "400px";
+  Updateimage.style.width = "200px";
   Updateimage.classList.toggle("UpdateIMG");
   UpdateContainer.appendChild(Updateimage);
   
