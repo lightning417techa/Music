@@ -27,7 +27,7 @@ function startUI() {
      newDiv.onclick = function(){Playbutton(b);};
     }
 }
-
+startUI();
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
@@ -60,7 +60,7 @@ function Update() {
   Updatebutton.onclick = function() {startUI(); document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
   UpdateContainer.appendChild(Updatebutton);
 }
-Update();
+//Update();
 
 function drop() {
 }
