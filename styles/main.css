@@ -64,9 +64,10 @@ body {
   top: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
+  align-items: center;
   color: black;
-  font-size: 24px;
-  display: inline-block;
+  font-size: 22px;
+  display: block;
 }
 
 
