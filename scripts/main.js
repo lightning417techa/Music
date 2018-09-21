@@ -239,9 +239,9 @@ function Playbutton(clicked_id) {
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.innerHTML = x.title + " -- " + artists[i];
      newDiv.id = "33";
-     alert(newDiv.id);
+     alert(this(newDiv.id));
      document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = "Playbutton(newDiv.id)";
+     newDiv.onclick = this(newDiv.id);
      if (albumart[i] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
