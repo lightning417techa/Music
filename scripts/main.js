@@ -21,7 +21,7 @@ function startUI() {
      newDiv.id = "33";
      newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
      document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = "Playbutton(newDiv.id)";
+     newDiv.onclick = function(){Playbutton(newDiv.id);};
 }
 
 function Update() {
