@@ -17,10 +17,12 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 function startUI() {
     var b;
+    let idnum = 0;
     for (b = 0; b < 34; b++) {
+      idnum++;
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.id = b;
+     newDiv.id = idnum;
      newDiv.innerHTML = titles[b] + " -- " + artists[b];
      document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = function(){Playbutton(b);};
