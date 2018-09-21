@@ -18,6 +18,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
+  UpdateContainer.innerHTML = "Welcome to LanyxSoft Music! please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
   UpdateContainer.classList.toggle("NewUpdate");
   document.body.appendChild(UpdateContainer);
   
