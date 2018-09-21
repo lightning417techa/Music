@@ -249,7 +249,7 @@ function Playbutton(clicked_id) {
 
 
 function startup() {
-    input2.style.display="none";
+    //input2.style.display="none";
      
      let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
@@ -258,7 +258,7 @@ function startup() {
      document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = Playbutton(newDiv.id);
 }
-startup()
+startup();
 
 function playAudio() { 
     x.play();
