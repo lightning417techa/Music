@@ -58,6 +58,7 @@ body {
 }
 .UpdateTXT {
   z-index: 9;
+  position: fixed;
   left: 50%;
   top: 20%;
   transform: translate(-50%, -50%);
