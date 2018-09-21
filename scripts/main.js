@@ -21,7 +21,7 @@ function Update() {
   UpdateContainer.classList.toggle("NewUpdate");
   document.body.appendChild(UpdateContainer);
   
-  let Updatetxt = document.createElement("p");
+  let Updatetxt = document.createElement("div");
   Updatetxt.id = "UTXT";
   Updatetxt.innerHTML = "Welcome to LanyxSoft Music! please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
   Updatetxt.classList.toggle("UpdateTXT");
