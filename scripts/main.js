@@ -141,6 +141,13 @@ function search() {
     filter = input.value.toUpperCase();
     ui = document.getElementById("PlaylistDropdown");
     li = ui.getElementsByTagName("li");
+  
+    let newDiv = document.createElement("a");
+     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
+     newDiv.innerHTML = x.title + " -- " + artists[i];
+     newDiv.id = "33";
+     document.getElementById("SongBtns").appendChild(newDiv);
+     newDiv.onclick = Playbutton(newDiv.id);
     
     //function for dd
     for (w = 0; w < li.length; w++) {
@@ -235,13 +242,6 @@ function Playbutton(clicked_id) {
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
     
-     let newDiv = document.createElement("a");
-     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.innerHTML = x.title + " -- " + artists[i];
-     newDiv.id = "33";
-     alert(this(newDiv.id));
-     document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = this(newDiv.id);
      if (albumart[i] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
