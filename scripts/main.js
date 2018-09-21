@@ -15,31 +15,31 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-let UpdateContainer = document.createElement("div");
-let Updatebackground = document.createElement("div");
-let Updatebutton = document.createElement("div");
-function UpdateContinue() {
-  UpdateContainer.style.visibility = "hidden";
-  Updatebackground.style.visibility = "hidden";
-  Updatebutton.style.visibility = "hidden";
-}
 function Update() {
-  
+  let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
   UpdateContainer.classList.toggle("NewUpdate");
   document.body.appendChild(UpdateContainer);
   
+  let Updatebackground = document.createElement("div");
   Updatebackground.id = "UB";
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
   
+  let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = UpdateContinue();
+  Updatebutton.onclick = "UpdateContinue";
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
+
+function UpdateContinue() {
+  document.getElementById("UC").style.visibility = "hidden";
+  document.getElementById("UB").style.visibility = "hidden";
+  document.getElementById("UBTN").style.visibility = "hidden";
+}
 
 function drop() {
 }
