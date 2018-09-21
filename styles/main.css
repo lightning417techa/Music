@@ -48,7 +48,7 @@ body {
   dont-size: 24px;
 }
 .UpdateIMG {
-  z-index: 7;
+  z-index: 8;
   position: fixed;
   left: 50%;
   top: 50%;
