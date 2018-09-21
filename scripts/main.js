@@ -32,7 +32,7 @@ function Update() {
   Updateimage.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
   Updateimage.style.width = "100px";
   Updateimage.classList.toggle("UpdateIMG");
-  UpdateContainer.appendChild(Updatebutton);
+  UpdateContainer.appendChild(Updateimage);
   
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
