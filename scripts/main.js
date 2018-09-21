@@ -15,13 +15,17 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
+
+var b;
 function startUI() {
+    for (b = 0; b < 34; b++) {
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.id = "33";
-     newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
-     document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = function(){Playbutton(newDiv.id);};
+     newDiv.id = b;
+     newDiv.innerHTML = titles[b] + " -- " + artists[b];
+     document.getElementById("SongBtns").appendChild(b);
+     newDiv.onclick = function(){Playbutton(b);};
+    }
 }
 
 function Update() {
