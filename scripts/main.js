@@ -1,4 +1,5 @@
 var btnv = 0;
+var update = 0;
 function Dropdown() {
 var i = 0;
 if (i == 0) {
@@ -13,6 +14,13 @@ document.getElementById("myDropdown").classList.toggle("show");
 i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
+
+function Update() {
+  let UpdateContainer = document.createElement("div");
+  UpdateContainer.classList.toggle("NewUpdate");
+  document.body.appendChild(UpdateContainer);
+}
+Update();
 
 function drop() {
 }
