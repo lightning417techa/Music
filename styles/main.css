@@ -47,6 +47,14 @@ body {
   border-radius: 10px;
   dont-size: 24px;
 }
+.UpdateIMG {
+  z-index: 7;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
 
 /*AlbumList*/
 .AlbumList {
