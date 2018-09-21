@@ -15,15 +15,14 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-
-var b = 0;
+var b;
 function startUI() {
     for (b = 0; b < 34; b++) {
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.id = b;
      newDiv.innerHTML = titles[b] + " -- " + artists[b];
-     document.getElementById("SongBtns").appendChild(b);
+     document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = function(){Playbutton(b);};
     }
 }
@@ -57,10 +56,10 @@ function Update() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {startUI(); document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
+  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
   UpdateContainer.appendChild(Updatebutton);
 }
-//Update();
+Update();
 
 function drop() {
 }
