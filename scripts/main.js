@@ -15,7 +15,7 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-function UpdateContinue {
+function UpdateContinue() {
   
 }
 function Update() {
