@@ -141,13 +141,6 @@ function search() {
     filter = input.value.toUpperCase();
     ui = document.getElementById("PlaylistDropdown");
     li = ui.getElementsByTagName("li");
-  
-    let newDiv = document.createElement("a");
-     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.innerHTML = x.title + " -- " + artists[i];
-     newDiv.id = "33";
-     document.getElementById("SongBtns").appendChild(newDiv);
-     newDiv.onclick = Playbutton(newDiv.id);
     
     //function for dd
     for (w = 0; w < li.length; w++) {
@@ -257,6 +250,13 @@ function Playbutton(clicked_id) {
 
 function startup() {
     input2.style.display="none";
+     
+     let newDiv = document.createElement("a");
+     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
+     newDiv.id = "33";
+     newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
+     document.getElementById("SongBtns").appendChild(newDiv);
+     newDiv.onclick = Playbutton(newDiv.id);
 }
 startup()
 
