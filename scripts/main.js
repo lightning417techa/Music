@@ -33,7 +33,7 @@ function Update() {
   Updatebutton.id = "UBTN";
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = UpdateContainer.style.visibility = "hidden";
+  //Updatebutton.onclick = UpdateContainer.style.visibility = "hidden";
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
