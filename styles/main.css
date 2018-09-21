@@ -9,6 +9,16 @@ body {
     background: black;
 }
 
+.NewUpdate {
+  position: relative;
+  z-index: 6;
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+}
+
 /*AlbumList*/
 .AlbumList {
   width: 100%;
