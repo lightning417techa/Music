@@ -19,6 +19,10 @@ function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.classList.toggle("NewUpdate");
   document.body.appendChild(UpdateContainer);
+  
+  let Updatebackground = document.createElement("div");
+  Updatebackground.classList.toggle("UpdateBackground");
+  document.body.appendChild(Updatebackground);
 }
 Update();
 
