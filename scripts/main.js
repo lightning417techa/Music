@@ -23,6 +23,10 @@ function Update() {
   let Updatebackground = document.createElement("div");
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
+  
+  let Updatebutton = document.createElement("div");
+  Updatebutton.classList.toggle("UpdateCB");
+  UpdateContainer.appendChild(Updatebutton);
 }
 Update();
 
