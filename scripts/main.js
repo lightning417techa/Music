@@ -15,8 +15,8 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-var b;
 function startUI() {
+    var b;
     for (b = 0; b < 34; b++) {
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
@@ -26,7 +26,6 @@ function startUI() {
      newDiv.onclick = function(){Playbutton(b);};
     }
 }
-startUI();
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
