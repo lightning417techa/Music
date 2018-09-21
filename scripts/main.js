@@ -16,7 +16,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 
-var b;
+var b = 0;
 function startUI() {
     for (b = 0; b < 34; b++) {
   let newDiv = document.createElement("a");
