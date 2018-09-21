@@ -29,6 +29,7 @@ function Update() {
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
   Updatebutton.classList.toggle("UpdateCB");
+  Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
   Updatebutton.onclick = function() {document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
   UpdateContainer.appendChild(Updatebutton);
