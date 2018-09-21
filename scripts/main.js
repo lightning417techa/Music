@@ -15,6 +15,12 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
+function UpdateContinue() {
+  document.getElementById("UC").style.visibility = "hidden";
+  document.getElementById("UB").style.visibility = "hidden";
+  document.getElementById("UBTN").style.visibility = "hidden";
+}
+
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
@@ -34,12 +40,6 @@ function Update() {
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
-
-function UpdateContinue() {
-  document.getElementById("UC").style.visibility = "hidden";
-  document.getElementById("UB").style.visibility = "hidden";
-  document.getElementById("UBTN").style.visibility = "hidden";
-}
 
 function drop() {
 }
