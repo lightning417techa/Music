@@ -21,7 +21,7 @@ body {
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  font-size: 100%;
+  font-size: 18pt;
 }
 .UpdateBackground {
   z-index: 5;
@@ -45,7 +45,7 @@ body {
   color: white;
   background-color: #0144FE;
   border-radius: 10px;
-  dont-size: 100%;
+  dont-size: 20pt;
 }
 
 /*AlbumList*/
