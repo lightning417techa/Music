@@ -206,7 +206,7 @@ function Playbutton(clicked_id) {
      newDiv.id = "33";
      alert(newDiv.id);
      document.getElementById("SongBtns").appendChild(newDiv);
-     
+     newDiv.onclick = "Playbutton(newDiv.id);"
      if (albumart[i] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
