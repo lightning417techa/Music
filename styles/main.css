@@ -12,7 +12,7 @@ body {
 .NewUpdate {
   z-index: 6;
   position: fixed;
-   top: 50%;
+   top: 45%;
    left: 50%;
    transform: translate(-50%, -50%);
   width: 500px;
@@ -39,7 +39,7 @@ body {
   z-index: 7;
   position: fixed;
   left: 50%;
-  top: 80%;
+  top: 75%;
   transform: translate(-50%, -50%);
   width: 300px;
   height: 50px;
@@ -52,14 +52,14 @@ body {
   z-index: 8;
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 .UpdateTXT {
   z-index: 9;
   left: 50%;
-  top: 10%;
+  top: 5%;
   transform: translate(-50%, -50%);
   text-align: center;
   dont-size: 24px;
