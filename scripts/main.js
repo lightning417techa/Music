@@ -132,12 +132,7 @@ switch (window.orientation) {
      // Landscape  (Counterclockwise)
        //alert("Landscape (Counter-Clockwise) 90°");
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-     zoomOutMobile();
-     let newDiv = document.createElement("a");
-     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.innerHTML = "test " + x.title + x.duration;
-     
-     document.getElementById("SongBtns").appendChild(newDiv);
+     zoomOutMobile();     
      break;
      }
  }
