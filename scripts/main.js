@@ -23,7 +23,7 @@ function startUI() {
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.id = idnum;
-     newDiv.innerHTML = titles[b] + " -- " + artists[b];
+     newDiv.innerHTML = titles[b] + " -- " + artists[b] + "b value: " + b + "idnum: " + idnum;
      document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = function(){Playbutton(b);};
     }
