@@ -27,12 +27,17 @@ function Update() {
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
   
+  let Updateimage = document.createElement("img");
+  Updateimage.id = "UIMG";
+  Updateimage.classList.toggle("UpdateIMG");
+  UpdateContainer.appendChild(Updatebutton);
+  
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
+  Updatebutton.onclick = function() {document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden";}
   UpdateContainer.appendChild(Updatebutton);
 }
 Update();
