@@ -33,6 +33,14 @@ body {
   background-color: black;
   opacity: 0.5;
 }
+.UpdateCB {
+  z-index: 7;
+  position: relative;
+  left: 5%;
+  width: 100px;
+  height: 50px;
+  background-color: blur;
+}
 
 /*AlbumList*/
 .AlbumList {
