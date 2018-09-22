@@ -142,21 +142,21 @@ var artists = {
   33 : "Fall Out Boy"
 }
 
-/*var TrackDurations {
-  1 : "1 minute",
+var AlbumName {
+  1 : "",
   2 : "",
   3 : "",
   4 : "",
-  5 : "",
+  5 : "Mania",
   6 : "",
   7 : "",
   8 : "",
-  9 : "",
+  9 : "American Beauty/American Psycho",
   10 : "",
-  11 : "",
+  11 : "Vessel",
   12 : "",
-  13 : "",
-  14 : "",
+  13 : "Vessel",
+  14 : "American Beauty/American Psycho",
   15 : "",
   16 : "",
   17 : "",
@@ -165,7 +165,7 @@ var artists = {
   20 : "",
   21 : "",
   22 : "",
-  23 : "",
+  23 : "Vessel",
   24 : "",
   25 : "",
   26 : "",
@@ -175,5 +175,5 @@ var artists = {
   30 : "",
   31 : "",
   32 : "",
-  33 : ""
-}*/
+  33 : "Mania"
+}
