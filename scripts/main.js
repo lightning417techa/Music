@@ -30,7 +30,7 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
 }
-function StartUI2() {
+/*function StartUI2() {
   var SB;
     for (SB = 0; SB < 33;) {
     SB++;
@@ -48,7 +48,7 @@ function StartUI2() {
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
-}
+}*/
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
@@ -79,9 +79,8 @@ function Update() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI2();}
-  UpdateContainer.appendChild(Updatebutton);
-  //startUI();
+  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
+  UpdateContainer.appendChild(Updatebutton);  
 }
 Update();
 
