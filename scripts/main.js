@@ -30,25 +30,7 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
 }
-function StartUI2() {
-  var SB;
-    for (SB = 0; SB < 33;) {
-    SB++;
-        let NewAlbumBtn = document.createElement("div");        
-        NewAlbumBtn.classList.toggle("column");
-        
-        let NewAlbumArt = document.createElement("img");
-        NewAlbumArt.src = albumart[SB];
-        NewAlbumArt.style.width = "100%";
-        NewAlbumBtn.appendChild(NewAlbumArt);
-      
-        let NewAlbumP = document.createElement("p");
-        NewAlbumP.innerHTML = AlbumName[SB];
-        NewAlbumBtn.appendChild(NewAlbumP);
-              
-        document.getElementById("albums").appendChild(NewAlbumBtn);
-    }
-}
+
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
