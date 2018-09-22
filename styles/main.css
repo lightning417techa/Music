@@ -56,7 +56,7 @@ body {
     border-radius: 10px;
 }
 .UpdateTXT {
-  z-index: 8;
+  z-index: 7;
   position: fixed;
   left: 50%;
   top: 20%;
