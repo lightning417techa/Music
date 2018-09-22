@@ -111,8 +111,6 @@ body {
   position: fixed;
   align-items: center;
   text-align: center;
-  display: none;
-  visibility: hidden;
   min-height: 50px;
   bottom: 0;
   width: 100%;
