@@ -34,17 +34,17 @@ function StartUII() {
     for (SB2 = 0; SB2 < 33;) {
     SB2++;
         let NewAlbumBtn = document.createElement("div");                
+        NewAlbumBtn.classList.toggle("column");
         
         let NewAlbumArt = document.createElement("img");
-        //NewAlbumArt.src = albumart[SB2];
+        NewAlbumArt.src = albumart[SB2];
         NewAlbumArt.setAttribute("style", "width: 100%");
-        //NewAlbumBtn.appendChild(NewAlbumArt);
+        NewAlbumBtn.appendChild(NewAlbumArt);
       
-        let NewAlbumP = document.createElement("p");
+        /*let NewAlbumP = document.createElement("p");
         NewAlbumP.innerHTML = AlbumName[SB2];
-        NewAlbumBtn.appendChild(NewAlbumP);
-              
-        NewAlbumBtn.classList.toggle("column");
+        NewAlbumBtn.appendChild(NewAlbumP);*/
+                      
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
