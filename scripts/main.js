@@ -154,6 +154,9 @@ switch (window.orientation) {
 readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
+//SEARCH
+document.getElementById("SearchBox").addEventListener("keyup", function(){search(); searchAlbums();});
+
 function search() {
   var input, filter, ui, li, a, w;
     input = document.getElementById("SearchBox");
@@ -170,6 +173,23 @@ function search() {
             li[w].style.display = "none";
     }}    
 }
+function searchAlbums() {
+  var input, filter, ui, li, a, w;
+    input = document.getElementById("SearchBox");
+    filter = input.value.toUpperCase();
+    ui = document.getElementById("albums");
+    li = ui.getElementsByTagName("div");
+    
+    //function for dd
+    for (w = 0; w < li.length; w++) {
+        a = li[w].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[w].style.display = "";
+        } else {
+            li[w].style.display = "none";
+    }}    
+}
+
 
 function Shuffle() {
   var s = Math.floor(Math.random() * 22) + 1;
