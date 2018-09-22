@@ -37,13 +37,13 @@ function StartUII() {
         NewAlbumBtn.classList.toggle("column");
         
         let NewAlbumArt = document.createElement("img");
-        NewAlbumArt.src = albumart[SB2];
+        //NewAlbumArt.src = albumart[SB2];
         NewAlbumArt.setAttribute("style", "width: 100%");
-        NewAlbumBtn.appendChild(NewAlbumArt);
+        //NewAlbumBtn.appendChild(NewAlbumArt);
       
         let NewAlbumP = document.createElement("p");
         NewAlbumP.innerHTML = AlbumName[SB2];
-        //NewAlbumBtn.appendChild(NewAlbumP);
+        NewAlbumBtn.appendChild(NewAlbumP);
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
