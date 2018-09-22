@@ -114,45 +114,45 @@ function readDeviceOrientation() {
 switch (window.orientation) {  
    case 0:  
      // Portrait 
-       //alert("Portrait 0°");
      document.getElementById("PlaylistC").style.visibility = "hidden";
      document.getElementById("PlaylistC").style.display = "none";
-     document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");                                                                                               
-     
+    
      document.getElementById("MiniPlayer").style.visibility = "visible";
      document.getElementById("MiniPlayer").style.display = "block";
+    
+     document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");                                                                                                    
      break;      
    case 180:  
      // Portrait (Upside-down)
-       //alert("Portrait (Upside Down) 180°");
      document.getElementById("PlaylistC").style.visibility = "hidden";
      document.getElementById("PlaylistC").style.display = "none";
-     document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");     
-   
+    
      document.getElementById("MiniPlayer").style.visibility = "visible";
      document.getElementById("MiniPlayer").style.display = "block";
+    
+     document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");            
      break; 
    case -90:  
      // Landscape (Clockwise)
-       //alert("Landscape (Clockwise) -90°");
      document.getElementById("PlaylistC").style.visibility = "visible";
      document.getElementById("PlaylistC").style.display = "block";
-     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-     zoomOutMobile();
     
      document.getElementById("MiniPlayer").style.visibility = "hidden";
      document.getElementById("MiniPlayer").style.display = "none";
+    
+     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+     zoomOutMobile();         
      break;  
    case 90:  
      // Landscape  (Counterclockwise)
-       //alert("Landscape (Counter-Clockwise) 90°");
      document.getElementById("PlaylistC").style.visibility = "visible";
      document.getElementById("PlaylistC").style.display = "block";
-     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-     zoomOutMobile();     
     
      document.getElementById("MiniPlayer").style.visibility = "hidden";
      document.getElementById("MiniPlayer").style.display = "none";
+    
+     document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
+     zoomOutMobile();              
      break;
      }
  }
