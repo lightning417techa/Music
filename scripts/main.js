@@ -16,8 +16,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 function startUI() {    
-  var SB;
-  StartUI2();
+  var SB;  
     for (SB = 0; SB < 33;) {
     SB++;
         let NewSongBtn = document.createElement("a");
@@ -34,8 +33,7 @@ function StartUI2() {
   var SB;
     for (SB = 0; SB < 33;) {
     SB++;
-        let NewAlbumBtn = document.createElement("div");
-        NewAlbumBtn.id = SB;
+        let NewAlbumBtn = document.createElement("div");        
         NewAlbumBtn.classList.toggle("column");
         
         let NewAlbumArt = document.createElement("img");
@@ -79,7 +77,7 @@ function Update() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
+  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI(); StartUI2();}
   UpdateContainer.appendChild(Updatebutton);
   //startUI();
 }
