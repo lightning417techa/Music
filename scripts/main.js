@@ -30,7 +30,7 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
 }
-/*function StartUI2() {
+function StartUI2() {
   var SB;
     for (SB = 0; SB < 33;) {
     SB++;
@@ -48,7 +48,7 @@ function startUI() {
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
-}*/
+}
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
