@@ -16,14 +16,29 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 function startUI() {
-    
   let newDiv = document.createElement("a");
      newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
      newDiv.id = "33";
      newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
      document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = function(){Playbutton(newDiv.id);};    
+  
+  var SBTNI;
+    for (SBTNI = 0; SBTNI < 33;) {
+    SBTNI++;
+        let NewSongBtn = document.createElement("a");
+        NewSongBtn.id = SBTNI;
+        NewSongBtn.innerHTML = "id is " + SBTNI + "<br>";
+        NewSongBtn.onclick = function() {at(NewSongBtn.id)};
+        document.body.appendChild(NewSongBtn);
+    }
 }
+function at(clicked_id) {
+  e = clicked_id;
+  alert(x);
+  
+}
+
 function Update() {
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
