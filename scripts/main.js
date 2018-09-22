@@ -17,6 +17,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 function startUI() {    
   var SB;
+  StartUI2();
     for (SB = 0; SB < 33;) {
     SB++;
         let NewSongBtn = document.createElement("a");
@@ -29,9 +30,24 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
 }
-function at(clicked_id) {
-  b = clicked_id;
-  alert(b);  
+function StartUI2() {
+  var SB;
+    for (SB = 0; SB < 33;) {
+    SB++;
+        let NewAlbumBtn = document.createElement("div");
+        NewAlbumBtn.id = SB;
+        NewAlbumBtn.classList.toggle("column");
+        
+        let NewAlbumArt = document.createElement("img");
+        NewAlbumArt.src = albumart[SB];
+        NewAlbumArt.style.width = "100%";
+        NewAlbumBtn.appendChild(NewAlbumArt);
+      
+        let NewAlbumP = document.createElement("p");
+        NewAlbumP.innerHTML = AlbumName[SB];
+        NewAlbumBtn.appendChild(NewAlbumP);
+              
+        document.getElementById("albums").appendChild(NewAlbumBtn);
 }
 
 function Update() {  
