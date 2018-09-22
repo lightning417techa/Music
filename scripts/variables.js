@@ -1,4 +1,4 @@
-var AlbumName {
+var AlbumName = {
   1 : "",
   2 : "",
   3 : "",
