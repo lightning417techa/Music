@@ -23,13 +23,13 @@ function startUI() {
      document.getElementById("SongBtns").appendChild(newDiv);
      newDiv.onclick = function(){Playbutton(newDiv.id);};    
   
-  var SBTNI;
-    for (SBTNI = 0; SBTNI < 33;) {
-    SBTNI++;
+  var SB;
+    for (SB = 0; SB < 33;) {
+    SB++;
         let NewSongBtn = document.createElement("a");
-        NewSongBtn.id = SBTNI;
+        NewSongBtn.id = SB;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
-        NewSongBtn.innerHTML = "id is " + SBTNI;
+        NewSongBtn.innerHTML = "id is " + SB;
         NewSongBtn.onclick = function() {at(NewSongBtn.id)};
         document.getElementById("SongBtns").appendChild(NewSongBtn);
     }
@@ -39,8 +39,7 @@ function at(clicked_id) {
   alert(b);  
 }
 
-function Update() {
-  startUI();
+function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
   UpdateContainer.classList.toggle("NewUpdate");
@@ -71,6 +70,7 @@ function Update() {
   Updatebutton.innerHTML = "Continue";
   Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
   UpdateContainer.appendChild(Updatebutton);
+  startUI();
 }
 Update();
 
@@ -131,40 +131,28 @@ switch (window.orientation) {
    case 0:  
      // Portrait 
      document.getElementById("PlaylistC").style.visibility = "hidden";
-     document.getElementById("PlaylistC").style.display = "none";
-    
-     document.getElementById("MiniPlayer").style.visibility = "visible";
-     document.getElementById("MiniPlayer").style.display = "block";
-    
+     document.getElementById("PlaylistC").style.display = "none";    
      document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");                                                                                                    
      break;      
    case 180:  
      // Portrait (Upside-down)
      document.getElementById("PlaylistC").style.visibility = "hidden";
-     document.getElementById("PlaylistC").style.display = "none";
-    
-     document.getElementById("MiniPlayer").style.visibility = "visible";
-     document.getElementById("MiniPlayer").style.display = "block";
-    
+     document.getElementById("PlaylistC").style.display = "none";            
      document.getElementById("container").setAttribute("style", "top: 5%; position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 20px auto; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");            
      break; 
    case -90:  
      // Landscape (Clockwise)         
      document.getElementById("PlaylistC").style.visibility = "visible";
-     document.getElementById("PlaylistC").style.display = "block";    
-    
+     document.getElementById("PlaylistC").style.display = "block";        
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-     zoomOutMobile();         
-    
+     zoomOutMobile();             
      break;  
    case 90:  
      // Landscape  (Counterclockwise)     
      document.getElementById("PlaylistC").style.visibility = "visible";
-     document.getElementById("PlaylistC").style.display = "block";         
-    
+     document.getElementById("PlaylistC").style.display = "block";             
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
-     zoomOutMobile();              
-    
+     zoomOutMobile();                  
      break;
      }
  }
