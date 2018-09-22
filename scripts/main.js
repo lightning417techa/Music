@@ -16,8 +16,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 function startUI() {    
-  var SB;  
-  startUI2();
+  var SB;    
     for (SB = 0; SB < 33;) {
     SB++;
         let NewSongBtn = document.createElement("a");
@@ -49,6 +48,7 @@ function StartUI2() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
+startUI2();
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
