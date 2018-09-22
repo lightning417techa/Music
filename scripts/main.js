@@ -33,8 +33,7 @@ function StartUII() {
   var SB2;
     for (SB2 = 0; SB2 < 33;) {
     SB2++;
-        let NewAlbumBtn = document.createElement("div");        
-        NewAlbumBtn.classList.toggle("column");
+        let NewAlbumBtn = document.createElement("div");                
         
         let NewAlbumArt = document.createElement("img");
         //NewAlbumArt.src = albumart[SB2];
@@ -45,6 +44,7 @@ function StartUII() {
         NewAlbumP.innerHTML = AlbumName[SB2];
         NewAlbumBtn.appendChild(NewAlbumP);
               
+        NewAlbumBtn.classList.toggle("column");
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
