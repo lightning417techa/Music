@@ -43,7 +43,7 @@ function StartUII() {
       
         let NewAlbumP = document.createElement("p");
         NewAlbumP.innerHTML = AlbumName[SB2];
-        NewAlbumBtn.appendChild(NewAlbumP);
+        //NewAlbumBtn.appendChild(NewAlbumP);
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
