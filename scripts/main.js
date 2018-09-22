@@ -188,7 +188,7 @@ function search() {
             li[w].style.display = "none";
     }}    
 }
-function searchAlbums() {
+/*function searchAlbums() {
   var input, filter, ui, li, a, w;
     input = document.getElementById("SearchBox");
     filter = input.value.toUpperCase();
@@ -203,7 +203,7 @@ function searchAlbums() {
         } else {
             li[w].style.display = "none";
     }}    
-}
+}*/
 
 
 function Shuffle() {
