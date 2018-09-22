@@ -38,7 +38,7 @@ function StartUII() {
         
         let NewAlbumArt = document.createElement("img");
         NewAlbumArt.src = albumart[SB2];
-        NewAlbumArt.style.width = "100%";
+        NewAlbumArt.setAttribute("style", "width: 100%");
         NewAlbumBtn.appendChild(NewAlbumArt);
       
         let NewAlbumP = document.createElement("p");
@@ -48,7 +48,6 @@ function StartUII() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
-StartUII();
 function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
