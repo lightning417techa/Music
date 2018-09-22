@@ -24,7 +24,9 @@ function startUI() {
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
         NewSongBtn.innerHTML = titles[SB] + " -- " + artists[SB];
         NewSongBtn.onclick = function() {Playbutton(NewSongBtn.id);};
-        document.getElementById("SongBtns").appendChild(NewSongBtn);
+        let LI = document.createElement("li");
+        LI.appendChild(NewSongBtn);
+        document.getElementById("SongBtns").appendChild(LI);
     }
 }
 function at(clicked_id) {
