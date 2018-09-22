@@ -70,7 +70,7 @@ function Update() {
   Updatebutton.innerHTML = "Continue";
   Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
   UpdateContainer.appendChild(Updatebutton);
-  startUI();
+  //startUI();
 }
 Update();
 
