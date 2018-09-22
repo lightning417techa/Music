@@ -57,15 +57,14 @@ body {
 }
 .UpdateTXT {
   z-index: 7;
-  position: relative;
+  position: fixed;
   left: 50%;
   top: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
-  align-items: center;
   color: black;
   font-size: 22px;
-    width: 400px;
+    width: 430px;
 }
 
 
