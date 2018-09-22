@@ -140,8 +140,7 @@ switch (window.orientation) {
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
      //zoomOutMobile();         
     
-     document.getElementById("MiniPlayer").style.visibility = "hidden";
-     document.getElementById("MiniPlayer").style.display = "none";
+     document.getElementById("MiniPlayer").setAttribute("style", "visibility: hidden; display: none;");     
      break;  
    case 90:  
      // Landscape  (Counterclockwise)     
@@ -151,8 +150,7 @@ switch (window.orientation) {
      document.getElementById("container").setAttribute("style", "position: relative; width: 330px; min-height:480px; background: #333; overflow: auto; margin: 0px; left: 0; border-radius: 10px; box-shadow: 0 10px 8px -8px #333; align-items: center; text-align: center;");
      //zoomOutMobile();              
     
-     document.getElementById("MiniPlayer").style.visibility = "hidden";
-     document.getElementById("MiniPlayer").style.display = "none";
+     document.getElementById("MiniPlayer").setAttribute("style", "visibility: hidden; display: none;");     
      break;
      }
  }
