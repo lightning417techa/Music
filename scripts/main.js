@@ -170,7 +170,7 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 //SEARCH
-document.getElementById("SearchBox").addEventListener("keyup", function(){search(); searchAlbums();});
+document.getElementById("SearchBox").addEventListener("keyup", function(){search(); /*searchAlbums();*/});
 
 function search() {
   var input, filter, ui, li, a, w;
