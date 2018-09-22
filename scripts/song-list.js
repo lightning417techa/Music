@@ -142,7 +142,7 @@ var artists = {
   33 : "Fall Out Boy"
 }
 
-var AlbumName {
+/*var AlbumName {
   1 : "",
   2 : "",
   3 : "",
@@ -176,4 +176,4 @@ var AlbumName {
   31 : "",
   32 : "",
   33 : "Mania"
-}
+}*/
