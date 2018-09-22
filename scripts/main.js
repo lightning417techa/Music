@@ -48,7 +48,7 @@ function StartUII() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
-StartUII();
+//StartUII();
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
