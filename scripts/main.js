@@ -182,7 +182,7 @@ function searchAlbums() {
     
     //function for dd
     for (w = 0; w < li.length; w++) {
-        a = li[w].getElementsByTagName("a")[0];
+        a = li[w].getElementsByTagName("p")[0];
         if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
             li[w].style.display = "";
         } else {
