@@ -108,13 +108,14 @@ body {
 
 /*MiniPlayerController*/
 .MiniPlayerContainer {
-  position: absolute;
+  position: fixed;
   align-items: center;
   text-align: center;
-  display: inline-block;
+  display: none;
+  visibility: hidden;
   min-height: 50px;
   bottom: 0;
-  /*display: none;*/
+  width: 100%;
   border-radius: 10px;
   background: white;
 }
