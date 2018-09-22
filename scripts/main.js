@@ -30,25 +30,24 @@ function startUI() {
     }
 }
 function StartUI2() {
-  var SB;
-    for (SB = 0; SB < 33;) {
-    SB++;
+  var SB2;
+    for (SB2 = 0; SB2 < 33;) {
+    SB2++;
         let NewAlbumBtn = document.createElement("div");        
         NewAlbumBtn.classList.toggle("column");
         
         let NewAlbumArt = document.createElement("img");
-        NewAlbumArt.src = albumart[SB];
+        NewAlbumArt.src = albumart[SB2];
         NewAlbumArt.style.width = "100%";
         NewAlbumBtn.appendChild(NewAlbumArt);
       
         let NewAlbumP = document.createElement("p");
-        NewAlbumP.innerHTML = AlbumName[SB];
+        NewAlbumP.innerHTML = AlbumName[SB2];
         NewAlbumBtn.appendChild(NewAlbumP);
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
-startUI2();
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
