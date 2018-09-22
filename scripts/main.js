@@ -29,14 +29,14 @@ function startUI() {
         let NewSongBtn = document.createElement("a");
         NewSongBtn.id = SBTNI;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
-        NewSongBtn.innerHTML = "id is " + SBTNI + "<br>";
+        NewSongBtn.innerHTML = "id is " + SBTNI;
         NewSongBtn.onclick = function() {at(NewSongBtn.id)};
         document.body.appendChild(NewSongBtn);
     }
 }
 function at(clicked_id) {
   b = clicked_id;
-  alert(x);  
+  alert(b);  
 }
 
 function Update() {
