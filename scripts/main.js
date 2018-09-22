@@ -29,7 +29,7 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
 }
-function StartUI2() {
+function StartUII() {
   var SB2;
     for (SB2 = 0; SB2 < 33;) {
     SB2++;
@@ -48,7 +48,7 @@ function StartUI2() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
-
+StartUII();
 function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
