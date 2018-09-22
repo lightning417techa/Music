@@ -46,6 +46,7 @@ function StartUI2() {
         NewAlbumBtn.appendChild(NewAlbumP);
               
         document.getElementById("albums").appendChild(NewAlbumBtn);
+    }
 }
 
 function Update() {  
