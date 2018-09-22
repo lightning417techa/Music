@@ -48,6 +48,8 @@ function StartUII() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
+StartUII();
+
 function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
