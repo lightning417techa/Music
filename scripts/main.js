@@ -35,9 +35,9 @@ function startUI() {
 }
 function at(clicked_id) {
   e = clicked_id;
-  alert(x);
-  
+  alert(x);  
 }
+startUI();
 
 function Update() {
   let UpdateContainer = document.createElement("div");
