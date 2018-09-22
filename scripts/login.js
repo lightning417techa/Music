@@ -1,0 +1,7 @@
+var usernames = {
+
+}
+
+var passwords = {
+
+}
