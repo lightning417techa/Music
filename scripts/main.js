@@ -15,15 +15,7 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-function startUI() {
-  let newDiv = document.createElement("a");
-     newDiv.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");
-     newDiv.id = "33";
-     newDiv.innerHTML = titles[newDiv.id] + " -- " + artists[newDiv.id];
-     document.getElementById("SongBtns").appendChild(newDiv);
-     document.getElementById("myDropdown").appendChild(newDiv);
-     newDiv.onclick = function(){Playbutton(newDiv.id);};    
-  
+function startUI() {    
   var SB;
     for (SB = 0; SB < 33;) {
     SB++;
