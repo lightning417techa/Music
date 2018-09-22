@@ -17,7 +17,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 function startUI() {    
   var SB;  
-  
+  startUI2();
     for (SB = 0; SB < 33;) {
     SB++;
         let NewSongBtn = document.createElement("a");
@@ -79,7 +79,7 @@ function Update() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI(); startUI2();}
+  Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
   UpdateContainer.appendChild(Updatebutton);  
 }
 Update();
