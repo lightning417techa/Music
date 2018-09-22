@@ -17,7 +17,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 function startUI() {    
   var SB;  
-  StartUI2();
+  
     for (SB = 0; SB < 33;) {
     SB++;
         let NewSongBtn = document.createElement("a");
