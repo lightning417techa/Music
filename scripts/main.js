@@ -178,7 +178,6 @@ function MinimizeMiniPlayer() {
   document.getElementById("EMBTN").style.animationDelay = "3s";  
   //document.getElementById("EMBTN").classList.add("Maximize-Player");
 }
-MinimizeMiniPlayer();
 
 //SEARCH
 //document.getElementById("SearchBox").addEventListener("keyup",);
