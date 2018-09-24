@@ -174,9 +174,10 @@ body {
   width: 100%;
   border-radius: 10px;
     background: white;
-    animation-name: Minimize-Player forwards;
+    animation-name: Minimize-Player;
     animation-duration: 3s;
     animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 
 .help {
