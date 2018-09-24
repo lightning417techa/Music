@@ -31,7 +31,8 @@ var songs = {
   30 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/owl_city_-_verge_ft._aloe_blacc.mp3",
   31 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/walk_the_moon_-_one_foot__official_video_.mp3",
   32 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello__amp__logic_-_everyday__audio_.mp3",
-  33 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/fall_out_boy_-_bishops_knife_trick__lyrics_lyric_video_.mp3"
+  33 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/fall_out_boy_-_bishops_knife_trick__lyrics_lyric_video_.mp3",
+  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/sheppard_-_coming_home__official_audio_.mp3"
 }
 
 var titles = {
@@ -67,7 +68,8 @@ var titles = {
   30 : "Verge",
   31 : "One Foot",
   32 : "Everyday",
-  33 : "Bishops Knife Trick"
+  33 : "Bishops Knife Trick",
+  34 : "Coming Home"
 }
 
 var albumart = {
@@ -103,7 +105,8 @@ var albumart = {
   30 : "",
   31 : "",
   32 : "",
-  33 : ""
+  33 : "",
+  34 : ""
 }
 
 var artists = {
@@ -139,7 +142,8 @@ var artists = {
   30 : "Owl City",
   31 : "Walk The Moon",
   32 : "Marshmello ft. Logic",
-  33 : "Fall Out Boy"
+  33 : "Fall Out Boy",
+  34 : "Sheppard"
 }
 
 /*var AlbumName {
