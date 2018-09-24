@@ -161,8 +161,8 @@ img {
   border-radius: 10px;
   background: #585858;
   animation-name: Minimize-Player;
-  animation-duration: 3s;
-  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 /* Safari 4.0 - 8.0 */
