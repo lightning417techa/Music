@@ -171,25 +171,6 @@ switch (window.orientation) {
 readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
-//MinimizeMiniPlayer
-function MinimizeMiniPlayer() {
-  //alert("Function should've exicuted properly");
-}
-
-
-
-document.getElementById('EMBTN').onclick = function() {
-    document.getElementById('EMBTN').classList.remove('MiniPlayerContainer', 'MiniPlayerContainer-maximize');
-    setTimeout(function(){
-        document.getElementById('EMBTN').classList.add('MiniPlayerContainer-maximize');    
-    },100)
-    
-});
-
-
-
-
-
 //SEARCH
 //document.getElementById("SearchBox").addEventListener("keyup",);
 
