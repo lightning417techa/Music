@@ -174,10 +174,8 @@ window.onorientationchange = readDeviceOrientation;
 //MinimizeMiniPlayer
 function MinimizeMiniPlayer() {
   alert("Function should've exicuted properly");
-  //document.getElementById("EMBTN").style.animation = "Maximize-Player 1s forwards ";
-  document.getElementById("EMBTN").classList.toggle("Maximize-Player");
-  //document.getElementById("EMBTN").style.animationDelay = "3s";  
-  //document.getElementById("EMBTN").setAttribute("style", "animation-name: Maximize-Player; animation-duration: 1s; animation-delay: 3s; animation-fill-mode: forwards;");
+  document.getElementById("EMBTN").classList.remove("MiniPlayerContainer");
+  document.getElementById("EMBTN").classList.add("MiniPlayerContainer-maximize");
 }
 
 //SEARCH
