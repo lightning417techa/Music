@@ -166,6 +166,22 @@ img {
   animation-delay: 3s;
   animation-fill-mode: forwards;*/
 }
+.MiniPlayerContainer-maximize {
+  position: fixed;
+  align-items: center;
+  text-align: center;
+  min-height: 50px;
+  bottom: 0;
+  z-index: 12;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: #585858;
+  animation-name: Maximize-Player;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
 .MiniPlayer-EMBTN {
   text-align: left;
   left: 20px;
