@@ -35,8 +35,8 @@ body {
     padding: 8px 0;
     position: absolute;
     z-index: 6;
-    bottom: 110%; /*bottom: 125%;*/
-    left: 75%; /* left: 50%;*/
+    bottom: -10%; /*bottom: 125%;*/
+    left: 80%; /* left: 50%;*/
     margin-left: -80px;
 }
 .popup .popuptext::after {
