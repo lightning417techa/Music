@@ -280,7 +280,7 @@ body {
 }
 @keyframes Minimize-Player {
     from {bottom: 0; height: 50px;}
-    to {bottom: 0; height: 100px;}
+    to {bottom: 0; height: 100%;}
 }
 
 /*play/pause button*/ 
