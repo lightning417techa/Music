@@ -175,7 +175,7 @@ body {
   border-radius: 10px;
     background: white;
     animation-name: Minimize-Player;
-    animation-duration: 8s;
+    animation-duration: 3s;
     animation-delay: 5s;
 }
 
