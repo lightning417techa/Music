@@ -169,6 +169,8 @@ img {
 .MiniPlayer-EMBTN {
   text-align: left;
   left: 20px;
+  width: 100px;
+    
   margin-left: 10px;
   font-size: 24px;
   color: white;
