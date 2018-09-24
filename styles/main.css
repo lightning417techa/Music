@@ -157,6 +157,7 @@ img {
   min-height: 50px;
   bottom: 0;
   z-index: 12;
+  left: 0;
   width: 100%;
   border-radius: 10px;
   background: #585858;
