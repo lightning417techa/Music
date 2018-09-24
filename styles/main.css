@@ -167,7 +167,8 @@ img {
   animation-fill-mode: forwards;
 }
 .MiniPlayer-EMBTN {
-  left: 100px;
+  text-align: left;
+  left: 0;
   font-size: 20px;
   color: white;
 }
