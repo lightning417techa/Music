@@ -199,7 +199,7 @@ body {
   text-align: center;
 }
 .musicimg {
-    position: absolute;
+    position: fixed; /*position: absolute;*/
     top: 4%;
     bottom: 0%;
     width: 300px; 
