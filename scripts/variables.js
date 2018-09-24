@@ -31,5 +31,6 @@ var AlbumName = {
   30 : "",
   31 : "",
   32 : "",
-  33 : "Mania"
+  33 : "Mania",
+  34 : "Watching the Sky"
 }
