@@ -175,6 +175,7 @@ window.onorientationchange = readDeviceOrientation;
 function MinimizeMiniPlayer() {
   //alert("Function should've exicuted properly");
   document.getElementById("EMBTN").style.animation = "Maximize-Player 1s 2";
+  document.getElementById("EMBTN").style.WebkitAnimation = "Maximize-Player 1s 2";
 }
 
 //SEARCH
