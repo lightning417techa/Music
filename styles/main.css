@@ -175,8 +175,8 @@ body {
   border-radius: 10px;
     background: white;
     animation-name: Minimize-Player;
-    animation-duration: 4s;
-    animation-delay: -2s;
+    animation-duration: 8s;
+    animation-delay: 5s;
 }
 
 .help {
