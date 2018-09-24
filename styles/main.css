@@ -167,7 +167,9 @@ img {
   animation-fill-mode: forwards;
 }
 .MiniPlayer-EMBTN {
-
+  left: 100px;
+  font-size: 20px;
+  color: white;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes Minimize-Player {
