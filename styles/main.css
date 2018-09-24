@@ -209,8 +209,12 @@ img {
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes Minimize-Player {
-    from {}
-    to {bottom: 0; height: 100px;}
+    from {bottom: 0; height: 100%;}
+    to {bottom: 0; height: 50px;}
+}
+@-webkit-keyframes Maximize-Player {
+    from {bottom: 0; height: 50px;}
+    to {bottom: 0; height: 100%;}
 }
 @keyframes Minimize-Player {
     from {bottom: 0; height: 100%;}
