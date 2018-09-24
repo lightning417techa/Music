@@ -171,6 +171,11 @@ switch (window.orientation) {
 readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
+//MinimizeMiniPlayer
+function MinimizeMiniPlayer() {
+  document.getElementById("EMBTN").setAttribute("style", "animation-name: Minimize-Player; animation-duration: 1s; animation-delay: 3s; animation-fill-mode: forwards;");
+}
+
 //SEARCH
 //document.getElementById("SearchBox").addEventListener("keyup",);
 
