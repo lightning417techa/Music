@@ -173,7 +173,7 @@ window.onorientationchange = readDeviceOrientation;
 
 //MinimizeMiniPlayer
 function MinimizeMiniPlayer() {
-  document.getElementById("EMBTN").style.animation = "Minimize-Player 1s 3s forwards");
+  document.getElementById("EMBTN").style.animation = "Minimize-Player 1s 3s forwards";
 }
 
 //SEARCH
