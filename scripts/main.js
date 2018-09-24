@@ -174,8 +174,7 @@ window.onorientationchange = readDeviceOrientation;
 //MinimizeMiniPlayer
 function MinimizeMiniPlayer() {
   //alert("Function should've exicuted properly");
-  document.getElementById("EMBTN").classList.remove("MiniPlayerContainer");
-  document.getElementById("EMBTN").classList.add("MiniPlayerContainer-maximize");
+  document.getElementById("EMBTN").classList.toggle("maximize");
 }
 
 //SEARCH
