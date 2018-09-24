@@ -161,10 +161,10 @@ img {
   width: 100%;
   border-radius: 10px;
   background: #585858;
-  animation-name: Maximize-Player;
+  /*animation-name: Maximize-Player;
   animation-duration: 1s;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
 }
 .MiniPlayer-EMBTN {
   text-align: left;
