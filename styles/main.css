@@ -166,6 +166,9 @@ img {
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
+.MiniPlayer-EMBTN {
+
+}
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes Minimize-Player {
     from {}
