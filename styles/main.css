@@ -166,7 +166,7 @@ img {
   animation-delay: 3s;
   animation-fill-mode: forwards;*/
 }
-.MiniPlayerContainer-maximize {
+.MiniPlayerContainer .maximize {
   position: fixed;
   align-items: center;
   text-align: center;
@@ -182,7 +182,7 @@ img {
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
-.MiniPlayerContainer-minimize {
+.MiniPlayerContainer .minimize {
   position: fixed;
   align-items: center;
   text-align: center;
