@@ -207,7 +207,7 @@ function search() {
 
 
 function Shuffle() {
-  var s = Math.floor(Math.random() * 22) + 1;
+  var s = Math.floor(Math.random() * 34) + 1;
 
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
