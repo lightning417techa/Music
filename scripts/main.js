@@ -173,10 +173,11 @@ window.onorientationchange = readDeviceOrientation;
 
 //MinimizeMiniPlayer
 function MinimizeMiniPlayer() {
-  document.getElementById("EMBTN").style.animation = "Maximize-Player 1s ";
-  //document.getElementById("EMBTN").style.animationDelay = "3s";
-  
+  alert("Function should've exicuted properly");
+  document.getElementById("EMBTN").style.animation = "Maximize-Player 1s 2";
+  //document.getElementById("EMBTN").style.animationDelay = "3s";  
 }
+MinimizeMiniPlayer();
 
 //SEARCH
 //document.getElementById("SearchBox").addEventListener("keyup",);
