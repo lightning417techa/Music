@@ -8,18 +8,25 @@ html {
 body {
     background: black;
 }
+img {
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/*Popup Styles*/
 .popup {
     background-color: none;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  bottom: 5%;
-  position: absolute;
-  display: inline-block;
-  left: 0;
-  z-index: 5;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    bottom: 5%;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    z-index: 5;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -39,33 +46,12 @@ body {
     left: 200%; /* left: 50%;*/
     margin-left: -80px;
 }
-.popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 10%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-    z-index: 6;
-}
-.popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-    z-index: 6;
-}
-@-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-}
+.popup .popuptext::after {content: ""; position: absolute; top: 100%; left: 10%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #555 transparent transparent transparent; z-index: 6;}
+.popup .show {visibility: visible; -webkit-animation: fadeIn 1s; animation: fadeIn 1s; z-index: 6;}
+@-webkit-keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+@keyframes fadeIn {from {opacity: 0;} to {opacity:1 ;}}
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-}
-
+/*Update Controller*/
 .NewUpdate {
   z-index: 6;
   position: fixed;
@@ -173,13 +159,23 @@ body {
   z-index: 12;
   width: 100%;
   border-radius: 10px;
-    background: white;
-    animation-name: Minimize-Player;
-    animation-duration: 3s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
+  background: #585858;
+  animation-name: Minimize-Player;
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes Minimize-Player {
+    from {}
+    to {bottom: 0; height: 100px;}
+}
+@keyframes Minimize-Player {
+    from {bottom: 0; height: 50px;}
+    to {bottom: 0; height: 100%;}
 }
 
+/*Help*/
 .help {
   position: relative;
   width: 280px;
@@ -272,19 +268,6 @@ body {
     width: 300px; 
     height: 300px; /*300px;*/
 }
-
-/*animations*/
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes Minimize-Player {
-    from {}
-    to {bottom: 0; height: 100px;}
-}
-@keyframes Minimize-Player {
-    from {bottom: 0; height: 50px;}
-    to {bottom: 0; height: 100%;}
-}
-
-/*play/pause button*/ 
 .btn {
     background-color: black; /*DodgerBlue;*/
     width: 20px;
@@ -306,26 +289,21 @@ body {
     justify-content: center;
     margin-bottom: 0%;
 }
-
-/* Darker background on mouse-over */
 .btn:hover {
     background-color: white;
 }
-
 .slider {
     -webkit-appearance: none;
     width: 90%;
     margin-top: 5%; /*2%*/
     height: 5px; /*15px*/
     border-radius: 5px;
-    background: solid white; /*#4CAF50*/
-    
+    background: solid white; /*#4CAF50*/    
     opacity: 1;
     position: center;
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
-
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -335,7 +313,6 @@ body {
     background: white;
     cursor: pointer;
 }
-
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
@@ -344,18 +321,10 @@ body {
     cursor: pointer;
 }
 
-img {
-    margin-top: 5%;
-    margin-bottom: 0%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .percent-container {
     position: relative;
     height: 30px;
 }
-
 .percent {
     position: absolute;
     top: 2%;
@@ -363,7 +332,6 @@ img {
     display: inline-block;
     left: 20px;
 }
-
 .percentt {
     position: absolute;
     color: white;
