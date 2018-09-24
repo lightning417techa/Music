@@ -178,7 +178,7 @@ function MinimizeMiniPlayer() {
 
 
 
-document.getElementById('EMBTN').addEventListener('click', function() {
+document.getElementById('EMBTN').onclick = function() {
     document.getElementById('EMBTN').classList.remove('MiniPlayerContainer', 'MiniPlayerContainer-maximize');
     setTimeout(function(){
         document.getElementById('EMBTN').classList.add('MiniPlayerContainer-maximize');    
