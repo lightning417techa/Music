@@ -85,6 +85,8 @@ function Update() {
 Update();
 
 function drop() {
+  var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
 }
 
 window.onclick = function(event, clicked_id) {
