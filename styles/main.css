@@ -36,7 +36,7 @@ body {
     position: absolute;
     z-index: 6;
     bottom: 125%;
-    left: 50%;
+    left: 65%; /* left: 50%;*/
     margin-left: -80px;
 }
 .popup .popuptext::after {
