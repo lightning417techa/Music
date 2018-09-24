@@ -161,7 +161,7 @@ img {
   width: 100%;
   border-radius: 10px;
   background: #585858;
-  animation-name: Minimize-Player;
+  animation-name: Maximize-Player;
   animation-duration: 1s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
@@ -179,9 +179,14 @@ img {
     to {bottom: 0; height: 100px;}
 }
 @keyframes Minimize-Player {
+    from {bottom: 0; height: 100%;}
+    to {bottom: 0; height: 50px;}
+}
+@keyframes Maximize-Player {
     from {bottom: 0; height: 50px;}
     to {bottom: 0; height: 100%;}
 }
+
 
 /*Help*/
 .help {
