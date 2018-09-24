@@ -168,8 +168,8 @@ img {
 }
 .MiniPlayer-EMBTN {
   text-align: left;
-  left: 0;
-  font-size: 20px;
+  left: 10px;
+  font-size: 24px;
   color: white;
 }
 /* Safari 4.0 - 8.0 */
