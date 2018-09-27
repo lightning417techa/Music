@@ -429,10 +429,6 @@ img {
   display: inline-block;
   left: 0;
   z-index: 5;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .dropdown-btn-container {
