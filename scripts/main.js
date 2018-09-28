@@ -81,6 +81,17 @@ function BeginUpdate() {
     firebase.database().ref('LanyxSoft-Music-Update/' + id).set({
       updated : "true"
     });
+  
+    var ref = firebase.database().ref().child('/LanyxSoft-Music-Update/'+globaluid);
+      ref.on("child_added", function(child) {
+            var IDofFriends = child.val();
+                if(IDofFriends == localStorage.getItem("LUDIN")) {
+                    alert("The other user's ID is in the currently signed in user's friend list, they are friends!");
+                } else {
+                    alert("This user's ID is NOT in the currently signed in user's friend list, they are NOT friends! So do nothing.");
+                }
+      });  
+  
     //updates["/posts/" + "hihihihihi"] = postData;
     return firebase.database().ref().update(updates);
   }
