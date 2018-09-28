@@ -70,8 +70,10 @@ firebase.initializeApp(config);
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
   function UpdateFirebase() {
     localStorage.setItem("LUDIN", id);
+    var postData = id;
     let newPostKey = id;
-    var updates = 'LanyxSoft-Music-Update/' + id;     
+    var updates;
+    updates['LanyxSoft-Music-Update/' + id] = postData;     
     return firebase.database().ref().update(updates);        
   }
   var db = firebase.database();
@@ -90,7 +92,7 @@ if (typeof(Storage) !== "undefined") {
   if (UPD == "true") {       
     startUI();
   } else {          
-    UpdateFirebase();    
+    Update();    
     localStorage.setItem("Updated", "true");
   }
 } else {
