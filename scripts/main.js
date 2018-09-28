@@ -105,15 +105,17 @@ function SetID() {
   BeginUpdate();              
 }
 // Check browser support
-/*if (typeof(Storage) !== "undefined") {
+if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
-    SetID();
+    alert("initializing SetID();");
+    SetID();    
   } else {
+    alert("initializing InitializeStartzup();");
     InitializeStartzup();              
   }
 } else {
   alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
-}*/
+}
 
 function drop() {
   
