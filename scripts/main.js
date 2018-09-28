@@ -15,7 +15,6 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 //Firebase
-Function firebase() {
 var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};
 firebase.initializeApp(config);         
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);  
@@ -39,7 +38,7 @@ if (typeof(Storage) !== "undefined") {
     let LUDIN = localStorage.setItem("Updated", "true");        
     if (localStorage.getItem("LUDIN") == null) { 
        UpdateFirebase();
-    } else {}    
+    }
     // Retrieve
      let UPD = localStorage.getItem("Updated");
      if (UPD == "true") {      
@@ -50,8 +49,6 @@ if (typeof(Storage) !== "undefined") {
 } else {
     alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
 }
-}
-//firebase();
 
 function startUI() {    
   var SB;    
@@ -65,25 +62,6 @@ function startUI() {
         let LI = document.createElement("li");
         LI.appendChild(NewSongBtn);
         document.getElementById("SongBtns").appendChild(LI);
-    }
-}
-function StartUII() {
-  var SB2;
-    for (SB2 = 0; SB2 < 37;) {
-    SB2++;
-        let NewAlbumBtn = document.createElement("div");                
-        NewAlbumBtn.classList.toggle("column");
-        
-        let NewAlbumArt = document.createElement("img");
-        NewAlbumArt.src = 
-        NewAlbumArt.setAttribute("style", "width: 100%");
-        NewAlbumBtn.appendChild(NewAlbumArt);
-      
-        /*let NewAlbumP = document.createElement("p");
-        NewAlbumP.innerHTML = AlbumName[SB2];
-        NewAlbumBtn.appendChild(NewAlbumP);*/
-                      
-        document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
 
