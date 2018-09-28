@@ -77,7 +77,7 @@ function BeginUpdate() {
     var postData = {};
     let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
     var updates = {};
-    firebase.database().ref('LanyxSoft-Music-Update/' + userId).set({
+    firebase.database().ref('LanyxSoft-Music-Update/' + id).set({
       title: "huvuvu"
     });
     updates['/posts/' + "byghuibygibyghuibyuhibyuhiobyhuibonyhuiobnyhobiyu"] = postData;
