@@ -73,7 +73,7 @@ firebase.initializeApp(config);
     var postData = id;
     let newPostKey = id;
     var updates;
-    updates['LanyxSoft-Music-Update/' + id] = postData;     
+    updates['LanyxSoft-Music-Update/' + newPostKey] = postData;     
     return firebase.database().ref().update(updates);        
   }
   var db = firebase.database();
