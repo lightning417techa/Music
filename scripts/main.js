@@ -91,14 +91,14 @@ function BeginUpdate() {
 function SetID() {
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
   localStorage.setItem("LUDIN", id); 
-  InitializeStartzup();              
+  BeginUpdate();              
 }
 // Check browser support
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
     SetID();
   } else {
-  
+    InitializeStartzup();              
   }
 } else {
   alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
