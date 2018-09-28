@@ -9,11 +9,48 @@ document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
 document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("PlaylistDropdown").classList.toggle("show");
   document.getElementById("SearchBox").setAttribute("style", "height: 30px;");
-
 } else {
 i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
+
+//Firebase
+var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};
+firebase.initializeApp(config);         
+  let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);  
+  let postData = id;   
+  function Update() {    
+     localStorage.setItem("LUDIN", id);
+     let newPostKey = id;
+     let updates = {};
+     updates['/LanyxSoft-Music-Update/' + newPostKey] = postData;     
+     return firebase.database().ref().update(updates);        
+}
+var db = firebase.database();
+var ref = db.ref("/LanyxSoft-Music-Update");
+ref.on("child_added", function(snapshot, prevChildKey) {
+  var newPost = snapshot.val();  
+});
+
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store   
+    let LUDIN = localStorage.setItem("Updated", "true");        
+    if (localStorage.getItem("LUDIN") == null) { 
+      Update();
+    } else {}    
+    // Retrieve
+     let UPD = localStorage.getItem("Updated");
+     if (UPD == "true") {
+       startUI();
+     } else {          
+       Update();
+       localStorage.setItem("Updated", "true");
+     }
+} else {
+    alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
+}
+
 
 function startUI() {    
   var SB;    
@@ -82,7 +119,7 @@ function Update() {
   Updatebutton.onclick = function() {document.getElementById("UTXT").style.visibility = "hidden"; document.getElementById("UIMG").style.visibility = "hidden"; document.getElementById("UC").style.visibility = "hidden"; document.getElementById("UB").style.visibility = "hidden"; document.getElementById("UBTN").style.visibility = "hidden"; startUI();}
   UpdateContainer.appendChild(Updatebutton);  
 }
-Update();
+
 
 function drop() {
   
