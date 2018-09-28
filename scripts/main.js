@@ -68,12 +68,10 @@ function Update() {
 var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};
 firebase.initializeApp(config);       
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
-  function UpdateFirebase() {    
-    let postData = id;   
+  function UpdateFirebase() {
     localStorage.setItem("LUDIN", id);
     let newPostKey = id;
-    var updates;
-    updates['LanyxSoft-Music-Update/' + id] = postData;     
+    var updates = 'LanyxSoft-Music-Update/' + id;     
     return firebase.database().ref().update(updates);        
   }
   var db = firebase.database();
