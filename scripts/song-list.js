@@ -32,7 +32,10 @@ var songs = {
   31 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/walk_the_moon_-_one_foot__official_video_.mp3",
   32 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello__amp__logic_-_everyday__audio_.mp3",
   33 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/fall_out_boy_-_bishops_knife_trick__lyrics_lyric_video_.mp3",
-  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/sheppard_-_coming_home__official_audio_.mp3"
+  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/sheppard_-_coming_home__official_audio_.mp3",
+  35 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_blood_sweat__amp__tears__%E1%84%91%E1%85%B5_%E1%84%84%E1%85%A1%E1%86%B7_%E1%84%82%E1%85%AE%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AF__lyrics_[color_coded_han_rom_eng].mp3",
+  36 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__bangtan_boys__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__-_i_need_u__color_coded_han|rom|eng_lyrics_.mp3",
+  37 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_save_me__color_coded_han|rom|eng_lyrics__|_by_yankat.mp3"
 }
 
 var titles = {
@@ -69,7 +72,10 @@ var titles = {
   31 : "One Foot",
   32 : "Everyday",
   33 : "Bishops Knife Trick",
-  34 : "Coming Home"
+  34 : "Coming Home",
+  35 : "Blood Sweat and Tears",
+  36 : "I Need U",
+  37 : "Save Me"
 }
 
 var albumart = {
@@ -106,7 +112,10 @@ var albumart = {
   31 : "",
   32 : "",
   33 : "",
-  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png"
+  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
+  35 : "",
+  36 : "",
+  37 : ""
 }
 
 var artists = {
@@ -143,7 +152,10 @@ var artists = {
   31 : "Walk The Moon",
   32 : "Marshmello ft. Logic",
   33 : "Fall Out Boy",
-  34 : "Sheppard"
+  34 : "Sheppard",
+  35 : "BTS",
+  36 : "BTS",
+  37 : "BTS"
 }
 
 /*var AlbumName {
