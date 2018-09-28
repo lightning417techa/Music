@@ -15,6 +15,15 @@ img {
     margin-right: auto;
 }
 
+/* Console logs */
+.consolelogs {position: scroll; border-radius:10px; word-wrap:break-word; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; font-size: 25px; background: #333; width: 400px; height: 300px;}
+.log-boolean {color: orange;}
+.log-undefined {color: red;}
+.log-object {color: lime;} 
+.log-date {color: pink;}
+.log-string {color: white;}
+.log-number {color: cyan;}
+
 /*Update Controller*/
 .NewUpdate {
   z-index: 6;
