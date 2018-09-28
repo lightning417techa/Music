@@ -17,7 +17,7 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 function startUI() {    
   var SB;    
-    for (SB = 0; SB < 34;) {
+    for (SB = 0; SB < 37;) {
     SB++;
         let NewSongBtn = document.createElement("a");
         NewSongBtn.id = SB;
@@ -31,7 +31,7 @@ function startUI() {
 }
 function StartUII() {
   var SB2;
-    for (SB2 = 0; SB2 < 33;) {
+    for (SB2 = 0; SB2 < 37;) {
     SB2++;
         let NewAlbumBtn = document.createElement("div");                
         NewAlbumBtn.classList.toggle("column");
@@ -208,7 +208,7 @@ function search() {
 
 
 function Shuffle() {
-  var s = Math.floor(Math.random() * 34) + 1;
+  var s = Math.floor(Math.random() * 37) + 1;
 
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
