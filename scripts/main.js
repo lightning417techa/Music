@@ -15,11 +15,12 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 //Firebase
+Function firebase() {
 var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};
 firebase.initializeApp(config);         
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);  
   let postData = id;   
-  function Update() {    
+  function UpdateFirebase() {    
      localStorage.setItem("LUDIN", id);
      let newPostKey = id;
      let updates = {};
@@ -37,12 +38,11 @@ if (typeof(Storage) !== "undefined") {
     // Store   
     let LUDIN = localStorage.setItem("Updated", "true");        
     if (localStorage.getItem("LUDIN") == null) { 
-      Update();
+       UpdateFirebase();
     } else {}    
     // Retrieve
      let UPD = localStorage.getItem("Updated");
-     if (UPD == "true") {
-       startUI();
+     if (UPD == "true") {      
      } else {          
        Update();
        localStorage.setItem("Updated", "true");
@@ -50,7 +50,8 @@ if (typeof(Storage) !== "undefined") {
 } else {
     alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
 }
-
+}
+//firebase();
 
 function startUI() {    
   var SB;    
@@ -85,7 +86,6 @@ function StartUII() {
         document.getElementById("albums").appendChild(NewAlbumBtn);
     }
 }
-//StartUII();
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
