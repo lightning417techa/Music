@@ -78,8 +78,8 @@ function BeginUpdate() {
     var postData = {};
     let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
     var updates = {};
-    let L = localStorage.getItem("LUDIN");
-    firebase.database().ref('LanyxSoft-Music-Update/' + L).set({
+    alert(localStorage.getItem("LUDIN"));
+    firebase.database().ref('LanyxSoft-Music-Update/' + id).set({
       updated : "true"
     });
   
