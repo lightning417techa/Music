@@ -68,7 +68,7 @@ firebase.initializeApp(config);
   
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);
     
-  function Update() {    
+  function UpdateFirebase() {    
     let postData = id;   
     localStorage.setItem("LUDIN", id);
     let newPostKey = id;
@@ -86,7 +86,7 @@ firebase.initializeApp(config);
 if (typeof(Storage) !== "undefined") {
   localStorage.setItem("Updated", "true");    
   if (localStorage.getItem("LUDIN") == null) { 
-    Update();
+    UpdateFirebase();
     alert(localStorage.getItem("LUDIN"));
   }    
   // Retrieve
