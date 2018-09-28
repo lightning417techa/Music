@@ -70,9 +70,10 @@ function InitializeStartzup() {
   let id = localStorage.getItem("LUDIN");
   var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/isUpdated');
   ref.on('value', function(snapshot) {
-    
+    alert("hello penis");
   });
 }
+InitializeStartzup();
 function BeginUpdate() {    
     var postData = {};
     let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
