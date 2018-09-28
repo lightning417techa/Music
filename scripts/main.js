@@ -77,7 +77,7 @@ firebase.initializeApp(config);
     return firebase.database().ref().update(updates);        
   }
   var db = firebase.database();
-  var ref = db.ref("/LanyxSoft-Music-Update");
+  var ref = db.ref("LanyxSoft-Music-Update");
   ref.on("child_added", function(snapshot, prevChildKey) {
     var newPost = snapshot.val();  
   });
@@ -92,7 +92,7 @@ if (typeof(Storage) !== "undefined") {
   if (UPD == "true") {       
     startUI();
   } else {          
-    Update();    
+    UpdateFirebase();    
     localStorage.setItem("Updated", "true");
   }
 } else {
