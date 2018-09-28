@@ -89,12 +89,13 @@ if (typeof(Storage) !== "undefined") {
   localStorage.setItem("Updated", "true");    
   if (localStorage.getItem("LUDIN") == null) { 
     UpdateFirebase();
-    alert(localStorage.getItem("LUDIN"));
   }    
   // Retrieve
   let UPD = localStorage.getItem("Updated");
   if (UPD == "true") {       
+    startUI();
   } else {          
+    Update();    
     localStorage.setItem("Updated", "true");
   }
 } else {
