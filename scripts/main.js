@@ -70,7 +70,7 @@ function InitializeStartzup() {
   let id = localStorage.getItem("LUDIN");
   var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/updatestats');
   ref.on('value', function(snapshot) {
-    alert(snapshot.val());
+    
   });
 }
 InitializeStartzup();
@@ -87,9 +87,9 @@ function BeginUpdate() {
       ref.on("child_added", function(child) {
             var IDofFriends = child.val();
                 if(IDofFriends == localStorage.getItem("LUDIN")) {
-                    alert("The other user's ID is in the currently signed in user's friend list, they are friends!");
+                    console.log("func: child_added result: User id matches to id in accepted LanyxSoft database");
                 } else {
-                    alert("This user's ID is NOT in the currently signed in user's friend list, they are NOT friends! So do nothing.");
+                    console.log("func: child_added result: User id  doesn't match to id in accepted LanyxSoft database");
                 }
       });  
   
@@ -108,9 +108,11 @@ function SetID() {
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
     alert("initializing SetID();");
+    console.log("func: activating SetID() result: func success");
     SetID();    
   } else {
     alert("initializing InitializeStartzup();");
+    console.log("func: activating InitializeStartzup() result: func success");
     InitializeStartzup();              
   }
 } else {
