@@ -70,7 +70,7 @@ function InitializeStartzup() {
   let id = localStorage.getItem("LUDIN");
   var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/isUpdated');
   ref.on('value', function(snapshot) {
-    alert(snapshot.val());
+    
   });
 }
 function BeginUpdate() {    
@@ -78,7 +78,7 @@ function BeginUpdate() {
     let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
     var updates = {};
     firebase.database().ref('LanyxSoft-Music-Update/' + userId).set({
-      updates['/LanyxSoft-Music-Update/' + id] = postData;         
+      title: "huvuvu"
     });
     return firebase.database().ref().update(updates);
   }
