@@ -14,6 +14,8 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
+window.onerror = function(error) {alert(error);};
+
 function startUI() {    
   var SB;    
     for (SB = 0; SB < 37;) {
