@@ -68,9 +68,9 @@ var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fit
 firebase.initializeApp(config);  
 function InitializeStartzup() {
   let id = localStorage.getItem("LUDIN");
-  var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/isUpdated');
+  var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/updatestats');
   ref.on('value', function(snapshot) {
-    alert("hello penis");
+    alert(snapshot.val());
   });
 }
 InitializeStartzup();
