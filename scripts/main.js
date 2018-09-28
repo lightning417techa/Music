@@ -64,36 +64,41 @@ function Update() {
   UpdateContainer.appendChild(Updatebutton);  
 }
 
-
-var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};
-firebase.initializeApp(config);       
-  let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
-  function UpdateFirebase() {
-    localStorage.setItem("LUDIN", id);
-    var postData = id;
-    let newPostKey = id;
-    var updates;
-    updates['LanyxSoft-Music-Update/' + newPostKey] = postData;     
-    return firebase.database().ref().update(updates);        
+var config = {apiKey:"AIzaSyAz0J5c0czjU3S2PddQdFxmnd52hGHqtWQ", authDomain: "fitbit-flex2-integration.firebaseapp.com", databaseURL: "https://fitbit-flex2-integration.firebaseio.com", projectId: "fitbit-flex2-integration", storageBucket: "fitbit-flex2-integration.appspot.com", messagingSenderId: "247113062436"};  
+firebase.initializeApp(config);  
+function InitializeStartzup() {
+  let id = localStorage.getItem("LUDIN");
+  var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/isUpdated');
+ref.on('value', function(snapshot) {
+  alert(snapshot.val());
+});
+}
+function BeginUpdate() {    
+    var postData = {};
+    let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
+    var updates = {};
+    firebase.database().ref('LanyxSoft-Music-Update/' + userId).set({
+      updates['/LanyxSoft-Music-Update/' + id] = postData;         
+    });
+    return firebase.database().ref().update(updates);
   }
   var db = firebase.database();
-  var ref = db.ref("LanyxSoft-Music-Update");
+  var ref = db.ref("LanyxSoft-Music-Update/");
   ref.on("child_added", function(snapshot, prevChildKey) {
     var newPost = snapshot.val();  
   });
+
+function SetID() {
+  let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
+  localStorage.setItem("LUDIN", id); 
+  InitializeStartzup();              
+}
 // Check browser support
 if (typeof(Storage) !== "undefined") {
-  localStorage.setItem("Updated", "true");    
   if (localStorage.getItem("LUDIN") == null) { 
-    UpdateFirebase();
-  }    
-  // Retrieve
-  let UPD = localStorage.getItem("Updated");
-  if (UPD == "true") {       
-    startUI();
-  } else {          
-    Update();    
-    localStorage.setItem("Updated", "true");
+    SetID();
+  } else {
+  
   }
 } else {
   alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
