@@ -80,6 +80,7 @@ function BeginUpdate() {
     firebase.database().ref('LanyxSoft-Music-Update/' + userId).set({
       title: "huvuvu"
     });
+    updates['/posts/' + "byghuibygibyghuibyuhibyuhiobyhuibonyhuiobnyhobiyu"] = postData;
     return firebase.database().ref().update(updates);
   }
 //child_added
