@@ -71,11 +71,11 @@ firebase.initializeApp(config);
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);
     
   function UpdateFirebase() {    
-    let postData = id;   
+    let postData = "";   
     localStorage.setItem("LUDIN", id);
     let newPostKey = id;
     var updates;
-    updates['/LanyxSoft-Music-Update/' + newPostKey] = postData;     
+    updates['LanyxSoft-Music-Update/' + newPostKey] = postData;     
     return firebase.database().ref().update(updates);        
   }
   var db = firebase.database();
