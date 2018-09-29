@@ -38,11 +38,11 @@ function createAlbums() {
   var AB;    
     for (AB = 0; AB < 37;) {
     AB++;
-      if (AlbumName == "") {} else {
+      if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
         let NewAlbumBtn = document.createElement("div");
         NewAlbumBtn.id = AB;
         NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;");     
-        NewAlbumBtn.innerHTML = AlbumName[AB] + " -- " + artists[AB];
+        //NewAlbumBtn.innerHTML = AlbumName[AB];
         NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
         let IMG = document.createElement("img");
         IMG.src = AlbumIMG[AB];
