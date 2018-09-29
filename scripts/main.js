@@ -45,7 +45,7 @@ function createAlbums() {
         NewAlbumBtn.innerHTML = AlbumName[AB] + " -- " + artists[AB];
         NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
         let IMG = document.createElement("img");
-        IMG.src = AlbumArt[AB];
+        IMG.src = AlbumIMG[AB];
         IMG.style.width = "100px";
         NewAlbumBtn.appendChild(IMG);
         document.getElementById("SongBtns").appendChild(NewAlbumBtn);
