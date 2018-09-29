@@ -80,6 +80,7 @@ function BeginUpdate() {
     var updates = {};
     let L = localStorage.getItem("LUDIN");
     Update();
+    alert(L);
     firebase.database().ref('LanyxSoft-Music-Update/' + L).set({
       updated : "true"
     });
@@ -87,7 +88,7 @@ function BeginUpdate() {
     var ref = firebase.database().ref().child('/LanyxSoft-Music-Update/'+id);
       ref.on("child_added", function(child) {
             var IDofFriends = child.val();
-                if(IDofFriends == localStorage.getItem("LUDIN")) {
+                if(IDofFriends == localStorage.getItem("LUDIN")) {                  
                     console.log("func: child_added result: User id matches to id in accepted LanyxSoft database");
                 } else {
                     console.log("func: child_added result: User id  doesn't match to id in accepted LanyxSoft database");
@@ -97,7 +98,6 @@ function BeginUpdate() {
     //updates["/posts/" + "hihihihihi"] = postData;
     return firebase.database().ref().update(updates);
   }
-BeginUpdate();
 //child_added
 
 function SetID() {
@@ -108,13 +108,15 @@ function SetID() {
 // Check browser support
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
+    alert("func SetID");
     console.log("func: activating SetID() result: func success");
     SetID();    
   } else {
+    alert("func InitializeStartzup");
     console.log("func: activating InitializeStartzup() result: func success");
     InitializeStartzup();              
   }
-} else {
+} else {  
   console.log("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
 }
 
