@@ -43,7 +43,7 @@ function createAlbums() {
         let NewAlbumBtn = document.createElement("div");                
         NewAlbumBtn.classList.toggle("column");
         NewAlbumBtn.id = AB;
-        NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;  padding: 0 8px;text-align:center;align-items:center; display: inline-block; float: none;");     
+        NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
         //NewAlbumBtn.innerHTML = AlbumName[AB];
         //NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
         let IMG = document.createElement("img");
