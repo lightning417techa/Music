@@ -36,9 +36,10 @@ function startUI() {
 
 function createAlbums() {    
   var AB;    
-    for (AB = 0; AB < 37;) {
-    AB++;
-      if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
+  for (AB = 0; AB < 34;) {
+  AB++;
+    if (AlbumName[AB] == "") {} else {
+      if (AlbumIMG[AB] == "") {} else {
         let NewAlbumBtn = document.createElement("div");                
         NewAlbumBtn.classList.toggle("column");
         NewAlbumBtn.id = AB;
@@ -53,9 +54,7 @@ function createAlbums() {
         text.innerHTML = AlbumName[AB];
         NewAlbumBtn.appendChild(text);
         document.getElementById("albums").appendChild(NewAlbumBtn);
-      }
-    }
-}
+}}}}
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
