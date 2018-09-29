@@ -107,7 +107,7 @@ function SetID() {
 // Check browser support
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
-    console.log("func: SetID() result: func success= "+ true);
+    console.log("func:", SetID(), "result: func success= ", true);
     SetID();    
   } else {
     console.log("func: InitializeStartzup() result: func success= "+ true);
