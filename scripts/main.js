@@ -29,6 +29,28 @@ function startUI() {
         LI.appendChild(NewSongBtn);
         document.getElementById("SongBtns").appendChild(LI);
     }
+    var n;
+    for (n = 0; n < 37; n++) {}
+    createAlbums();
+}
+
+function createAlbums() {    
+  var AB;    
+    for (AB = 0; AB < 37;) {
+    AB++;
+      if (AlbumName == "") {} else {
+        let NewAlbumBtn = document.createElement("div");
+        ç.id = AB;
+        NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;");     
+        NewAlbumBtn.innerHTML = AlbumName[AB] + " -- " + artists[AB];
+        NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
+        let IMG = document.createElement("img");
+        IMG.src = AlbumArt[AB];
+        IMG.style.width = "100px";
+        NewAlbumBtn.appendChild(IMG);
+        document.getElementById("SongBtns").appendChild(NewAlbumBtn);
+      }
+    }
 }
 
 function Update() {  
