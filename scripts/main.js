@@ -14,7 +14,7 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-window.onerror = function(error) {alert(error);};
+window.onerror = function(error) {console.log(error);};
 
 function startUI() {    
   var SB;    
@@ -80,7 +80,6 @@ function BeginUpdate() {
     var updates = {};
     let L = localStorage.getItem("LUDIN");
     Update();
-    alert(L);
     firebase.database().ref('LanyxSoft-Music-Update/' + L).set({
       updated : "true"
     });
@@ -108,12 +107,10 @@ function SetID() {
 // Check browser support
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
-    alert("func SetID");
-    console.log("func: activating SetID() result: func success");
+    console.log("func: SetID() result: func success= "+ true);
     SetID();    
   } else {
-    alert("func InitializeStartzup");
-    console.log("func: activating InitializeStartzup() result: func success");
+    console.log("func: InitializeStartzup() result: func success= "+ true);
     InitializeStartzup();              
   }
 } else {  
