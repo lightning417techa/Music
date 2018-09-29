@@ -48,7 +48,7 @@ function createAlbums() {
         IMG.src = AlbumIMG[AB];
         IMG.style.width = "100px";
         NewAlbumBtn.appendChild(IMG);
-        document.getElementById("SongBtns").appendChild(NewAlbumBtn);
+        document.getElementById("albums").appendChild(NewAlbumBtn);
       }
     }
 }
