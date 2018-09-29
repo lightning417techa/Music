@@ -38,7 +38,7 @@ function createAlbums() {
   var AB;    
     for (AB = 0; AB < 37;) {
     AB++;
-      //if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
+      if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
         let NewAlbumBtn = document.createElement("div");                
         NewAlbumBtn.classList.toggle("column");
         NewAlbumBtn.id = AB;
@@ -53,7 +53,7 @@ function createAlbums() {
         text.innerHTML = AlbumName[AB];
         NewAlbumBtn.appendChild(text);
         document.getElementById("albums").appendChild(NewAlbumBtn);
-      //}
+      }
     }
 }
 
