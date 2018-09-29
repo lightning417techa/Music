@@ -108,16 +108,14 @@ function SetID() {
 // Check browser support
 if (typeof(Storage) !== "undefined") {
   if (localStorage.getItem("LUDIN") == null) { 
-    alert("initializing SetID();");
     console.log("func: activating SetID() result: func success");
     SetID();    
   } else {
-    alert("initializing InitializeStartzup();");
     console.log("func: activating InitializeStartzup() result: func success");
     InitializeStartzup();              
   }
 } else {
-  alert("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
+  console.log("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
 }
 
 function drop() {
