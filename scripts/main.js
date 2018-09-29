@@ -38,13 +38,13 @@ function createAlbums() {
   var AB;    
     for (AB = 0; AB < 37;) {
     AB++;
-      if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
-        let NewAlbumBtn = document.createElement("div");
+      //if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
+        let NewAlbumBtn = document.createElement("div");                
         NewAlbumBtn.classList.toggle("column");
         NewAlbumBtn.id = AB;
         NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;");     
         //NewAlbumBtn.innerHTML = AlbumName[AB];
-        NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
+        //NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
         let IMG = document.createElement("img");
         IMG.src = AlbumIMG[AB];
         IMG.style.width = "100%";
@@ -53,7 +53,7 @@ function createAlbums() {
         text.innerHTML = AlbumName[AB];
         NewAlbumBtn.appendChild(text);
         document.getElementById("albums").appendChild(NewAlbumBtn);
-      }
+      //}
     }
 }
 
@@ -99,7 +99,6 @@ function InitializeStartzup() {
     startUI();
   });
 }
-InitializeStartzup();
 function BeginUpdate() {    
     var postData = {};
     let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
