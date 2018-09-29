@@ -40,7 +40,7 @@ function createAlbums() {
     AB++;
       if (AlbumName == "") {} else {
         let NewAlbumBtn = document.createElement("div");
-        ç.id = AB;
+        NewAlbumBtn.id = AB;
         NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;");     
         NewAlbumBtn.innerHTML = AlbumName[AB] + " -- " + artists[AB];
         NewAlbumBtn.onclick = function(clicked_id) {alert(clicked_id);};
