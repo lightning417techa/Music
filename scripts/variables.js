@@ -35,21 +35,21 @@ var AlbumName = {
   34 : "Watching the Sky"
 }
 
-var AlbumArt = {
+var AlbumIMG = {
   1 : "",
   2 : "",
-  3 : "",
+  3 : "https://vignette.wikia.nocookie.net/monstercat/images/0/0c/Marshmello_-_Alone.jpg/revision/latest?cb=20160513204533",
   4 : "",
-  5 : "Mania",
+  5 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
   6 : "",
   7 : "",
   8 : "",
-  9 : "American Beauty/American Psycho",
+  9 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
   10 : "",
-  11 : "Vessel",
+  11 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",
   12 : "",
-  13 : "Vessel",
-  14 : "American Beauty/American Psycho",
+  13 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",
+  14 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
   15 : "",
   16 : "",
   17 : "",
@@ -58,7 +58,7 @@ var AlbumArt = {
   20 : "",
   21 : "",
   22 : "",
-  23 : "Vessel",
+  23 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",
   24 : "",
   25 : "",
   26 : "",
@@ -68,6 +68,6 @@ var AlbumArt = {
   30 : "",
   31 : "",
   32 : "",
-  33 : "Mania",
-  34 : "Watching the Sky"
+  33 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
+  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png"
 }
