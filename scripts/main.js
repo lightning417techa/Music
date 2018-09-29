@@ -40,6 +40,7 @@ function createAlbums() {
     AB++;
       if (AlbumName == "") {console.log(AB + undefined + " Name");} else {
         let NewAlbumBtn = document.createElement("div");
+        NewAlbumBtn.classList.toggle("column");
         NewAlbumBtn.id = AB;
         NewAlbumBtn.setAttribute("style", "float: left; width: 25%; align-items: center; text-align: center;");     
         //NewAlbumBtn.innerHTML = AlbumName[AB];
@@ -48,6 +49,9 @@ function createAlbums() {
         IMG.src = AlbumIMG[AB];
         IMG.style.width = "100%";
         NewAlbumBtn.appendChild(IMG);
+        let text = document.createElement("p");
+        text.innerHTML = AlbumName[AB];
+        NewAlbumBtn.appendChild(text);
         document.getElementById("albums").appendChild(NewAlbumBtn);
       }
     }
