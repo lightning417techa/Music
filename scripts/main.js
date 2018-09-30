@@ -76,7 +76,7 @@ function Update() {
   document.body.appendChild(Updatebackground);
   
   let UpdateScrollController = document.createElement("div");
-  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; background: gray; font-size: 20px; width: 430px; height: 120px;")
+  UpdateScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
   UpdateScrollController.id = "USC";
   UpdateContainer.appendChild(UpdateScrollController);  
     
@@ -91,16 +91,23 @@ function Update() {
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
   var UTXT2B = "Automatic button creation";  
-  Updatetxt2.innerHTML = UTXT2B.bold() + " makes the player's ability to load fastermore powerful";
+  Updatetxt2.innerHTML = UTXT2B.bold() + " makes the player's ability to load fastermore powerful. <br>";
   Updatetxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt2);
   
-    let Updatetxt3 = document.createElement("div");
+  let Updatetxt3 = document.createElement("div");
   Updatetxt3.id = "UTXT3";
   var UTXT3B = "Automatic Update notifications";  
-  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified.";
+  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified. <br>";
   Updatetxt3.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt3);
+  
+  let Updatetxt4 = document.createElement("div");
+  Updatetxt4.id = "UTXT4";
+  var UTXT4B = "More Album Art";  
+  Updatetxt4.innerHTML = UTXT4B.bold() + " new and updated album art. <br>";
+  Updatetxt4.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
+  UpdateScrollController.appendChild(Updatetxt4);
   
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
