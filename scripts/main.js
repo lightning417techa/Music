@@ -59,7 +59,8 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   id = clicked_id;
   //var AN;
-  alert(id + document.getElementById("3"));
+  let AB = document.getElementById(AN);
+  alert(id.id + AB.id);
    /*for (AN = 0; AN < 37) {}
      AN++;
      let AB = document.getElementById(AN);
