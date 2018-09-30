@@ -75,13 +75,19 @@ function Update() {
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
   
+  let UpdateScrollController = document.createElement("div");
+  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px; height: 430px;")
+  UpdateScrollController.id = "USC";
+  document.body.appendChild(UpdateScrollController);
+  
+  
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
   var u = "UPDATE: ";
   var ur = u.bold();
   Updatetxt2.innerHTML = ur + "Automatic button creation makes the player's ability to load fastermore powerful";
   Updatetxt2.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
-  document.body.appendChild(Updatetxt2);
+  UpdateScrollController.appendChild(Updatetxt2);
   
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
