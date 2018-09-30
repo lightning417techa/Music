@@ -65,8 +65,11 @@ function PlayAlbum(clicked_id) {
     if (AlbumName[AB.id] == AlbumName[Id]) {      
       console.log("AlbumName " + AlbumName[Id]);
     } else {
-      console.log("id: " + Id.id + " AB " + AB.id);
-      AB.remove();
+      if (AlbumName[AB.id] == AlbumName[Id]) {        
+      } else {
+        console.log("id: " + Id.id + " AB " + AB.id);
+        AB.remove();
+      }  
     }  
   }
 }
