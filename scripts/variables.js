@@ -32,7 +32,10 @@ var AlbumName = {
   31 : "",
   32 : "",
   33 : "Mania",
-  34 : "Watching the Sky"
+  34 : "Watching the Sky",
+  35 : "",
+  36 : "",
+  37 : ""
 }
 
 var AlbumIMG = {
@@ -69,5 +72,8 @@ var AlbumIMG = {
   31 : "",
   32 : "",
   33 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
-  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png"
+  34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
+  35 : "",
+  36 : "",
+  37 : ""
 }
