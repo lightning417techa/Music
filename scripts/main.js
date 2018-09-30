@@ -64,8 +64,10 @@ function Update() {
   
   let Updatetxt = document.createElement("div");
   Updatetxt.id = "UTXT";
-  Updatetxt.innerHTML = "Welcome to LanyxSoft Music! please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
-  Updatetxt.classList.toggle("UpdateTXT");
+  var wm = "Welcome to LanyxSoft Music!";
+  var wmr= wm.bold();
+  Updatetxt.innerHTML = wmr + " please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
+  Updatetxt.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 20%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   document.body.appendChild(Updatetxt);
   
   let Updatebackground = document.createElement("div");
@@ -75,7 +77,9 @@ function Update() {
   
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
-  Updatetxt2.innerHTML = "UPDATE: Automatic button creation makes the player's ability to load fastermore powerful";
+  var u = "UPDATE: ";
+  var ur = u.bold();
+  Updatetxt2.innerHTML = ur + "Automatic button creation makes the player's ability to load fastermore powerful";
   Updatetxt2.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   document.body.appendChild(Updatetxt2);
   
