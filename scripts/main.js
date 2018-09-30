@@ -65,7 +65,7 @@ function PlayAlbum(clicked_id) {
     if (AB.id == Id) {      
       console.log("AlbumName " + AlbumName[Id]);
     } else {
-      console.log("id: " + Id + " AB " + AB.id);
+      console.log("id: " + Id.id + " AB " + AB.id);
       AB.remove();
     }  
   }
