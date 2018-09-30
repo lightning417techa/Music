@@ -90,11 +90,17 @@ function Update() {
   
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
-  var u = "UPDATE: ";
-  var ur = u.bold();
-  Updatetxt2.innerHTML = ur + "Automatic button creation makes the player's ability to load fastermore powerful";
-  Updatetxt2.setAttribute("style", "position: fixed; text-align: left; color: black; font-size: 20px; width: 430px;")
+  var UTXT2B = "Automatic button creation";  
+  Updatetxt2.innerHTML = UTXT2B.bold() + " makes the player's ability to load fastermore powerful";
+  Updatetxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt2);
+  
+    let Updatetxt3 = document.createElement("div");
+  Updatetxt3.id = "UTXT3";
+  var UTXT3B = "Automatic Update notifications";  
+  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified.";
+  Updatetxt3.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
+  UpdateScrollController.appendChild(Updatetxt3);
   
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
