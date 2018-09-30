@@ -45,7 +45,7 @@ function createAlbums() {
         NewAlbumBtn.id = AB;
         NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
         //NewAlbumBtn.innerHTML = AlbumName[AB];
-        NewAlbumBtn.onclick = PlayAlbum(NewAlbumBtn.id);
+        NewAlbumBtn.onclick = fuction() {PlayAlbum(this.id);};
         let IMG = document.createElement("img");
         IMG.src = AlbumIMG[AB];
         IMG.style.width = "100%";
@@ -59,7 +59,6 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   id = clicked_id;
   var AN;
-  alert(id);
   for (AN = 0; AN < 37;) {
     AN++;
     let AB = document.getElementById(AN);
