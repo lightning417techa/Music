@@ -69,7 +69,6 @@ function Update() {
   Updatetxt.innerHTML = wmr + " please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
   Updatetxt.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   UpdateContainer.appendChild(Updatetxt);
-  //document.body.appendChild(Updatetxt);
   
   let Updatebackground = document.createElement("div");
   Updatebackground.id = "UB";
@@ -77,11 +76,18 @@ function Update() {
   document.body.appendChild(Updatebackground);
   
   let UpdateScrollController = document.createElement("div");
-  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; background: gray; font-size: 20px; width: 430px; height: 90px;")
+  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; background: gray; font-size: 20px; width: 430px; height: 120px;")
   UpdateScrollController.id = "USC";
   UpdateContainer.appendChild(UpdateScrollController);  
-  //document.body.appendChild(UpdateScrollController);
     
+  let UpdateHead = document.createElement("div");
+  UpdateHead.id = "UH";
+  var u = "UPDATES";
+  var ur = u.bold();
+  UpdateHead.innerHTML = ur;
+  UpdateHead.setAttribute("style", "position: fixed; text-align: center; color: black; font-size: 23px; width: 430px;")
+  UpdateScrollController.appendChild(UpdateHead);
+  
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
   var u = "UPDATE: ";
