@@ -59,13 +59,13 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
-  for (AN = 1; AN < 37;) {
+  for (AN = 0; AN < 37;) {
     AN++;
     let AB = document.getElementById(AN);
-    if (AB.id == Id) {
+    if (AB.id == Id) {      
       console.log("AlbumName " + AlbumName[Id]);
     } else {
-      console.log("AB " + AB.id);
+      console.log("id: " + Id + " AB " + AB.id);
       AB.remove();
     }  
   }
