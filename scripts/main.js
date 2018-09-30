@@ -58,14 +58,16 @@ function createAlbums() {
 
 function PlayAlbum(clicked_id) {
   id = clicked_id;
-  //var AN;
-  let AB = document.getElementById("4");
-  alert(id.id + AB.id);
-   /*for (AN = 0; AN < 37) {}
-     AN++;
-     let AB = document.getElementById(AN);
-     if (AB.id == AlbumName[id])*/
-  
+  var AN;
+  for (AN = 0; AN < 37) {
+    AN++;
+    let AB = document.getElementById(AN);
+    if (AB.id == AlbumName[id]) {
+      
+    } else {
+      AB.remove();
+    }  
+  }
 }
 
 function Update() {  
