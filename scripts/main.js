@@ -73,12 +73,11 @@ function Update() {
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
   
-  let Updateimage = document.createElement("img");
-  Updateimage.id = "UIMG";
-  Updateimage.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-  Updateimage.style.width = "200px";
-  Updateimage.classList.toggle("UpdateIMG");
-  UpdateContainer.appendChild(Updateimage);
+  let Updatetxt2 = document.createElement("div");
+  Updatetxt2.id = "UTXT2";
+  Updatetxt2.innerHTML = "UPDATE: Automatic button creation makes the player's ability to load fastermore powerful";
+  Updatetxt2.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
+  document.body.appendChild(Updatetxt2);
   
   let Updatebutton = document.createElement("div");
   Updatebutton.id = "UBTN";
