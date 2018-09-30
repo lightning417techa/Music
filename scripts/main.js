@@ -87,7 +87,7 @@ function Update() {
   var u = "UPDATE: ";
   var ur = u.bold();
   Updatetxt2.innerHTML = ur + "Automatic button creation makes the player's ability to load fastermore powerful";
-  Updatetxt2.setAttribute("style", "position: fixed; left: 50%; text-align: left; color: black; font-size: 20px; width: 430px;")
+  Updatetxt2.setAttribute("style", "position: fixed; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt2);
   
   let Updatebutton = document.createElement("div");
