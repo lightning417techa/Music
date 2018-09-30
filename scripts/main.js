@@ -36,7 +36,7 @@ function startUI() {
 
 function createAlbums() {    
   var AB;    
-  for (AB = 0; AB < 34;) {
+  for (AB = 0; AB < 37;) {
   AB++;
     if (AlbumName[AB] == "") {} else {
       if (AlbumIMG[AB] == "") {} else {
