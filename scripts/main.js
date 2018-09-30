@@ -64,12 +64,9 @@ function PlayAlbum(clicked_id) {
     let AB = document.getElementById(AN);
     if (AlbumName[AB.id] == AlbumName[Id]) {      
       console.log("AlbumName " + AlbumName[Id]);
-    } else {
-      if (AlbumName[AB.id] == AlbumName[Id]) {        
-      } else {
+    } else {                           
         console.log("id: " + Id.id + " AB " + AB.id);
         AB.remove();
-      }  
     }  
   }
 }
