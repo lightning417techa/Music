@@ -76,7 +76,7 @@ function Update() {
   document.body.appendChild(Updatebackground);
   
   let UpdateScrollController = document.createElement("div");
-  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px; height: 430px;")
+  UpdateScrollController.setAttribute("style", "z-index: 8; border-color: black; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 430px;")
   UpdateScrollController.id = "USC";
   document.body.appendChild(UpdateScrollController);
   
@@ -86,7 +86,7 @@ function Update() {
   var u = "UPDATE: ";
   var ur = u.bold();
   Updatetxt2.innerHTML = ur + "Automatic button creation makes the player's ability to load fastermore powerful";
-  Updatetxt2.setAttribute("style", "position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
+  Updatetxt2.setAttribute("style", "position: fixed; left: 50%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt2);
   
   let Updatebutton = document.createElement("div");
