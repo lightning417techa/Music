@@ -85,7 +85,7 @@ function Update() {
   var u = "UPDATES";
   var ur = u.bold();
   UpdateHead.innerHTML = ur;
-  UpdateHead.setAttribute("style", "position: fixed; text-align: center; color: black; font-size: 23px; width: 430px;")
+  UpdateHead.setAttribute("style", "position: relative; text-align: center; color: black; font-size: 23px; width: 430px;")
   UpdateScrollController.appendChild(UpdateHead);
   
   let Updatetxt2 = document.createElement("div");
