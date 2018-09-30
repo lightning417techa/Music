@@ -91,21 +91,21 @@ function Update() {
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
   var UTXT2B = "Automatic button creation";  
-  Updatetxt2.innerHTML = UTXT2B.bold() + " makes the player's ability to load fastermore powerful. <br>";
+  Updatetxt2.innerHTML = UTXT2B.bold() + " makes the player's ability to load faster.";
   Updatetxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt2);
   
   let Updatetxt3 = document.createElement("div");
   Updatetxt3.id = "UTXT3";
   var UTXT3B = "Automatic Update notifications";  
-  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified. <br>";
+  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified.";
   Updatetxt3.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt3);
   
   let Updatetxt4 = document.createElement("div");
   Updatetxt4.id = "UTXT4";
   var UTXT4B = "More Album Art";  
-  Updatetxt4.innerHTML = UTXT4B.bold() + " new and updated album art. <br>";
+  Updatetxt4.innerHTML = UTXT4B.bold() + " new and updated album art.";
   Updatetxt4.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt4);
   
