@@ -76,9 +76,10 @@ function Update() {
   document.body.appendChild(Updatebackground);
   
   let UpdateScrollController = document.createElement("div");
-  UpdateScrollController.setAttribute("style", "z-index: 8; border-color: black; position: fixed; left: 50%; top: 60%; transform: translate(-50%, -50%); text-align: left; color: black; background: gray; font-size: 20px; width: 430px; height: 430px;")
+  UpdateScrollController.setAttribute("style", "z-index: 7; border-color: black; position: fixed; left: 50%; top: 60%; transform: translate(-50%, -50%); text-align: left; color: black; background: gray; font-size: 20px; width: 430px; height: auto;")
   UpdateScrollController.id = "USC";
-  document.body.appendChild(UpdateScrollController);
+  UpdateContainer.appendChild(UpdateScrollController);  
+  //document.body.appendChild(UpdateScrollController);
     
   let Updatetxt2 = document.createElement("div");
   Updatetxt2.id = "UTXT2";
