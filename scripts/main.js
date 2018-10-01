@@ -39,23 +39,22 @@ function createAlbums() {
   var AB;    
   for (AB = 0; AB < NumberOfSongs;) {
   AB++;
-    if (AlbumName[AB] == "") {} else {
-      if (AlbumIMG[AB] == "") {} else {
-        let NewAlbumBtn = document.createElement("div");                
-        NewAlbumBtn.classList.toggle("column");
-        NewAlbumBtn.id = AB;
-        NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-        //NewAlbumBtn.innerHTML = AlbumName[AB];
-        NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
-        let IMG = document.createElement("img");
-        IMG.src = AlbumIMG[AB];
-        IMG.style.width = "100%";
-        NewAlbumBtn.appendChild(IMG);
-        let text = document.createElement("p");
-        text.innerHTML = AlbumName[AB];
-        NewAlbumBtn.appendChild(text);
-        document.getElementById("albums").appendChild(NewAlbumBtn);
-}}}}
+    if (AlbumName[AB] == "" || AlbumIMG[AB] == "") {} else {      
+      let NewAlbumBtn = document.createElement("div");                
+      NewAlbumBtn.classList.toggle("column");
+      NewAlbumBtn.id = AB;
+      NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
+      //NewAlbumBtn.innerHTML = AlbumName[AB];
+      NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
+      let IMG = document.createElement("img");
+      IMG.src = AlbumIMG[AB];
+      IMG.style.width = "100%";
+      NewAlbumBtn.appendChild(IMG);
+      let text = document.createElement("p");
+      text.innerHTML = AlbumName[AB];
+      NewAlbumBtn.appendChild(text);
+      document.getElementById("albums").appendChild(NewAlbumBtn);
+}}}
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
