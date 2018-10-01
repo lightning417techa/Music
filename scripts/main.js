@@ -60,12 +60,12 @@ function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
   alert(Id);
-  let AB = document.getElementById(AN);
+  let AB = document.getElementById(AN).id;
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     AB = document.getElementById(AN).id.replace("SongButton", "");
     console.log(AB.id);
-    if (AlbumName[AB.id] == albumlist[Id]) {      
+    if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
       console.log("id: " + Id.id + " AB " + AB.id);
