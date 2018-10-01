@@ -59,6 +59,7 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
+  alert(titles.length);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let SongBtn = document.getElementById("SongButton" + AN)
