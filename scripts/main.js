@@ -60,6 +60,7 @@ function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
   alert(Id);
+  alert(AN + "b");
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
