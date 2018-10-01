@@ -59,7 +59,6 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
-  alert(titles[].length);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let SongBtn = document.getElementById("SongButton" + AN)
@@ -85,7 +84,7 @@ function Update() {
   let Updatetxt = document.createElement("div");
   Updatetxt.id = "UTXT";
   var wm = "Welcome to LanyxSoft Music!";
-  var wmr= wm.bold();
+  var wmr = wm.bold();
   Updatetxt.innerHTML = wmr + " please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
   Updatetxt.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   UpdateContainer.appendChild(Updatetxt);
@@ -165,9 +164,7 @@ function BeginUpdate() {
                 } else {
                     console.log("func: child_added result: User id  doesn't match to id in accepted LanyxSoft database");
                 }
-      });  
-  
-    //updates["/posts/" + "hihihihihi"] = postData;
+      });
     return firebase.database().ref().update(updates);
   }
 //child_added
@@ -219,6 +216,7 @@ var dy = a.getDate();
 var yr = a.getFullYear();
 var tm = a.getHours()+":"+a.getMinutes();
 var dateFormat = mt+"/"+dy+"/"+yr+"_"+tm;
+var i = 1;
   //labels
 var audiotitle = document.getElementById("audiotitle");
 var audioartist = document.getElementById("artist");
@@ -278,40 +276,40 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 //SEARCH
-//document.getElementById("SearchBox").addEventListener("keyup",);
-
 function search() {
   var input, filter, ui, li, a, w;
-    input = document.getElementById("SearchBox");
-    filter = input.value.toUpperCase();
-    ui = document.getElementById("PlaylistDropdown");
-    li = ui.getElementsByTagName("li");
-    
-    //function for dd
-    for (w = 0; w < li.length; w++) {
-        a = li[w].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[w].style.display = "";
-        } else {
-            li[w].style.display = "none";
-    }}    
+  input = document.getElementById("SearchBox");
+  filter = input.value.toUpperCase();
+  ui = document.getElementById("PlaylistDropdown");
+  li = ui.getElementsByTagName("li");
+  
+  //function for dd
+  for (w = 0; w < li.length; w++) {
+    a = li[w].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[w].style.display = "";
+    } else {
+      li[w].style.display = "none";
+  }}    
+  for (w = 0; w < li.length; w++) {}
+  searchAlbums();
 }
-/*function searchAlbums() {
-  var input, filter, ui, li, a, w;
-    input = document.getElementById("SearchBox");
-    filter = input.value.toUpperCase();
-    ui = document.getElementById("albums");
-    li = ui.getElementsByTagName("div");
+function searchAlbums() {
+  var input, filter, ui, divs, a, w;
+  input = document.getElementById("SearchBox");
+  filter = input.value.toUpperCase();
+  ui = document.getElementById("albums");  
+  divs = ui.getElementsByTagName("div");
     
     //function for dd
-    for (w = 0; w < li.length; w++) {
-        a = li[w].getElementsByTagName("p")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[w].style.display = "";
-        } else {
-            li[w].style.display = "none";
-    }}    
-}*/
+  for (w = 0; w < divs.length; w++) {
+    a = divs[w].getElementsByTagName("p")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[w].style.display = "";
+    } else {
+      li[w].style.display = "none";
+  }}
+}
 
 
 function Shuffle() {
@@ -321,11 +319,7 @@ function Shuffle() {
   audiotitle.innerHTML = x.title;
   audioartist.innerHTML = artists[s];
   
-  if (albumart[s] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-     } else {
-       image.src = albumart[s];
-     }
+  if (albumart[s] == "") {image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";} else {image.src = albumart[s];}
   
   x.src = songs[s];
   x.play();
@@ -333,11 +327,8 @@ function Shuffle() {
   playAudio();
 }
 
-var i = 1;
-function keys() {
-     
+function keys() {     
    if (x.currentTime == x.duration) {
-     //x.src = sources.two;
      i++;
      x.title = titles[i];
      audiotitle.innerHTML = x.title;
@@ -438,8 +429,6 @@ function playAudio() {
       
     }}
 
-
-    
 window.addEventListener('load', function() {
   var cur = document.querySelector('#perc'),
       vid = document.querySelector('#myAudio')
@@ -453,16 +442,11 @@ myAudio.addEventListener('timeupdate', function(e) {
   //duraion
   dur.textContent = sToTime(e.target.duration);
   slider.value = x.currentTime;
-      //percent.innerHTML = x.currentTime;
-      slider.max = x.duration;
-      keys();
+  //percent.innerHTML = x.currentTime;
+  slider.max = x.duration;
+  keys();
 })
 
-function sToTime(t) {
-  return padZero(parseInt((t / (60 * 60)) % 24)) + ":" +
-         padZero(parseInt((t / (60)) % 60)) + ":" + 
-         padZero(parseInt((t) % 60));
-}
-function padZero(v) {
-  return (v < 10) ? "0" + v : v;
-}
+//THE TIME CONVERTER
+function sToTime(t) {return padZero(parseInt((t / (60 * 60)) % 24)) + ":" + padZero(parseInt((t / (60)) % 60)) + ":" + padZero(parseInt((t) % 60));}
+function padZero(v) {return (v < 10) ? "0" + v : v;}
