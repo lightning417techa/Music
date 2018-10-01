@@ -62,16 +62,16 @@ function PlayAlbum(clicked_id) {
   alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let AB = document.getElementById("SongButton" + AN)
-    AB.id.replace("SongButton", "");
+    let SongBtn = document.getElementById("SongButton" + AN)
+    let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
     if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
       console.log("id: " + Id + " AB " + AB);
       //A.remove();
-      AB.style.display = "none";
-      AB.style.visibility = "hidden";
+      SongBtn.style.display = "none";
+      SongBtn.style.visibility = "hidden";
     }  
   }
 }
