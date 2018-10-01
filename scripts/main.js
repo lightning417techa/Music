@@ -36,20 +36,7 @@ function startUI() {
 }
 
 function createAlbums() {    
-  var AB;     
-  
-  let hi = document.createElement("div");
-  hi.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");       
-  hi.onclick= function() {alert(albumlist["songs"]); };
-  let iMage = document.createElement("img");
-      iMage.src = albumlist["Albumart"];
-      iMage.style.width = "100%";
-      hi.appendChild(iMage);
-      let ttxt = document.createElement("p");
-      ttxt.innerHTML = albumlist["Albumname"];
-      hi.appendChild(ttxt);
-      document.getElementById("albums").appendChild(hi);
-  
+  var AB;       
   for (AB = 0; AB < NumberOfSongs;) {
   AB++;
     if (AlbumName[AB] == "" || AlbumIMG[AB] == "") {} else {      
@@ -75,13 +62,10 @@ function PlayAlbum(clicked_id) {
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
-    if (AlbumName[AB.id] == AlbumName[Id]) {      
-      console.log("AlbumName " + AlbumName[Id]);
-    } else {                           
-        console.log("id: " + Id.id + " AB " + AB.id);
-        AB.remove();
-    }  
+    //AB.remove();   
+    AB.style.visibility = "hidden";
   }
+  document.getElementById(albumname["sonngs"])
 }
 
 function Update() {  
