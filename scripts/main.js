@@ -59,17 +59,16 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
-  alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let SongBtn = document.getElementById("SongButton" + AN)
     let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
-    if (ManiaAlbum[AB] == Id) {      
-      console.log("AlbumName " + Id);
+    if (AlbumSongs[AB] == Id) {      
+      SongBtn.style.display = "";
+      SongBtn.style.visibility = "visible";
     } else {                           
-      console.log("id: " + Id + " AB " + ManiaAlbum[AB]);
-      //A.remove();
+      console.log("id: " + Id + " AB " + AlbumSongs[AB]);
       SongBtn.style.display = "none";
       SongBtn.style.visibility = "hidden";
     }  
