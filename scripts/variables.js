@@ -78,4 +78,7 @@ var AlbumIMG = {
   37 : ""
 }
 
-//var AlbumList = {Albumname : "", Albumart : "", songs : []}
+var albumlist = {Albumname : "MANIA", 
+  Albumart : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg", 
+  songs : [titles[5]]
+}
