@@ -67,7 +67,7 @@ function PlayAlbum(clicked_id) {
     if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
-      console.log("id: " + Id.id + " AB " + AB.id);
+      console.log("id: " + Id + " AB " + AB);
       //A.remove();
       AB.style.display = "none";
       AB.style.visibility = "hidden";
