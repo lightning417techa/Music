@@ -36,7 +36,19 @@ function startUI() {
 }
 
 function createAlbums() {    
-  var AB;    
+  var AB;     
+  
+  let hi = document.createElement("div");
+  hi.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");       
+  let iMage = document.createElement("img");
+      iMage.src = albumlist["Albumart"];
+      iMage.style.width = "100%";
+      hi.appendChild(iMage);
+      let ttxt = document.createElement("p");
+      ttxt.innerHTML = albumlist["Albumname"];
+      hi.appendChild(ttxt);
+      document.getElementById("albums").appendChild(hi);
+  
   for (AB = 0; AB < NumberOfSongs;) {
   AB++;
     if (AlbumName[AB] == "" || AlbumIMG[AB] == "") {} else {      
