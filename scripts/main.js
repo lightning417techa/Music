@@ -22,7 +22,7 @@ function startUI() {
     for (SB = 0; SB < NumberOfSongs;) {
     SB++;
         let NewSongBtn = document.createElement("a");
-        NewSongBtn.id = SB;
+        NewSongBtn.id = "SongButton" + SB;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
         NewSongBtn.innerHTML = titles[SB] + " -- " + artists[SB];
         NewSongBtn.onclick = function() {Playbutton(NewSongBtn.id);};
@@ -62,7 +62,8 @@ function PlayAlbum(clicked_id) {
   alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let AB = document.getElementById(AN);    
+    let AB = document.getElementById(AN);
+    AB.replace("SongButton", "");
     if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
@@ -391,17 +392,18 @@ function rewind() {
 
 function Playbutton(clicked_id) {
   i = clicked_id;
-  x.title = titles[i];
+  let I = i.replace("SongButton", "");
+  x.title = titles[I];
      audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[i];
+     audioartist.innerHTML = artists[I];
     
-     if (albumart[i] == "") {
+     if (albumart[I] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
-       image.src = albumart[i];
+       image.src = albumart[I];
      }
   
-     x.src = songs[i];
+     x.src = songs[I];
      x.play();
      num = 1;
      playAudio();  
