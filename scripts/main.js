@@ -65,10 +65,10 @@ function PlayAlbum(clicked_id) {
     let SongBtn = document.getElementById("SongButton" + AN)
     let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
-    if (ManiaAlbum[AB] == albumlist[Id]) {      
+    if (ManiaAlbum[AB] == Id) {      
       console.log("AlbumName " + Id);
     } else {                           
-      console.log("id: " + Id + " AB " + AB);
+      console.log("id: " + Id + " AB " + ManiaAlbum[AB]);
       //A.remove();
       SongBtn.style.display = "none";
       SongBtn.style.visibility = "hidden";
