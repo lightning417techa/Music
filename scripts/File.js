@@ -1,4 +1,4 @@
 var ManiaAlbum = { 
-  titles[5],
-  titles[33]
+  1 : titles[5], 
+  2 : titles[33]
 }
