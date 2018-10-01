@@ -63,8 +63,13 @@ function PlayAlbum(clicked_id) {
   console.log(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    AB = document.getElementById(AN);
-    AB.remove();       
+    document.getElementById(AN);
+    if (AlbumName[AB.id] == AlbumName[Id]) {      
+      console.log("AlbumName " + AlbumName[Id]);
+    } else {                           
+        console.log("id: " + Id.id + " AB " + AB.id);
+        AB.remove();
+    }  
   }
 }
 
