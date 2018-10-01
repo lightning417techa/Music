@@ -51,7 +51,7 @@ function createAlbums() {
       IMG.style.width = "100%";
       NewAlbumBtn.appendChild(IMG);
       let text = document.createElement("p");
-      text.innerHTML = AlbumName[AB];
+      text.innerHTML = albumlist[AB];
       NewAlbumBtn.appendChild(text);
       document.getElementById("albums").appendChild(NewAlbumBtn);
 }}}
