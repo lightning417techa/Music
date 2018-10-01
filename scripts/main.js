@@ -1,5 +1,6 @@
 var btnv = 0;
 var update = 0;
+var NumberOfSongs = 37;
 function Dropdown() {
 var i = 0;
 if (i == 0) {
@@ -18,7 +19,7 @@ window.onerror = function(error) {console.log(error);};
 
 function startUI() {    
   var SB;    
-    for (SB = 0; SB < 37;) {
+    for (SB = 0; SB < NumberOfSongs;) {
     SB++;
         let NewSongBtn = document.createElement("a");
         NewSongBtn.id = SB;
@@ -30,13 +31,13 @@ function startUI() {
         document.getElementById("SongBtns").appendChild(LI);
     }
     var n;
-    for (n = 0; n < 37; n++) {}
+    for (n = 0; n < NumberOfSongs; n++) {}
     createAlbums();
 }
 
 function createAlbums() {    
   var AB;    
-  for (AB = 0; AB < 37;) {
+  for (AB = 0; AB < NumberOfSongs;) {
   AB++;
     if (AlbumName[AB] == "") {} else {
       if (AlbumIMG[AB] == "") {} else {
@@ -59,7 +60,7 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
-  for (AN = 0; AN < 37;) {
+  for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
     if (AlbumName[AB.id] == AlbumName[Id]) {      
@@ -310,7 +311,7 @@ function search() {
 
 
 function Shuffle() {
-  var s = Math.floor(Math.random() * 37) + 1;
+  var s = Math.floor(Math.random() * NumberOfSongs) + 1;
 
   x.title = titles[s];
   audiotitle.innerHTML = x.title;
