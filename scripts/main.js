@@ -62,13 +62,14 @@ function PlayAlbum(clicked_id) {
   alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    var A = document.getElementById(AN);
-    if (AlbumName[A] == albumlist[Id]) {      
+    let AB = document.getElementById(AN);
+    if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
-      console.log("id: " + Id.id + " AB " + A.id);
+      console.log("id: " + Id.id + " AB " + AB.id);
       //A.remove();
-      A.style.display = "none";
+      AB.style.display = "none";
+      AB.style.visibility = "hidden";
     }  
   }
 }
