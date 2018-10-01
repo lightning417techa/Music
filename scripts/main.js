@@ -62,13 +62,13 @@ function PlayAlbum(clicked_id) {
   alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    var AB = document.getElementById(AN);
-    if (ManiaAlbum[AN] == albumlist[Id]) {      
+    var A = document.getElementById(AN);
+    if (ManiaAlbum[A] == albumlist[Id]) {      
       console.log("AlbumName " + albumlist[Id]);
     } else {                           
-      console.log("id: " + Id.id + " AB " + AB.id);
-      //AB.remove();
-      AB.style.display = "none";
+      console.log("id: " + Id.id + " AB " + A.id);
+      //A.remove();
+      A.style.display = "none";
     }  
   }
 }
