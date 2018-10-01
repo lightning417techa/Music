@@ -60,15 +60,15 @@ function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;  
   console.log(Id);
-  alert(ManiaAlbum);
+  consol.log(ManiaAlbum);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
     if (AlbumName[AB.id] == AlbumName[Id]) {      
       console.log("AlbumName " + AlbumName[Id]);
     } else {                           
-        console.log("id: " + Id.id + " AB " + AB.id);
-        AB.remove();
+      console.log("id: " + Id.id + " AB " + AB.id);
+      AB.remove();
     }  
   }
 }
