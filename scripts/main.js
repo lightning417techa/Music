@@ -59,9 +59,10 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
+  alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let AB = document.getElementById(AN);
+    var AB = document.getElementById(AN);
     if (ManiaAlbum[AB.id] == albumlist[Id]) {      
       console.log("AlbumName " + albumlist[Id]);
     } else {                           
