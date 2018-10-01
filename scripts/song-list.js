@@ -1,4 +1,4 @@
-var songs = {
+var songs = [
   1 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/i_like_me_better__bass_boosted_.m4a",
   2 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello_ft._khalid_-_silence__official_lyric_video_.mp3",
   3 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/marshmello_-_alone.mp3",
@@ -36,7 +36,7 @@ var songs = {
   35 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_blood_sweat__amp__tears__%E1%84%91%E1%85%B5_%E1%84%84%E1%85%A1%E1%86%B7_%E1%84%82%E1%85%AE%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AF__lyrics_[color_coded_han_rom_eng].mp3",
   36 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__bangtan_boys__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__-_i_need_u__color_coded_han|rom|eng_lyrics_.mp3",
   37 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_save_me__color_coded_han|rom|eng_lyrics__|_by_yankat.mp3"
-}
+]
 
 var titles = {
   1 : "I Like Me Better",
