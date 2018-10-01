@@ -77,3 +77,5 @@ var AlbumIMG = {
   36 : "",
   37 : ""
 }
+
+//var AlbumList = {Albumname : "", Albumart : "", songs : []}
