@@ -182,7 +182,8 @@ if (typeof(Storage) !== "undefined") {
     InitializeStartzup();              
   }
 } else {  
-  console.log("unfortunatly your browser doesnt support cookies. this means that some feature aren't available on this device");
+  Update();
+  console.log("s means that some feature aren't available on this device");
 }
 
 function drop() {
