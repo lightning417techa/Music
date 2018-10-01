@@ -37,12 +37,12 @@ function startUI() {
 
 function createAlbums() {    
   var AB;       
-  for (AB = 0; AB < AlbumList.length;) {
+  for (AB = 0; AB < albumlist.length;) {
   AB++;
-    if (AlbumName[AB] == "" || AlbumIMG[AB] == "") {} else {      
+    if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {      
       let NewAlbumBtn = document.createElement("div");                
       NewAlbumBtn.classList.toggle("column");
-      NewAlbumBtn.id = AlbumList[AB];
+      NewAlbumBtn.id = albumlist[AB];
       NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
       //NewAlbumBtn.innerHTML = AlbumName[AB];
       NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
