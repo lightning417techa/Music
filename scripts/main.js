@@ -37,7 +37,7 @@ function startUI() {
 
 function createAlbums() {    
   var AB;       
-  for (AB = 0; AB < albumlist.length;) {
+  for (AB = 0; AB < 4;) {
   AB++;
     if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {      
       let NewAlbumBtn = document.createElement("div");                
