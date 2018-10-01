@@ -62,7 +62,7 @@ function PlayAlbum(clicked_id) {
   alert(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let AB = document.getElementById(AN).id.replace("SongButton", "");
+    let AB = document.getElementById("SongButton" + AN).id.replace("SongButton", "");
     console.log(AB);
     if (AlbumName[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
