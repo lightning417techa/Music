@@ -62,8 +62,8 @@ function PlayAlbum(clicked_id) {
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
-    if (titles[AB.id] == ManiaAlbum[1]) {      
-      console.log("AlbumName " + AlbumName[Id]);
+    if (ManiaAlbum[AB.id] == albumlist[Id]) {      
+      console.log("AlbumName " + albumlist[Id]);
     } else {                           
       console.log("id: " + Id.id + " AB " + AB.id);
       //AB.remove();
