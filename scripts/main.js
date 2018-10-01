@@ -60,7 +60,7 @@ function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;  
   console.log(Id);
-  consol.log(ManiaAlbum);
+  console.log(ManiaAlbum);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
