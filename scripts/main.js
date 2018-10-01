@@ -55,6 +55,7 @@ function createAlbums() {
       NewAlbumBtn.appendChild(text);
       document.getElementById("albums").appendChild(NewAlbumBtn);
 }}}
+alert(ManiaAlbum[1]);
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
