@@ -58,9 +58,7 @@ function createAlbums() {
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
-  var AN;  
-  console.log(Id);
-  console.log(ManiaAlbum[1]);
+  var AN;
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
     let AB = document.getElementById(AN);
@@ -68,7 +66,8 @@ function PlayAlbum(clicked_id) {
       console.log("AlbumName " + AlbumName[Id]);
     } else {                           
       console.log("id: " + Id.id + " AB " + AB.id);
-      AB.remove();
+      //AB.remove();
+      AB.style.display = "none";
     }  
   }
 }
