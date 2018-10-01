@@ -158,21 +158,30 @@ var artists = {
   37 : "BTS"
 }
 
-/*var AlbumName {
-  1 : "",
-  2 : "",
-  3 : "",
-  4 : "",
-  5 : "Mania",
-  6 : "",
-  7 : "",
+var AlbumIMG = {
+  1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
+  2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
+  3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",        
+  4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
+  5 : "",
+  6 : ""
+}
+
+var albumlist = {
+  1 : "Mania",
+  2 : "American Beauty/American Psycho",
+  3 : "Vessel",
+  4 : "Watching the Sky",
+  5 : "I Met You When I Was 18",
+  6 : "Unknown/None"
+  /*7 : "",
   8 : "",
-  9 : "American Beauty/American Psycho",
+  9 : "",
   10 : "",
-  11 : "Vessel",
+  11 : "",
   12 : "",
-  13 : "Vessel",
-  14 : "American Beauty/American Psycho",
+  13 : "",
+  14 : "",
   15 : "",
   16 : "",
   17 : "",
@@ -181,7 +190,7 @@ var artists = {
   20 : "",
   21 : "",
   22 : "",
-  23 : "Vessel",
+  23 : "",
   24 : "",
   25 : "",
   26 : "",
@@ -191,5 +200,45 @@ var artists = {
   30 : "",
   31 : "",
   32 : "",
-  33 : "Mania"
-}*/
+  33 : "Unknown"*/
+}
+
+var AlbumSongs = {
+  1 : albumlist[5],
+  2 : "Silence ft. Khalid",
+  3 : "Alone (Spotify extended version)",
+  4 : "jj",
+  5 : albumlist[1],
+  6 : "Spotlight",
+  7 : "Walk it Talk it",
+  8 : "Friends Are Family",
+  9 : albumlist[2],
+  10 : "Better When I'm Dancin",
+  11 : albumlist[3],
+  12 : "Shine Your Way",
+  13 : albumlist[3],
+  14 : "Uma Therman",
+  15 : "Danger",
+  16 : "Rockstar",
+  17 : "Thunder",
+  18 : "Faded",
+  19 : albumlist[6],
+  20 : albumlist[6],
+  21 : albumlist[6],
+  22 : "Jackie Chan",
+  23 : albumlist[3],
+  24 : albumlist[6],
+  25 : "Ballin'",
+  26 : albumlist[6],
+  27 : albumlist[4],
+  28 : "I Like it",
+  29 : "Classic",
+  30 : "Verge",
+  31 : "One Foot",
+  32 : "Everyday",
+  33 : albumlist[1],
+  34 : albumlist[4],
+  35 : "Blood Sweat and Tears",
+  36 : "I Need U",
+  37 : "Save Me"
+}
