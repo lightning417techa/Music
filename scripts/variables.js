@@ -83,7 +83,7 @@ var albumlist = {
   33 : "Unknown"*/
 }
 
-var ManiaAlbum = {
+var AlbumSongs = {
   1 : albumlist[5],
   2 : "Silence ft. Khalid",
   3 : "Alone (Spotify extended version)",
