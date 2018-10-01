@@ -59,13 +59,12 @@ function createAlbums() {
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
+  let AB = document.getElementById(AN);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let AB = document.getElementById(AN);
-    //AB.remove();   
-    AB.style.visibility = "hidden";
+    AB = document.getElementById(AN);
+    AB.remove();       
   }
-  document.getElementById(albumname["sonngs"])
 }
 
 function Update() {  
