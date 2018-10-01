@@ -58,12 +58,11 @@ function createAlbums() {
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
-  var AN;
-  let AB = document.getElementById(AN);
+  var AN;  
   console.log(Id);
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    document.getElementById(AN);
+    let AB = document.getElementById(AN);
     if (AlbumName[AB.id] == AlbumName[Id]) {      
       console.log("AlbumName " + AlbumName[Id]);
     } else {                           
