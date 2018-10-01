@@ -2,7 +2,7 @@ var ManiaAlbum = {
   1 : "I Like Me Better",
   2 : "Silence ft. Khalid",
   3 : "Alone (Spotify extended version)",
-  4 : "",
+  4 : "jj",
   5 : albumlist[1],
   6 : "Spotlight",
   7 : "Walk it Talk it",
