@@ -40,6 +40,7 @@ function createAlbums() {
   
   let hi = document.createElement("div");
   hi.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");       
+  hi.onclick= function() {alert(albumlist["songs"]); };
   let iMage = document.createElement("img");
       iMage.src = albumlist["Albumart"];
       iMage.style.width = "100%";
