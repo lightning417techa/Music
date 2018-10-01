@@ -65,7 +65,7 @@ function PlayAlbum(clicked_id) {
     let SongBtn = document.getElementById("SongButton" + AN)
     let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
-    if (AlbumName[AB] == albumlist[Id]) {      
+    if (ManiaAlbum[AB] == albumlist[Id]) {      
       console.log("AlbumName " + Id);
     } else {                           
       console.log("id: " + Id + " AB " + AB);
