@@ -88,7 +88,7 @@ var ManiaAlbum = {
   2 : "Silence ft. Khalid",
   3 : "Alone (Spotify extended version)",
   4 : "jj",
-  5 : albumlist[1],
+  5 : "Mania",
   6 : "Spotlight",
   7 : "Walk it Talk it",
   8 : "Friends Are Family",
