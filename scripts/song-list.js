@@ -158,7 +158,7 @@ var artists = {
   37 : "BTS"
 }
 
-/*var ArtistsImg = {
+var ArtistsImg = {
   1 : "",
   2 : "",
   3 : "",
@@ -196,7 +196,7 @@ var artists = {
   35 : "",
   36 : "",
   37 : ""
-}*/
+}
 
 var AlbumIMG = {
   1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
@@ -213,7 +213,7 @@ var albumlist = {
   3 : "Vessel",
   4 : "Watching the Sky",
   5 : "I Met You When I Was 18",
-  6 : "Unknown/None"
+  6 : "Unknown/None",
   7 : "Beerbongs & Bentleys",
   8 : "Evolve",
   9 : "Light Of Day",
