@@ -127,8 +127,9 @@ function Update() {
   
   let Updatetxt4 = document.createElement("div");
   Updatetxt4.id = "UTXT4";
+  let UTXT4C = "New widget at bottom";
   var UTXT4B = "More Album Art";  
-  Updatetxt4.innerHTML = UTXT4B.bold() + " new and updated album art.";
+  Updatetxt4.innerHTML = UTXT4B.bold() + " new and updated album art. <br>" + UTXT4C.bold() + " New widget at bottom to allow you to control the music even when selecting music.";
   Updatetxt4.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt4);
   
