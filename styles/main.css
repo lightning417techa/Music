@@ -25,79 +25,42 @@ img {
 .log-number {text-align:left; font-size: 20px; color: cyan;}
 
 /*Update Controller*/
-.NewUpdate {
-  z-index: 6;
-  position: fixed;
-   top: 45%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 550px;
-  background-color: white;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
-  font-size: 18pt;
+.NewUpdate {z-index: 6; position: fixed;
+  top: 45%; left: 50%; transform: translate(-50%, -50%);
+  width: 500px; height: 550px; background-color: white;
+  text-align: center; align-items: center; font-size: 18pt;
+  border-radius: 10px;  
 }
 .UpdateBackground {
-  z-index: 5;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
+  z-index: 5; position: fixed; top: 50%; left: 50%;
+  transform: translate(-50%, -50%); width: 100%;
+  height: 100%; background-color: black; opacity: 0.5;
 }
 .UpdateCB {
-  z-index: 7;
-  position: fixed;
-  left: 50%;
-  top: 85%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 50px;
-  color: white;
-  background-color: #0144FE;
-  border-radius: 10px;
-  font-size: 24px;
+  z-index: 7; position: fixed; left: 50%; top: 85%;
+  transform: translate(-50%, -50%); width: 300px;
+  height: 50px; color: white; background-color: #0144FE;
+  border-radius: 10px; font-size: 24px;
 }
 .UpdateIMG {
-  z-index: 8;
-  position: fixed;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-    border-radius: 10px;
+  z-index: 8; position: fixed; left: 50%; top: 45%;
+  transform: translate(-50%, -50%); border-radius: 10px;
 }
 .UpdateTXT {
-  z-index: 7;
-  position: fixed;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  font-size: 22px;
-    width: 430px;
+  z-index: 7; position: fixed; left: 50%; top: 20%;
+  transform: translate(-50%, -50%); text-align: center;
+  color: black; font-size: 22px; width: 430px;
 }
 
 
 /*AlbumList*/
 .AlbumList {
-  width: 100%;
-  height: 5%;
-  bacground-color: black;
-  overflow-x: auto;
-  white-space: nowrap;
+  width: 100%; height: 5%; bacground-color: black;
+  overflow-x: auto; white-space: nowrap;
 }
 .AlbumList > .column {
-  padding: 0 8px;
-  text-align: center;
-  align-items: center;
-  display: inline-block;
-  float: none;
+  padding: 0 8px; text-align: center; align-items: center;
+  display: inline-block; float: none;
 }
 .AlbumList:after {
   content: "";
@@ -447,57 +410,30 @@ img {
 }
 
 .dropbtnpos {
-    margin-left: 35%; 
-    cursor: pointer; 
-    float: center; 
-    overflow: auto;
+    margin-left: 35%; cursor: pointer;  float: center;  overflow: auto;
 }
 
-.dropdown {
-  position: relative;
-  display: block;
-  align-items: center;
-  height: 55px; /*51px*/
-}
+.dropdown {position: relative; display: block; align-items: center; height: 55px; /*51px*/}
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: none;
-    width: 331px;
-    overflow: auto;
-    margin-left: 0%;
+    display: none; position: absolute;
+    background-color: none; width: 331px; 
+    overflow: auto; margin-left: 0%;
 }
 
 .dropdown-content a {
-    color: white;
-    /*padding: 16px 50px;*/
-    padding: 10px 50px;
-    text-decoration: none;
-    text-align: left;
-    display: block;
-    border-top: 0.9px solid #9B9898;
+    color: white; padding: 10px 50px;
+    text-decoration: none; text-align: left;
+    display: block; border-top: 0.9px solid #9B9898;
 }
 
 .dropdown a:hover {background-color: #ddd; color: black;} /*#ddd*/
-
 .dropdown-content li {list-style: none;}
-
 .show {display:block;}
-
 .dropbtnclick {color: lime;}
 
-.playlistnames {
-    color: white;
-    text-align: center;
-    /*border: 0.7px solid white;*/
-}
-
-.Playlistartist {
-    color: lime;
-    text-align: right;
-}
-
+.playlistnames {color: white; text-align: center;}
+.Playlistartist {color: lime; text-align: right;}
 .Playlistartist:hover {color: white;}
 
 .Containeralert {
@@ -516,10 +452,7 @@ img {
    -webkit-filter: blur(8px);
 }
 
-.Containeralertext {
-    z-index: 243;
-    overflow: auto;
-}
+.Containeralertext {z-index: 243; overflow: auto;}
 
 .shufflebtn {
     background-color: none;
@@ -535,8 +468,4 @@ img {
     overflow: auto;
 }
 
-.simg {
-  width: 50%;
-  height: 50%;
-  margin-right: 50%;
-}
+.simg {width: 50%; height: 50%; margin-right: 50%;}
