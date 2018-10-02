@@ -38,6 +38,13 @@ function SendFeedback() {
   FeedbackScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
   FeedbackScrollController.id = "hiii";
   UpdateContainer.appendChild(FeedbackScrollController);  
+  
+  let ex = document.createElement("div");
+  ex.setAttribute("style", "z-index: 7; position: relative; left: 90%; top: 15%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
+  ex.id = "ex";
+  ex.innerHTML = "X";
+  ex.onclick = function() {document.getElementById("ex").style.visibility = "hidden"; document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden";}
+  UpdateContainer.appendChild(ex);  
     
   let feedbacktitle = document.createElement("div");
   let feedbacktitletext = "Send Feedback";
@@ -57,7 +64,7 @@ function SendFeedback() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden"; let win = window.open(url, 'mailto:?subject=&body='); win.focus();}
+  Updatebutton.onclick = function() {document.getElementById("ex").style.visibility = "hidden"; document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden"; let win = window.open(url, '_mailto:?subject=&body='); win.focus();}
   UpdateContainer.appendChild(Updatebutton);  
 }
 
