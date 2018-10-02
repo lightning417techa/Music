@@ -290,9 +290,9 @@ function searchAlbums() {
   for (w = 0; w < divs.length; w++) {
     a = divs[w].getElementsByTagName("p")[0];
     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-      li[w].style.display = "";
+      divs[w].style.display = "";
     } else {
-      li[w].style.display = "none";
+      divs[w].style.display = "none";
   }}
 }
 
