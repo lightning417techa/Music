@@ -17,6 +17,12 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 window.onerror = function(error) {console.log(error);};
 
+function MinimizeMiniPlayer() {
+ let MiniPlayer = document.getElementById("MiniPlayer");
+  MiniPlayer.classList.remove("MiniPlayerContainer");
+  MiniPlayer.classList.toggle(".MiniPlayerContainer-minimize");
+}
+
 function startUI() {    
   var SB;    
     for (SB = 0; SB < NumberOfSongs;) {
