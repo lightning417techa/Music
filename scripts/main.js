@@ -133,7 +133,7 @@ function CreateArtists() {
        NewArtistBtn.classList.toggle("column");
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
        let ArtistIMG = document.createElement("img");
-       ArtistIMG.src = AlbumIMG[CreationNumber];
+       ArtistIMG.src = ArtistsImg[CreationNumber];
        ArtistIMG.style.borderradius = "50%";
        ArtistIMG.style.width = "100%";
        NewArtistBtn.appendChild(ArtistIMG);
