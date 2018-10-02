@@ -20,7 +20,7 @@ window.onerror = function(error) {console.log(error);};
 let MiniPlayerSwitch = 0;
 function MinimizeMiniPlayer() {
  let MiniPlayer = document.getElementById("MiniPlayer");
-  if (MiniPlayerSwitch == 1) {MiniPlayerSwitch = 0; MiniPlayer.classList.remove("MiniPlayerContainer"); MiniPlayer.classList.add("MiniPlayerContainer-minimize");} else {MiniPlayerSwitch = 1; MiniPlayer.classList.remove("MiniPlayerContainer-minimize"); MiniPlayer.classList.add("MiniPlayerContainer");}
+  if (MiniPlayerSwitch == 1) {MiniPlayerSwitch = 0; MiniPlayer.classList.remove("MiniPlayerContainer-maximize"); MiniPlayer.classList.remove("MiniPlayerContainer"); MiniPlayer.classList.add("MiniPlayerContainer-minimize");} else {MiniPlayerSwitch = 1; MiniPlayer.classList.remove("MiniPlayerContainer-minimize"); MiniPlayer.classList.add("MiniPlayerContainer-maximize");}
 }
 
 function startUI() {    
