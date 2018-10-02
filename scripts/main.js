@@ -23,6 +23,34 @@ function MinimizeMiniPlayer() {
   if (MiniPlayerSwitch == 1) {MiniPlayerSwitch = 0; document.getElementById("MiniPlayerArrow").classList.remove("fa fa-angle-down"); document.getElementById("MiniPlayerArrow").classList.add("fa fa-angle-up"); MiniPlayer.classList.remove("MiniPlayerContainer-maximize"); MiniPlayer.classList.remove("MiniPlayerContainer"); MiniPlayer.classList.add("MiniPlayerContainer-minimize");} else {MiniPlayerSwitch = 1; document.getElementById("MiniPlayerArrow").classList.remove("fa fa-angle-up"); MiniPlayer.classList.remove("MiniPlayerContainer-minimize"); MiniPlayer.classList.add("MiniPlayerContainer-maximize"); document.getElementById("MiniPlayerArrow").classList.add("fa fa-angle-down");}
 }
 
+function SendFeedback() {
+  let UpdateContainer = document.createElement("div");
+  UpdateContainer.id = "UC";
+  UpdateContainer.classList.toggle("NewUpdate");
+  document.body.appendChild(UpdateContainer);
+  
+  let Updatebackground = document.createElement("div");
+  Updatebackground.id = "UB";
+  Updatebackground.classList.toggle("UpdateBackground");
+  document.body.appendChild(Updatebackground);
+  
+  let FeedbackScrollController = document.createElement("div");
+  FeedbackScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
+  FeedbackScrollController.id = "USC";
+  UpdateContainer.appendChild(FeedbackScrollController);  
+    
+  let feedbacktitle = document.createElement("div");
+  let feedbacktitletext = "Send Feedback";
+  feedbacktitle.innerHTML = feedbacktitletext.bold();
+  feedbacktitle.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
+  UpdateContainer.appendChild(feedbacktitle);
+  
+  let feedbacktxt2 = document.createElement("div");
+  feedbacktxt2.innerHTML = "Help us improve by sending us feedback. Please note that we will keep your suggestions in mind, and they might even become a new feature in a later version.";  
+  feedbacktxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
+  FeedbackScrollController.appendChild(feedbacktxt2);
+}
+
 function startUI() {    
   var SB;    
     for (SB = 0; SB < NumberOfSongs;) {
@@ -183,10 +211,6 @@ if (typeof(Storage) !== "undefined") {
 } else {  
   Update();
   console.log("s means that some feature aren't available on this device");
-}
-
-function drop() {
-  
 }
 
 window.onclick = function(event, clicked_id) {
