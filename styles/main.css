@@ -119,6 +119,23 @@ img {
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
 }
+
+.MiniPlayerContainer-minimize {
+  position: fixed;
+  align-items: center;
+  text-align: center;
+  min-height: 50px;
+  bottom: 0;
+  z-index: 12;
+  left: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: #585858;
+  animation-name: Minimize-Player;
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
 .MiniPlayer-EMBTN {
   text-align: left;
   left: 20px;
