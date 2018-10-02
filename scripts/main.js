@@ -83,9 +83,8 @@ function Update() {
   
   let Updatetxt = document.createElement("div");
   Updatetxt.id = "UTXT";
-  var wm = "Welcome to LanyxSoft Music!";
-  var wmr = wm.bold();
-  Updatetxt.innerHTML = wmr + " please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
+  var wm = "Welcome to LanyxSoft Music!";  
+  Updatetxt.innerHTML = wm.bold() + " please note that this web player is still in beta testing mode meaning that there will most likely be issues. Thank you for you coaperation.";
   Updatetxt.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   UpdateContainer.appendChild(Updatetxt);
   
@@ -102,8 +101,7 @@ function Update() {
   let UpdateHead = document.createElement("div");
   UpdateHead.id = "UH";
   var u = "UPDATES";
-  var ur = u.bold();
-  UpdateHead.innerHTML = ur;
+  UpdateHead.innerHTML = u.bold();
   UpdateHead.setAttribute("style", "position: relative; text-align: center; color: black; font-size: 23px; width: 430px;")
   UpdateScrollController.appendChild(UpdateHead);
   
@@ -142,9 +140,7 @@ firebase.initializeApp(config);
 function InitializeStartzup() {
   let id = localStorage.getItem("LUDIN");
   var ref = firebase.database().ref('LanyxSoft-Music-Update/' + id + '/updatestats');
-  ref.on('value', function(snapshot) {
-    startUI();
-  });
+  ref.on('value', function(snapshot) {startUI();});
 }
 function BeginUpdate() {    
     var postData = {};
@@ -158,16 +154,10 @@ function BeginUpdate() {
   
     var ref = firebase.database().ref().child('/LanyxSoft-Music-Update/'+id);
       ref.on("child_added", function(child) {
-            var IDofFriends = child.val();
-                if(IDofFriends == localStorage.getItem("LUDIN")) {                  
-                    console.log("func: child_added result: User id matches to id in accepted LanyxSoft database");
-                } else {
-                    console.log("func: child_added result: User id  doesn't match to id in accepted LanyxSoft database");
-                }
-      });
-    return firebase.database().ref().update(updates);
+        var IDofFriends = child.val();
+        if(IDofFriends == localStorage.getItem("LUDIN")) {console.log("func: child_added result: User id matches to id in accepted LanyxSoft database");} else {console.log("func: child_added result: User id  doesn't match to id in accepted LanyxSoft database");}});
+        return firebase.database().ref().update(updates);
   }
-//child_added
 
 function SetID() {
   let id = (0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36)+"-"+(0|Math.random()*9e6).toString(36);    
@@ -180,7 +170,7 @@ if (typeof(Storage) !== "undefined") {
     console.log("func: SetID() result:", true);
     SetID();    
   } else {
-    console.log("func: InitializeStartzup() result:", true); //console.log("func: InitializeStartzup() result: func success= "+ true);
+    console.log("func: InitializeStartzup() result:", true);
     InitializeStartzup();              
   }
 } else {  
@@ -199,15 +189,13 @@ window.onclick = function(event, clicked_id) {
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
-        //openDropdown.classList.remove('show');
-       }}}}
+      }}}}
 
 //labels
 
 //buttons
 var input = document.getElementById("button");
 var input2 = document.getElementById("button2");
-//text/labels/numbers
   //number vals
 var num = 1;
 var a = new Date();
@@ -236,10 +224,7 @@ slider.oninput = function() {
 //device orientation functions
 function zoomOutMobile() {
   var viewport = document.querySelector('meta[name="viewport"]');
-
-  if ( viewport ) {
-    viewport.content = "width=device-width, initial-scale=1.0";
-  }
+  if (viewport) {viewport.content = "width=device-width, initial-scale=1.0";}
 }
 
 function readDeviceOrientation() {
@@ -425,7 +410,6 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-      
     }}
 
 window.addEventListener('load', function() {
