@@ -34,7 +34,7 @@ function SendFeedback() {
   UpdateContainer.appendChild(FeedbackScrollController);  
   
   let ex = document.createElement("div");
-  ex.setAttribute("style", "z-index: 7; position: relative; left: 85%; top: 15%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")
+  ex.setAttribute("style", "z-index: 7; position: relative; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")
   ex.id = "ex";
   ex.innerHTML = "X";
   ex.onclick = function() {document.getElementById("ex").style.visibility = "hidden"; document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden";}
