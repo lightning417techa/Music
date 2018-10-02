@@ -20,7 +20,7 @@ window.onerror = function(error) {console.log(error);};
 let MiniPlayerSwitch = 0;
 function MinimizeMiniPlayer() {
  let MiniPlayer = document.getElementById("MiniPlayer");
-  if (MiniPlayerSwitch == 0) {MiniPlayerSwitch = 1; MiniPlayer.classList.remove("MiniPlayerContainer");} else {MiniPlayerSwitch = 0; MiniPlayer.classList.add("MiniPlayerContainer-minimize");}
+  if (MiniPlayerSwitch == 1) {MiniPlayerSwitch = 0; MiniPlayer.classList.remove("MiniPlayerContainer");} else {MiniPlayerSwitch = 1; MiniPlayer.classList.add("MiniPlayerContainer-minimize");}
 }
 
 function startUI() {    
