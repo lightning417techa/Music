@@ -158,6 +158,46 @@ var artists = {
   37 : "BTS"
 }
 
+var ArtistsImg = {
+  1 : "LAUV",
+  2 : "Marshmello and Khalid",
+  3 : "Marshmello",
+  4 : "Marshmello and Selena Gomez",
+  5 : "Fall Out Boy",
+  6 : "Marshmello ft. lil Peep",
+  7 : "Migos",
+  8 : "(undefined)",
+  9 : "Fall Out Boy",
+  10 : "Megan Trainer",
+  11 : "Twentyone Pilots",
+  12 : "Owl City",
+  13 : "Twentyone Pilots",
+  14 : "Fall Out Boy",
+  15 : "Marshmello ft. Migos and",
+  16 : "Post Malone ft. 21 Savage",
+  17 : "Imagine Dragons",
+  18 : "Alan Walker",
+  19 : "Dodie Clark",
+  20 : "lil Dicky ft. Chris Brown",
+  21 : "Bastille",
+  22 : "Post Malone",
+  23 : "Twentyone Pilots",
+  24 : "Owl City",
+  25 : "Logic ft. Castro",
+  26 : "Owl City",
+  27 : "Shepherd",
+  28 : "Cardi B ft. Bad Bunny",
+  29 : "MKTO",
+  30 : "Owl City",
+  31 : "Walk The Moon",
+  32 : "Marshmello ft. Logic",
+  33 : "Fall Out Boy",
+  34 : "Sheppard",
+  35 : "BTS",
+  36 : "BTS",
+  37 : "BTS"
+}
+
 var AlbumIMG = {
   1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
   2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
