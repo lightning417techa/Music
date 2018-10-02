@@ -77,7 +77,8 @@ function startUI() {
     }
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
-    createAlbums();
+    //createAlbums();
+  CreateArtists();
 }
 
 function createAlbums() {    
@@ -100,9 +101,7 @@ function createAlbums() {
       NewAlbumBtn.appendChild(text);
       document.getElementById("albums").appendChild(NewAlbumBtn);
     }
-  }  
-  for (AB = 0; AB < 4;) {};
-  CreateArtists();
+  }   
 }
 
 function PlayAlbum(clicked_id) {
