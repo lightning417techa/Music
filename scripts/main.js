@@ -17,10 +17,10 @@ document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 
 window.onerror = function(error) {console.log(error);};
 
+let MiniPlayerSwitch = 0;
 function MinimizeMiniPlayer() {
  let MiniPlayer = document.getElementById("MiniPlayer");
-  MiniPlayer.classList.remove("MiniPlayerContainer");
-  MiniPlayer.classList.add("MiniPlayerContainer-minimize");
+  if (MiniPlayerSwitch == 0) {MiniPlayerSwitch = 1; MiniPlayer.classList.remove("MiniPlayerContainer");} else {MiniPlayerSwitch = 0; MiniPlayer.classList.add("MiniPlayerContainer-minimize");}
 }
 
 function startUI() {    
