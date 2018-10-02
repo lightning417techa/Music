@@ -1,5 +1,10 @@
 function OpenSettings() {
-
+  let UpdateContainer = document.createElement("div");
+  UpdateContainer.id = "hi";
+  UpdateContainer.classList.toggle("NewUpdate");
+  document.body.appendChild(UpdateContainer);
+  
+  
 }
 
 
