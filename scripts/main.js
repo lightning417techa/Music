@@ -133,14 +133,15 @@ function CreateArtists() {
        NewArtistBtn.classList.toggle("column");
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
        let ArtistIMG = document.createElement("img");
-       if (ArtistIMG[CreationNumber] == "") {
+       if (ArtistsImg[CreationNumber] == "") {
          ArtistIMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
          ArtistIMG.style.borderRadius = "50%";
        } else {
          ArtistIMG.src = ArtistsImg[CreationNumber];
          ArtistIMG.style.borderRadius = "50%";
        }
-       ArtistIMG.style.width = "100%";
+       ArtistIMG.style.width = "150px";
+       ArtistIMG.style.height = "150px";
        NewArtistBtn.appendChild(ArtistIMG);
        let text = document.createElement("p");
        text.innerHTML = artistlist[CreationNumber];
