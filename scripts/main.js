@@ -125,19 +125,20 @@ function PlayAlbum(clicked_id) {
 
 function CreateArtists() {
    var CreationNumber;       
-   for (CreationNumber = 0; CreationNumber < 37;) {
+   for (CreationNumber = 0; CreationNumber < 21;) {
    CreationNumber++;
-     if (albumlist[CreationNumber] == "") {} else {      
+     if (artistlist[CreationNumber] == "") {} else {      
        let NewArtistBtn = document.createElement("div");
-       NewArtistBtn.id = artists[CreationNumber];
+       NewArtistBtn.id = artistlist[CreationNumber];
        NewArtistBtn.classList.toggle("column");
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
        let ArtistIMG = document.createElement("img");
        ArtistIMG.src = ArtistIMG[CreationNumber];
+       ArtistIMG.style.borderradius = "50%";
        ArtistIMG.style.width = "100%";
        NewArtistBtn.appendChild(ArtistIMG);
        let text = document.createElement("p");
-       text.innerHTML = artists[CreationNumber];
+       text.innerHTML = artistlist[CreationNumber];
        NewArtistBtn.appendChild(text);
        document.getElementById("artists").appendChild(NewArtistBtn);
  }}}
