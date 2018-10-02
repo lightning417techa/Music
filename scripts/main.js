@@ -64,7 +64,7 @@ function SendFeedback() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {document.getElementById("ex").style.visibility = "hidden"; document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden"; let win = window.open(url, '_mailto:?subject=&body='); win.focus();}
+  Updatebutton.onclick = function() {document.getElementById("ex").style.visibility = "hidden"; document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden"; var strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes"; window.open("http://www.cnn.com/", "CNN_WindowName", strWindowFeatures);}
   UpdateContainer.appendChild(Updatebutton);  
 }
 
