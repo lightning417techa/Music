@@ -96,12 +96,7 @@ img {
   left: 0;
   width: 100%;
   border-radius: 10px;
-  background: #585858;
-  
-  animation-name: Maximize-Player;
-  animation-duration: 1s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
+  background: #585858;    
 }
 .MiniPlayerContainer-maximize {
   position: fixed;
@@ -116,7 +111,7 @@ img {
   background: #585858;
   animation-name: Maximize-Player;
   animation-duration: 1s;
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
   animation-fill-mode: forwards;
 }
 
@@ -133,7 +128,7 @@ img {
   background: #585858;
   animation-name: Minimize-Player;
   animation-duration: 1s;
-  animation-delay: 0.1s;
+  animation-delay: 0.05s;
   animation-fill-mode: forwards;
 }
 .MiniPlayer-EMBTN {
