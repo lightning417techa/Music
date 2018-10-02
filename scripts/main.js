@@ -127,7 +127,7 @@ function CreateArtists() {
    var CreationNumber;       
    for (CreationNumber = 0; CreationNumber < 37;) {
    CreationNumber++;
-     if (albumlist[CreationNumber] == "" || document.getElementById("ArtistsIcon" + artists[CreationNumber]).id == "ArtistsIcon" + artists[CreationNumber]) {} else {      
+     if (albumlist[CreationNumber] == "") {} else {      
        let NewArtistBtn = document.createElement("div");
        NewArtistBtn.id = artists[CreationNumber];
        NewArtistBtn.classList.toggle("column");
