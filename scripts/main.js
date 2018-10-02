@@ -120,6 +120,24 @@ function PlayAlbum(clicked_id) {
   }
 }
 
+function CreateArtists() {
+  var CreationNumber;       
+  for (CreationNumber = 0; CreationNumber < 37;) {
+  CreationNumber++;
+    if (albumlist[CreationNumber] == "" || document.getElementById("ArtistsIcon" + artists[CreationNumber]).id == "ArtistsIcon" + artists[CreationNumber]) {} else {      
+      let NewArtistBtn = document.createElement("div");
+      NewArtistBtn.id = albumlist[CreationNumber];
+      NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
+      let ArtistIMG = document.createElement("img");
+      ArtistIMG.src = ArtistIMG[CreationNumber];
+      ArtistIMG.style.width = "100%";
+      NewArtistBtn.appendChild(ArtistIMG);
+      let text = document.createElement("p");
+      text.innerHTML = albumlist[CreationNumber];
+      NewArtistBtn.appendChild(text);
+      document.getElementById("albums").appendChild(NewArtistBtn);
+}}}
+
 function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
