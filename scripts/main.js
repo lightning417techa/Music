@@ -134,7 +134,7 @@ function CreateArtists() {
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
        let ArtistIMG = document.createElement("img");
        if (ArtistsImg[CreationNumber] == "") {
-         ArtistIMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
+         ArtistIMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p298.png";
          ArtistIMG.style.borderRadius = "50%";
        } else {
          ArtistIMG.src = ArtistsImg[CreationNumber];
