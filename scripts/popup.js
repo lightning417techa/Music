@@ -1,9 +1,17 @@
 function OpenSettings() {
-  let UpdateContainer = document.createElement("div");
-  UpdateContainer.id = "hi";
-  UpdateContainer.classList.toggle("NewUpdate");
-  document.body.appendChild(UpdateContainer);
+  let MoreContainer = document.createElement("div");
+  MoreContainer.id = "hi";
+  MoreContainer.classList.toggle("NewUpdate");
+  document.body.appendChild(MoreContainer);
   
+  let Updatebackground = document.createElement("div");
+  Updatebackground.id = "hii";
+  Updatebackground.classList.toggle("UpdateBackground");
+  document.body.appendChild(Updatebackground);
+  
+  let CloseBtn = document.createElement("div");
+  CloseBtn.id = "CloseButton";    
+  CloseBtn..setAttribute("style", "z-index: 7; position: relative; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")
   
 }
 
