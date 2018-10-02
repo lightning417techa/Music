@@ -158,7 +158,7 @@ var artists = {
   37 : "BTS"
 }
 
-var ArtistsImg = {
+/*var ArtistsImg = {
   1 : "",
   2 : "",
   3 : "",
@@ -196,7 +196,7 @@ var ArtistsImg = {
   35 : "",
   36 : "",
   37 : ""
-}
+}*/
 
 var AlbumIMG = {
   1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
