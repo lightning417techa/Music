@@ -99,7 +99,10 @@ function createAlbums() {
       text.innerHTML = albumlist[AB];
       NewAlbumBtn.appendChild(text);
       document.getElementById("albums").appendChild(NewAlbumBtn);
-}}}
+}}
+  for (AB = 0; AB < 4;) {}
+  CreateArtists();
+}
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
@@ -126,16 +129,17 @@ function CreateArtists() {
   CreationNumber++;
     if (albumlist[CreationNumber] == "" || document.getElementById("ArtistsIcon" + artists[CreationNumber]).id == "ArtistsIcon" + artists[CreationNumber]) {} else {      
       let NewArtistBtn = document.createElement("div");
-      NewArtistBtn.id = albumlist[CreationNumber];
+      NewArtistBtn.id = artists[CreationNumber];
+      NewArtistBtn.classList.toggle("column");
       NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
       let ArtistIMG = document.createElement("img");
       ArtistIMG.src = ArtistIMG[CreationNumber];
       ArtistIMG.style.width = "100%";
       NewArtistBtn.appendChild(ArtistIMG);
       let text = document.createElement("p");
-      text.innerHTML = albumlist[CreationNumber];
+      text.innerHTML = artists[CreationNumber];
       NewArtistBtn.appendChild(text);
-      document.getElementById("albums").appendChild(NewArtistBtn);
+      document.getElementById("artists").appendChild(NewArtistBtn);
 }}}
 
 function Update() {  
