@@ -20,7 +20,7 @@ window.onerror = function(error) {console.log(error);};
 function MinimizeMiniPlayer() {
  let MiniPlayer = document.getElementById("MiniPlayer");
   MiniPlayer.classList.remove("MiniPlayerContainer");
-  MiniPlayer.classList.add(".MiniPlayerContainer-minimize");
+  MiniPlayer.classList.add("MiniPlayerContainer-minimize");
 }
 
 function startUI() {    
