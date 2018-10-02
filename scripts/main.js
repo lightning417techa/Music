@@ -216,7 +216,7 @@ var dy = a.getDate();
 var yr = a.getFullYear();
 var tm = a.getHours()+":"+a.getMinutes();
 var dateFormat = mt+"/"+dy+"/"+yr+"_"+tm;
-var i = 1;
+var SongNumber = 1;
   //labels
 var audiotitle = document.getElementById("audiotitle");
 var audioartist = document.getElementById("artist");
@@ -329,73 +329,72 @@ function Shuffle() {
 
 function keys() {     
    if (x.currentTime == x.duration) {
-     i++;
-     x.title = titles[i];
+     SongNumber++;
+     x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
      audioartist.innerHTML = artists[i];
      
-     if (albumart[i] == "") {
+     if (albumart[SongNumber] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
-       image.src = albumart[i];
+       image.src = albumart[SongNumber];
      }
      
-     x.src = songs[i];
+     x.src = songs[SongNumber];
      x.play(); 
      num = 1;
      playAudio();
    }}
 
 function next() {
-     i++;
-     x.title = titles[i];
+     SongNumber++;
+     x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[i];
+     audioartist.innerHTML = artists[SongNumber];
      
-     if (albumart[i] == "") {
+     if (albumart[SongNumber] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
-       image.src = albumart[i];
+       image.src = albumart[SongNumber];
      }
   
-     x.src = songs[i];
+     x.src = songs[SongNumber];
      x.play(); 
      num = 1;
      playAudio();
 }
 
 function rewind() {
-     i--;
-     x.title = titles[i];
+     SongNumber--;
+     x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[i];
+     audioartist.innerHTML = artists[SongNumber];
      
-     if (albumart[i] == "") {
+     if (albumart[SongNumber] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
-       image.src = albumart[i];
+       image.src = albumart[SongNumber];
      }
   
-     x.src = songs[i];
+     x.src = songs[SongNumber];
      x.play(); 
      num = 1;
      playAudio();
 }
 
 function Playbutton(clicked_id) {
-  i = clicked_id;
-  let I = i.replace("SongButton", "");
-  x.title = titles[I];
+  SongNumber = clicked_id.replace("SongButton", "");
+  x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[I];
+     audioartist.innerHTML = artists[SongNumber];
     
-     if (albumart[I] == "") {
+     if (albumart[SongNumber] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
-       image.src = albumart[I];
+       image.src = albumart[SongNumber];
      }
   
-     x.src = songs[I];
+     x.src = songs[SongNumber];
      x.play();
      num = 1;
      playAudio();  
