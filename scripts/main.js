@@ -25,30 +25,40 @@ function MinimizeMiniPlayer() {
 
 function SendFeedback() {
   let UpdateContainer = document.createElement("div");
-  UpdateContainer.id = "UC";
+  UpdateContainer.id = "hi";
   UpdateContainer.classList.toggle("NewUpdate");
   document.body.appendChild(UpdateContainer);
   
   let Updatebackground = document.createElement("div");
-  Updatebackground.id = "UB";
+  Updatebackground.id = "hii";
   Updatebackground.classList.toggle("UpdateBackground");
   document.body.appendChild(Updatebackground);
   
   let FeedbackScrollController = document.createElement("div");
   FeedbackScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
-  FeedbackScrollController.id = "USC";
+  FeedbackScrollController.id = "hiii";
   UpdateContainer.appendChild(FeedbackScrollController);  
     
   let feedbacktitle = document.createElement("div");
   let feedbacktitletext = "Send Feedback";
+  feedbacktitle.id = "hiiii";
   feedbacktitle.innerHTML = feedbacktitletext.bold();
   feedbacktitle.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
   UpdateContainer.appendChild(feedbacktitle);
   
   let feedbacktxt2 = document.createElement("div");
+  feedbacktxt2.id = "hiiiii";
   feedbacktxt2.innerHTML = "Help us improve by sending us feedback. Please note that we will keep your suggestions in mind, and they might even become a new feature in a later version.";  
   feedbacktxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   FeedbackScrollController.appendChild(feedbacktxt2);
+  
+  let Updatebutton = document.createElement("div");
+  Updatebutton.id = "hiiiiii";
+  Updatebutton.classList.toggle("UpdateCB");
+  Updatebutton.style.fontSize = "xx-large";
+  Updatebutton.innerHTML = "Continue";
+  Updatebutton.onclick = function() {document.getElementById("hi").style.visibility = "hidden"; document.getElementById("hii").style.visibility = "hidden"; document.getElementById("hiii").style.visibility = "hidden"; document.getElementById("hiiii").style.visibility = "hidden"; document.getElementById("hiiiii").style.visibility = "hidden"; document.getElementById("hiiiiii").style.visibility = "hidden"; let win = window.open(url, 'mailto:?subject=&body='); win.focus();}
+  UpdateContainer.appendChild(Updatebutton);  
 }
 
 function startUI() {    
