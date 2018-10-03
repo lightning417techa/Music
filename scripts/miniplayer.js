@@ -20,7 +20,7 @@ function OpenSettings() {
   CloseBtnI.innerHTML = '<i class="fa fa-remove"></i>';
   CloseBtn.appendChild(CloseBtnI);
   CloseBtn.id = "CloseButton";    
-  CloseBtn.setAttribute("style", "z-index: 7; position: relattive; left: 95%; top: 15%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
+  CloseBtn.setAttribute("style", "z-index: 7; position: fixed; left: 95%; top: 15%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
   MoreContainer.appendChild(CloseBtn);
 }
 
