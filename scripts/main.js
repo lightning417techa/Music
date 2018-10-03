@@ -269,7 +269,6 @@ var input = document.getElementById("button");
 var input2 = document.getElementById("button2");
   //number vals
 var num = 1;
-let looping = "false";
 var a = new Date();
 var mt = a.getMonth() + 1;
 var dy = a.getDate();
@@ -384,18 +383,7 @@ function Shuffle() {
   playAudio();
 }
 
-function ToggleLoop() {
-  let loopbtn = document.getElementById("loopbutton");
-  switch(looping) {
-    case "true":
-        loopbtn.style.color = "white"; 
-        looping = "false";
-        break;
-    case "false":
-        loopbtn.style.color = "lime"; 
-        looping = "true";
-        break;
-  }
+function ToggleLoop() {  
 }
 
 function keys() {       
@@ -415,23 +403,24 @@ function keys() {
    playAudio();   
  }}
 
-function next() {
+function keys() {     
+   if (x.currentTime == x.duration) {
      SongNumber++;
      x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[SongNumber];
+     audioartist.innerHTML = artists[i];
      
      if (albumart[SongNumber] == "") {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[SongNumber];
      }
-  
+     
      x.src = songs[SongNumber];
      x.play(); 
      num = 1;
      playAudio();
-}
+   }}
 
 function rewind() {
      SongNumber--;
@@ -469,7 +458,6 @@ function Playbutton(clicked_id) {
      playAudio();  
 }
 
-
 function startup() {
     input2.style.display="none";
 }
@@ -494,8 +482,7 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-    }
-}
+    }}
 
 window.addEventListener('load', function() {
   var cur = document.querySelector('#perc'),
