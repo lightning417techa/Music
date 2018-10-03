@@ -360,7 +360,6 @@ function next() {
      }
   
      x.src = songs[SongNumber];
-     x.play(); 
      num = 1;
      playAudio();
 }
@@ -378,7 +377,6 @@ function rewind() {
      }
   
      x.src = songs[SongNumber];
-     x.play(); 
      num = 1;
      playAudio();
 }
@@ -396,7 +394,6 @@ function Playbutton(clicked_id) {
      }
   
      x.src = songs[SongNumber];
-     x.play();
      num = 1;
      playAudio();  
 }
@@ -407,7 +404,6 @@ function startup() {
 startup()
 
 function playAudio() { 
-    x.play();
     if (num == 1) {
       x.play();
       //text.innerHTML = "pause";
