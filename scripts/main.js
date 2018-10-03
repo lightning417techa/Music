@@ -396,7 +396,7 @@ function ToggleLoop() {
 }
 
 function keys() {     
-  if (looping == "true") {
+  if (looping = "true") {
     x.currentTime = 0;
     x.play();
     num = 1;
