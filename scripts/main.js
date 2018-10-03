@@ -408,7 +408,7 @@ function keys() {
        image.src = albumart[SongNumber];
      }
      if (looping = "true") {
-       x.currentTime = 0;
+       slider.value = 0;
      } else {
        x.src = songs[SongNumber];
      }     
