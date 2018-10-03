@@ -130,7 +130,7 @@ function About() {
   
   let feedbacktxt2 = document.createElement("div");
   feedbacktxt2.id = "hiiiii";
-  feedbacktxt2.innerHTML = '<i class="fa fa-stack-overflow"></i> Stack Overflow helped us ';
+  feedbacktxt2.innerHTML = '<i class="fa fa-stack-overflow"></i><i class="fa fa-reddit"></i><i class="fa fa-github"></i><i class="fa fa-stack-exchange"></i> Contributors: Stack Overflow, Github, Reddit, Stack Exchange';
   feedbacktxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   AboutScrollController.appendChild(feedbacktxt2);
   
