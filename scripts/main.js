@@ -397,6 +397,12 @@ function ToggleLoop() {
 
 function keys() {       
    if (x.currentTime == x.duration) {
+     if (looping = "true") {
+       x.src = songs[SongNumber];
+       x.play();
+       num = 1;     
+       playAudio();   
+     } else {
      SongNumber++;
      x.title = titles[SongNumber];
      audiotitle.innerHTML = x.title;
@@ -411,6 +417,7 @@ function keys() {
      x.play();
      num = 1;     
      playAudio();   
+     }
    }
 }
 
