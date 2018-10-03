@@ -396,9 +396,10 @@ function ToggleLoop() {
 }
 
 function keys() {     
-  if (looping = "true") {
+  if (looping == "true") {
     x.currentTime = 0;
     x.play();
+    num = 1;
     playAudio();   
   } else {
    if (x.currentTime == x.duration) {
@@ -412,9 +413,9 @@ function keys() {
      } else {
        image.src = albumart[SongNumber];
      }      
-       x.src = songs[SongNumber];
-     num = 1;
+     x.src = songs[SongNumber];
      x.play();
+     num = 1;     
      playAudio();   
    }}}
 
@@ -430,9 +431,9 @@ function next() {
        image.src = albumart[SongNumber];
      }
   
-     x.src = songs[SongNumber]; 
+     x.src = songs[SongNumber];
+     x.play(); 
      num = 1;
-     x.play();
      playAudio();
 }
 
@@ -451,7 +452,6 @@ function rewind() {
      x.src = songs[SongNumber];
      x.play(); 
      num = 1;
-     x.play();
      playAudio();
 }
 
@@ -466,9 +466,10 @@ function Playbutton(clicked_id) {
      } else {
        image.src = albumart[SongNumber];
      }
-     x.src = songs[SongNumber];     
-     num = 1;     
+  
+     x.src = songs[SongNumber];
      x.play();
+     num = 1;
      playAudio();  
 }
 
@@ -479,6 +480,7 @@ function startup() {
 startup()
 
 function playAudio() { 
+    x.play();
     if (num == 1) {
       x.play();
       //text.innerHTML = "pause";
@@ -496,7 +498,8 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-    }}
+    }
+}
 
 window.addEventListener('load', function() {
   var cur = document.querySelector('#perc'),
