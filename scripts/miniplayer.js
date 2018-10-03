@@ -5,6 +5,8 @@ function MinimizeMiniPlayer() {
 }
 
 function OpenSettings() {
+  let betatxt = " Beta"; let beta = betatxt.bold();
+  
   let MoreContainer = document.createElement("div");
   MoreContainer.id = "MoreContainer";
   MoreContainer.classList.toggle("NewUpdate");
@@ -30,11 +32,19 @@ function OpenSettings() {
   MoreScrollController.id = "USC";
   MoreContainer.appendChild(MoreScrollController);  
  
+ //SEND FEEDBACK
   let SendFeedbackBtn = document.createElement("div");
   SendFeedbackBtn.innerHTML = '<i class="fa fa-info-circle"></i>' + " Send Us Feedback to let us know what we can do better. You can also request new features.";
   SendFeedbackBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
   SendFeedbackBtn.onclick = function() {SendFeedback();};
-  MoreScrollController.appendChild(SendFeedbackBtn); 
+  MoreScrollController.appendChild(SendFeedbackBtn);
+ 
+ //NIGHT MODE
+  let NightModeBtn = document.createElement("div");
+  NightModeBtn.innerHTML = '<i class="fa fa-moon-o"></i>' + beta + " Turn Night Mode on to reduce the amount of bright light/colors on the player.";
+  NightModeBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
+  NightModeBtn.onclick = function() {console.log("Night mode was toggled" + true);};
+  MoreScrollController.appendChild(NightModeBtn); 
 }
 
 function SendFeedback() {
