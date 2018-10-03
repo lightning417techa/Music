@@ -347,6 +347,16 @@ function keys() {
    }
 }
 
+function MiniPlayPauseBTN() {
+  let MiniBTN = document.getElemntById("MiniPlayPause");
+  if (num == 1) {
+    MiniBTN.classList.toggle("fa%20fa-pause");
+    playAudio();
+  } else {
+   MiniBTN.classList.toggle("fa%20fa-play");
+  }
+}
+
 function next() {
      SongNumber++;
      x.title = titles[SongNumber];
@@ -412,6 +422,7 @@ function playAudio() {
       input2.style.display="block";
       num = 0;
       d = dateFormat + "playing";
+      document.getElemntById("MiniPlayPause").classList.toggle("fa%20fa-pause");
       
     } else {
       x.pause();
@@ -421,6 +432,7 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
+      document.getElemntById("MiniPlayPause").classList.toggle("fa%20fa-play");
     }}
 
 window.addEventListener('load', function() {
