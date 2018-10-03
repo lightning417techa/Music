@@ -18,10 +18,10 @@ function OpenSettings() {
   let CloseBtn = document.createElement("div");
   let CloseBtnI = document.createElement("i");
   CloseBtnI.classList.toggle("material-icons");
-  CloseBtnI.innerHTML = "close";
+  CloseBtnI.innerHTML = "&#xe5cd;";
   CloseBtn.appendChild(CloseBtnI);
   CloseBtn.id = "CloseButton";    
-  CloseBtn.setAttribute("style", "z-index: 9; position: relattive; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
+  CloseBtn.setAttribute("style", "z-index: 7; position: relattive; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
   MoreContainer.appendChild(CloseBtn);
 }
 
