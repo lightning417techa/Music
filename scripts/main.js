@@ -388,22 +388,9 @@ function ToggleLoop() {
 
 function keys() {     
    if (x.currentTime == x.duration) {
-     SongNumber++;
-     x.title = titles[SongNumber];
-     audiotitle.innerHTML = x.title;
-     audioartist.innerHTML = artists[i];
-     
-     if (albumart[SongNumber] == "") {
-       image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-     } else {
-       image.src = albumart[SongNumber];
-     }
-     
-     x.src = songs[SongNumber];
-     x.play(); 
-     num = 1;
-     playAudio();
-   }}
+     next();
+   }
+}
 
 function next() {
      SongNumber++;
