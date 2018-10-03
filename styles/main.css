@@ -506,4 +506,18 @@ img {
     overflow: auto;
 }
 
+.loopbtn {
+    background-color: none;
+    width: 50px;
+    height: 30px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    bottom: 20%;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    overflow: auto;
+}
+
 .simg {width: 50%; height: 50%; margin-right: 50%;}
