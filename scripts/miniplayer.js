@@ -34,7 +34,7 @@ function OpenSettings() {
  
  //SEND FEEDBACK
   let SendFeedbackBtn = document.createElement("div");
-  SendFeedbackBtn.innerHTML = '<i class="fa fa-info-circle"></i>' + " Send Us Feedback to let us know what we can do better. You can also request new features.";
+  SendFeedbackBtn.innerHTML = '<i class="fa fa-question-circle-o"></i>' + " Send Us Feedback to let us know what we can do better. You can also request new features.";
   SendFeedbackBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
   SendFeedbackBtn.onclick = function() {SendFeedback();};
   MoreScrollController.appendChild(SendFeedbackBtn);
@@ -45,6 +45,12 @@ function OpenSettings() {
   NightModeBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
   NightModeBtn.onclick = function() {console.log("Night mode was toggled" + true);};
   MoreScrollController.appendChild(NightModeBtn); 
+ 
+  let AboutBtn = document.createElement("div");
+  AboutBtn.innerHTML = '<i class="fa fa-info-circle"></i>' + " About LanyxSoft Music.";
+  AboutBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
+  AboutBtn.onclick = function() {About();};
+  MoreScrollController.appendChild(AboutBtn); 
 }
 
 function SendFeedback() {
@@ -90,4 +96,49 @@ function SendFeedback() {
   Updatebutton.innerHTML = "Continue";
   Updatebutton.onclick = function() {UpdateContainer.style.display = "none"; Updatebackground.style.display = "none"; var strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes"; window.open("mailto:rnelson009@stpaul.k12.mn.us?subject=Feedback%20On%20LanyxSoft%20Music&body=", "CNN_WindowName", strWindowFeatures);};
   UpdateContainer.appendChild(Updatebutton);  
+}
+
+function About() {
+  let AboutContainer = document.createElement("div");
+  AboutContainer.id = "hi";
+  AboutContainer.classList.toggle("NewUpdate");
+  document.body.appendChild(AboutContainer);
+  
+  let Aboutbackground = document.createElement("div");
+  Aboutbackground.id = "hii";
+  Aboutbackground.classList.toggle("UpdateBackground");
+  document.body.appendChild(Aboutbackground);
+  
+  let AboutScrollController = document.createElement("div");
+  AboutScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
+  AboutScrollController.id = "hiii";
+  AboutContainer.appendChild(AboutScrollController);  
+  
+  let ex = document.createElement("div");
+  ex.setAttribute("style", "z-index: 7; position: relative; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")
+  ex.id = "ex";
+  ex.innerHTML = "X";
+  ex.onclick = function() {AboutContainer.style.display = "none"; Aboutbackground.style.display = "none";}
+  AboutContainer.appendChild(ex);  
+    
+  let AboutTitle = document.createElement("div");
+  let AboutTitleText = "About LanyxSoft Music";
+  AboutTitle.id = "";
+  AboutTitle.innerHTML = AboutTitleText.bold();
+  AboutTitle.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 15%; transform: translate(-50%, -50%); text-align: center; color: black; font-size: 20px; width: 430px;")
+  AboutContainer.appendChild(AboutTitle);
+  
+  let feedbacktxt2 = document.createElement("div");
+  feedbacktxt2.id = "hiiiii";
+  feedbacktxt2.innerHTML = "Help us improve by sending us feedback. Please note that we will keep your suggestions in mind, and they might even become a new feature in a later version.";  
+  feedbacktxt2.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
+  AboutScrollController.appendChild(feedbacktxt2);
+  
+  let AboutCloseButton = document.createElement("div");
+  AboutCloseButton.id = "AboutCloseBTN";
+  AboutCloseButton.classList.toggle("UpdateCB");
+  AboutCloseButton.style.fontSize = "xx-large";
+  AboutCloseButton.innerHTML = "Ok";
+  AboutCloseButton.onclick = function() {AboutContainer.style.display = "none"; Aboutbackground.style.display = "none"; ,location=yes,resizable=yes,scrollbars=yes,status=yes"; window.open("mailto:rnelson009@stpaul.k12.mn.us?subject=Feedback%20On%20LanyxSoft%20Music&body=", "CNN_WindowName", strWindowFeatures);};
+  AboutContainer.appendChild(AboutCloseButton);  
 }
