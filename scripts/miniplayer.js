@@ -17,7 +17,7 @@ function OpenSettings() {
   
   let CloseBtn = document.createElement("div");
   let CloseBtnI = document.createElement("i");
-  CloseBtnI.classList.toggle("material-icons");
+  CloseBtnI.classList.add("material-icons");
   CloseBtnI.innerHTML = "&#xe5cd;";
   CloseBtn.appendChild(CloseBtnI);
   CloseBtn.id = "CloseButton";    
