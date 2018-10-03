@@ -78,7 +78,7 @@ function startUI() {
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
     createAlbums();
-    //CreateArtists();
+    CreateArtists();
 }
 
 function createAlbums() {    
