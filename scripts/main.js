@@ -479,7 +479,6 @@ function startup() {
 startup()
 
 function playAudio() { 
-    x.play();
     if (num == 1) {
       x.play();
       //text.innerHTML = "pause";
