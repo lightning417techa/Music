@@ -78,6 +78,6 @@ function SendFeedback() {
   Updatebutton.classList.toggle("UpdateCB");
   Updatebutton.style.fontSize = "xx-large";
   Updatebutton.innerHTML = "Continue";
-  Updatebutton.onclick = function() {UpdateContainer.style.display = "none"; Updatebackground.style.display = "none";};
+  Updatebutton.onclick = function() {UpdateContainer.style.display = "none"; Updatebackground.style.display = "none"; var strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,status=yes"; window.open("mailto:rnelson009@stpaul.k12.mn.us?subject=Feedback%20On%20LanyxSoft%20Music&body=", "CNN_WindowName", strWindowFeatures);};
   UpdateContainer.appendChild(Updatebutton);  
 }
