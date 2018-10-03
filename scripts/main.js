@@ -348,7 +348,7 @@ function keys() {
 }
 
 function MiniPlayPauseBTN() {
-  let MiniBTN = document.getElemntById("MiniPlayPause");
+  let MiniBTN = document.getElementById("MiniPlayPause");
   if (num == 1) {
     MiniBTN.classList.toggle("fa%20fa-pause");
     playAudio();
@@ -422,8 +422,8 @@ function playAudio() {
       input2.style.display="block";
       num = 0;
       d = dateFormat + "playing";
-      document.getElemntById("MiniPlayPause").classList.toggle("fa%20fa-pause");
-      
+      document.getElementById("MiniPlayPause").classList.remove("fa%20fa-play");
+      document.getElementById("MiniPlayPause").classList.add("fa%20fa-pause");
     } else {
       x.pause();
       //text.innerHTML = "play";
@@ -432,7 +432,8 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-      document.getElemntById("MiniPlayPause").classList.toggle("fa%20fa-play");
+      document.getElementById("MiniPlayPause").classList.remove("fa%20fa-pause");
+      document.getElementById("MiniPlayPause").classList.add("fa%20fa-play");
     }}
 
 window.addEventListener('load', function() {
