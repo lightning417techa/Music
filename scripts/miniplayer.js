@@ -139,6 +139,6 @@ function About() {
   AboutCloseButton.classList.toggle("UpdateCB");
   AboutCloseButton.style.fontSize = "xx-large";
   AboutCloseButton.innerHTML = "Ok";
-  AboutCloseButton.onclick = function() {AboutContainer.style.display = "none"; Aboutbackground.style.display = "none"; ,location=yes,resizable=yes,scrollbars=yes,status=yes"; window.open("mailto:rnelson009@stpaul.k12.mn.us?subject=Feedback%20On%20LanyxSoft%20Music&body=", "CNN_WindowName", strWindowFeatures);};
+  AboutCloseButton.onclick = function() {AboutContainer.style.display = "none"; Aboutbackground.style.display = "none";};
   AboutContainer.appendChild(AboutCloseButton);  
 }
