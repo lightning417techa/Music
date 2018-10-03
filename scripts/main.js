@@ -15,7 +15,7 @@ i--;
 document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-window.onerror = function(error) {console.log(error);};
+window.onerror = function(error) {console.log(error.stack);};
 
 function startUI() {    
   var SB;    
