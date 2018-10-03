@@ -398,6 +398,7 @@ function ToggleLoop() {
 function keys() {     
   if (looping = "true") {
     x.currentTime = 0;
+    x.play();
     playAudio();   
   } else {
    if (x.currentTime == x.duration) {
@@ -413,6 +414,7 @@ function keys() {
      }      
        x.src = songs[SongNumber];
      num = 1;
+     x.play();
      playAudio();   
    }}}
 
@@ -430,6 +432,7 @@ function next() {
   
      x.src = songs[SongNumber]; 
      num = 1;
+     x.play();
      playAudio();
 }
 
@@ -448,6 +451,7 @@ function rewind() {
      x.src = songs[SongNumber];
      x.play(); 
      num = 1;
+     x.play();
      playAudio();
 }
 
@@ -464,6 +468,7 @@ function Playbutton(clicked_id) {
      }
      x.src = songs[SongNumber];     
      num = 1;     
+     x.play();
      playAudio();  
 }
 
