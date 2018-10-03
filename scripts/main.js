@@ -387,10 +387,10 @@ function Shuffle() {
 function ToggleLoop() {
   let loopbtn = document.getElementById("loopbutton");
   if (looping = "true") {
-    loopbtn.style.color = "lime"; 
+    loopbtn.style.color = "white"; 
     looping = "false";
   } else {
-    loopbtn.style.color = "white"; 
+    loopbtn.style.color = "lime"; 
     looping = "true";
   }
 }
