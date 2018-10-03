@@ -395,13 +395,7 @@ function ToggleLoop() {
   }
 }
 
-function keys() {     
-  if (looping = "true") {
-    x.currentTime = 0;
-    x.play();
-    num = 1;
-    playAudio();   
-  } else {
+function keys() {       
    if (x.currentTime == x.duration) {
      SongNumber++;
      x.title = titles[SongNumber];
@@ -417,7 +411,8 @@ function keys() {
      x.play();
      num = 1;     
      playAudio();   
-   }}}
+   }
+}
 
 function next() {
      SongNumber++;
