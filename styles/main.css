@@ -168,7 +168,7 @@ img {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes Minimize-Player {
     from {bottom: 0; height: 100%;}
-    to {bottom: 0; height: 50px;}
+    to {bottom: 0; height: 60px;}
 }
 @-webkit-keyframes Maximize-Player {
     from {bottom: 0; height: 50px;}
@@ -176,7 +176,7 @@ img {
 }
 @keyframes Minimize-Player {
     from {bottom: 0; height: 100%;}
-    to {bottom: 0; height: 50px;}
+    to {bottom: 0; height: 60px;}
 }
 @keyframes Maximize-Player {
     from {bottom: 0; height: 50px;}
