@@ -17,7 +17,8 @@ function OpenSettings() {
   
   let CloseBtn = document.createElement("div");
   let CloseBtnI = document.createElement("i");
-  CloseBtnI.classList.toggle("fa fa-times");
+  CloseBtnI.classList.toggle("material-icons");
+  CloseBtnI.innerHTML = "close";
   CloseBtn.appendChild(CloseBtnI);
   CloseBtn.id = "CloseButton";    
   CloseBtn.setAttribute("style", "z-index: 7; position: relattive; left: 95%; top: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
