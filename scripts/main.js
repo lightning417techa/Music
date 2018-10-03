@@ -1,6 +1,8 @@
 var btnv = 0;
 var update = 0;
-var NumberOfSongs = 37;
+var NumberOfSongs = 38;
+var NumberOfAlbums = 4;
+var NumberOfArtists = 22;
 function Dropdown() {
 var i = 0;
 if (i == 0) {
@@ -38,7 +40,7 @@ function startUI() {
 
 function createAlbums() {    
   var AB;       
-  for (AB = 0; AB < 4;) {
+  for (AB = 0; AB < NumberOfAlbums;) {
   AB++;
     if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {      
       let NewAlbumBtn = document.createElement("div");                
@@ -80,7 +82,7 @@ function PlayAlbum(clicked_id) {
 
 function CreateArtists() {
    var CreationNumber;       
-   for (CreationNumber = 0; CreationNumber < 21;) {
+   for (CreationNumber = 0; CreationNumber < NumberOfArtists;) {
    CreationNumber++;
      if (artistlist[CreationNumber] == "") {} else {      
        let NewArtistBtn = document.createElement("div");
