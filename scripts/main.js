@@ -322,6 +322,24 @@ function searchAlbums() {
     } else {
       divs[w].style.display = "none";
   }}
+  for (w = 0; w < li.length; w++) {}
+  searchArtists();
+}
+function searchArtists() {
+  var input, filter, ui, divs, a, w;
+  input = document.getElementById("SearchBox");
+  filter = input.value.toUpperCase();
+  ui = document.getElementById("artists");  
+  divs = ui.getElementsByTagName("div");
+    
+    //function for dd
+  for (w = 0; w < divs.length; w++) {
+    a = divs[w].getElementsByTagName("p")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      divs[w].style.display = "";
+    } else {
+      divs[w].style.display = "none";
+  }}
 }
 
 
