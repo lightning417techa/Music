@@ -35,7 +35,8 @@ var songs = {
   34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/sheppard_-_coming_home__official_audio_.mp3",
   35 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_blood_sweat__amp__tears__%E1%84%91%E1%85%B5_%E1%84%84%E1%85%A1%E1%86%B7_%E1%84%82%E1%85%AE%E1%86%AB%E1%84%86%E1%85%AE%E1%86%AF__lyrics_[color_coded_han_rom_eng].mp3",
   36 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__bangtan_boys__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__-_i_need_u__color_coded_han|rom|eng_lyrics_.mp3",
-  37 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_save_me__color_coded_han|rom|eng_lyrics__|_by_yankat.mp3"
+  37 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/bts__%E1%84%87%E1%85%A1%E1%86%BC%E1%84%90%E1%85%A1%E1%86%AB%E1%84%89%E1%85%A9%E1%84%82%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A1%E1%86%AB__%E2%80%93_save_me__color_coded_han|rom|eng_lyrics__|_by_yankat.mp3",
+  38 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/lil_pump_-_"
 }
 
 var titles = {
@@ -75,7 +76,8 @@ var titles = {
   34 : "Coming Home",
   35 : "Blood Sweat and Tears",
   36 : "I Need U",
-  37 : "Save Me"
+  37 : "Save Me",
+  38 : "esskeetit"
 }
 
 var albumart = {
@@ -115,7 +117,8 @@ var albumart = {
   34 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
   35 : "",
   36 : "",
-  37 : ""
+  37 : "",
+  38 : ""
 }
 
 var artists = {
@@ -155,9 +158,11 @@ var artists = {
   34 : "Sheppard",
   35 : "BTS",
   36 : "BTS",
-  37 : "BTS"
+  37 : "BTS",
+  38 : "Lil Pump"
 }
 
+//list of the artists (no repeats)
 var artistlist = {
   1 : "Fall Out Boy",
   2 : "Post Malone",
@@ -179,9 +184,11 @@ var artistlist = {
   18 : "Ridley Nelson",
   19 : "blank",
   20 : "Lightning417techa",
-  21 : "Banana Tazer"
+  21 : "Banana Tazer",
+  22 : "Lil Pump"
 }
 
+//profile iages for the artists
 var ArtistsImg = {
   1 : "https://pbs.twimg.com/media/DT8VhIvX0AEOkRN.jpg",
   2 : "https://i1.sndcdn.com/avatars-000404451534-thnhi5-t500x500.jpg",
@@ -203,18 +210,11 @@ var ArtistsImg = {
   18 : "",
   19 : "",
   20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p296.png",
-  21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p294.png"  
+  21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p294.png",
+  22 : ""
 }
 
-var AlbumIMG = {
-  1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
-  2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
-  3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",        
-  4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
-  5 : "",
-  6 : ""
-}
-
+//list of evrey album in LanyxSoft Music
 var albumlist = {
   1 : "Mania",
   2 : "American Beauty/American Psycho",
@@ -248,9 +248,20 @@ var albumlist = {
   30 : "",
   31 : "",
   32 : "",
-  33 : "Unknown"
+  33 : "Unknown",  
 }
 
+//Album art for the albums
+var AlbumIMG = {
+  1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
+  2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
+  3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",        
+  4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
+  5 : "",
+  6 : ""
+}
+
+//songs in album
 var AlbumSongs = {
   1 : albumlist[5],
   2 : albumlist[33],
@@ -288,5 +299,6 @@ var AlbumSongs = {
   34 : albumlist[4],
   35 : albumlist[33],
   36 : albumlist[33],
-  37 : albumlist[33]
+  37 : albumlist[33],
+  39 : albumlist[33]
 }
