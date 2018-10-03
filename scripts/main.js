@@ -322,7 +322,7 @@ function searchAlbums() {
     } else {
       divs[w].style.display = "none";
   }}
-  for (w = 0; w < li.length; w++) {}
+  for (w = 0; w < divs.length; w++) {}
   searchArtists();
 }
 function searchArtists() {
