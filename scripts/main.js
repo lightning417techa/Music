@@ -386,14 +386,15 @@ function Shuffle() {
 
 function ToggleLoop() {
   let loopbtn = document.getElementById("loopbutton");
-  if (looping = "true") {
-    loopbtn.style.color = "white"; 
-    looping = "false";
-    console.log("Looping was" + true + " but is now false" + looping + loopbtn.style.color);
-  } else {
-    loopbtn.style.color = "lime"; 
-    looping = "true";
-    console.log("Looping was" + false + " but is now true" + looping + loopbtn.style.color);
+  switch(looping) {
+    case "true":
+        loopbtn.style.color = "white"; 
+        looping = "false";
+        break;
+    case "false":
+        loopbtn.style.color = "lime"; 
+        looping = "true";
+        break;
   }
 }
 
