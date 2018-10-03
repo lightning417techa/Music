@@ -370,10 +370,10 @@ function keys() {
 function MiniPlayPauseBTN() {
   let MiniBTN = document.getElementById("MiniPlayPause");
   if (num == 1) {
-    MiniBTN.classList.toggle("fa%20fa-pause");
+    MiniBTN..innerHTML = '<i class="fa fa-pause"></i>';
     playAudio();
   } else {
-   MiniBTN.classList.toggle("fa%20fa-play");
+    MiniBTN..innerHTML = '<i class="fa fa-play"></i>';
   }
 }
 
