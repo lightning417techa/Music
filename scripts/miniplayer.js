@@ -25,11 +25,16 @@ function OpenSettings() {
   CloseBtn.setAttribute("style", "z-index: 7; position: fixed; left: 95%; top: 3%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 20px; width: 30px; height: 30px;")  
   MoreContainer.appendChild(CloseBtn);
  
+  let MoreScrollController = document.createElement("div");
+  MoreScrollController.setAttribute("style", "z-index: 7; position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 20px; width: 430px; height: 120px;")
+  MoreScrollController.id = "USC";
+  MoreContainer.appendChild(MoreScrollController);  
+ 
   let SendFeedbackBtn = document.createElement("div");
   SendFeedbackBtn.innerHTML = '<i class="fa fa-info-circle"></i>' + " Send Us Feedback to let us know what we can do better. You can also request new features.";
-  SendFeedbackBtn.setAttribute("style", "z-index: 7; position: fixed; display: inline-block; right: 0%; transform: translate(-50%, -50%); text-align: left; color: black; font-size: 25px; width: 98%; height: 30px;");
+  SendFeedbackBtn.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;");
   SendFeedbackBtn.onclick = function() {SendFeedback();};
-  MoreContainer.appendChild(SendFeedbackBtn); 
+  MoreScrollController.appendChild(SendFeedbackBtn); 
 }
 
 function SendFeedback() {
