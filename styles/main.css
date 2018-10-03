@@ -236,7 +236,7 @@ img {
     display: block;
     border-top: 0.9px solid #9B9898;
 }
-.PlaylistContainer-dropdown a:hover {background-color: #ddd; color: black;} /*#ddd*/
+/*.PlaylistContainer-dropdown a:hover {background-color: #ddd; color: black;} #ddd*/
 .PlaylistContainer-dropdown-content li {list-style: none;}
 .MusicSearch {
     width: 96.5%; /*96.5%;*/
