@@ -27,7 +27,7 @@ function OpenSettings() {
  
   let SendFeedbackBtn = document.createElement("div");
   SendFeedbackBtn.innerHTML = '<i class="fa fa-info-circle"></i>' + " Send Us Feedback to let us know what we can do better. You can also request new features.";
-  SendFeedbackBtn.setAttribute("style", "z-index: 7; position: fixed; left: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 28px; width: 30px; height: 30px;");
+  SendFeedbackBtn.setAttribute("style", "z-index: 7; position: fixed; left: 5%; transform: translate(-50%, -50%); text-align: right; color: black; font-size: 28px; width: 98%; height: 30px;");
   SendFeedbackBtn.onclick = function() {SendFeedback();};
   MoreContainer.appendChild(SendFeedbackBtn); 
 }
