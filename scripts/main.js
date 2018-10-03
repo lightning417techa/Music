@@ -269,7 +269,7 @@ var input = document.getElementById("button");
 var input2 = document.getElementById("button2");
   //number vals
 var num = 1;
-var looping = "false";
+let looping = "false";
 var a = new Date();
 var mt = a.getMonth() + 1;
 var dy = a.getDate();
@@ -386,10 +386,12 @@ function Shuffle() {
 
 function ToggleLoop() {
   let loopbtn = document.getElementById("loopbutton");
-  if (looping == "true") {
+  if (looping = "true") {
     loopbtn.style.color = "lime"; 
+    looping = "false";
   } else {
-      
+    loopbtn.style.color = "white"; 
+    looping = "true";
   }
 }
 
@@ -405,8 +407,11 @@ function keys() {
      } else {
        image.src = albumart[SongNumber];
      }
-     
-     x.src = songs[SongNumber];
+     if (looping = "true") {
+       x.currentTime = 0;
+     } else {
+       x.src = songs[SongNumber];
+     }     
      x.play(); 
      num = 1;
      playAudio();
@@ -459,10 +464,8 @@ function Playbutton(clicked_id) {
      } else {
        image.src = albumart[SongNumber];
      }
-  
-     x.src = songs[SongNumber];
-     x.play();
-     num = 1;
+     x.src = songs[SongNumber];     
+     num = 1;     
      playAudio();  
 }
 
