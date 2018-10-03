@@ -396,6 +396,10 @@ function ToggleLoop() {
 }
 
 function keys() {     
+  if (looping = "true") {
+    x.currentTime = 0;
+    playAudio();   
+  } else {
    if (x.currentTime == x.duration) {
      SongNumber++;
      x.title = titles[SongNumber];
@@ -406,16 +410,11 @@ function keys() {
        image.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
      } else {
        image.src = albumart[SongNumber];
-     }
-     if (looping = "true") {
-       slider.value = 0;
-     } else {
+     }      
        x.src = songs[SongNumber];
-     }     
-     x.play(); 
      num = 1;
-     playAudio();
-   }}
+     playAudio();   
+   }}}
 
 function next() {
      SongNumber++;
@@ -429,8 +428,7 @@ function next() {
        image.src = albumart[SongNumber];
      }
   
-     x.src = songs[SongNumber];
-     x.play(); 
+     x.src = songs[SongNumber]; 
      num = 1;
      playAudio();
 }
