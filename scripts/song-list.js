@@ -302,3 +302,16 @@ var AlbumSongs = {
   37 : albumlist[33],
   39 : albumlist[33]
 }
+
+var AlbumArtistList = {
+  1 : albumlist[1],
+  2 : albumlist[1],
+  3 : albumlist[13],
+  4 : albumlist[8],
+  5 : albumlist[17],
+  6 : albumlist[19],
+  7 : albumlist[2],
+  8 : albumlist[15],
+  9 : albumlist[2]
+}
+
