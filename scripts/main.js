@@ -115,7 +115,7 @@ function PlayArtists(clicked_id) {
     let SongBtn = document.getElementById(artistlist[AN])
     let AB = SongBtn.id;
     console.log(AB);
-    if (AlbumArtistList[AB] == Id) {      
+    if (AlbumSongs[AB] == Id) {      
       SongBtn.style.display = "";
       SongBtn.style.visibility = "visible";
     } else {                           
