@@ -106,6 +106,25 @@ function CreateArtists() {
        document.getElementById("artists").appendChild(NewArtistBtn);
  }}}
 
+function PlayArtists(clicked_id) {
+  Id = clicked_id;
+  var AN;
+  for (AN = 0; AN < NumberOfSongs;) {
+    AN++;
+    let SongBtn = document.getElementById("SongButton" + AN)
+    let AB = SongBtn.id.replace("SongButton", "");
+    console.log(AB);
+    if (AlbumSongs[AB] == Id) {      
+      SongBtn.style.display = "";
+      SongBtn.style.visibility = "visible";
+    } else {                           
+      console.log("id: " + Id + " AB " + AlbumSongs[AB]);
+      SongBtn.style.display = "none";
+      SongBtn.style.visibility = "hidden";
+    }  
+  }
+}
+
 function Update() {  
   let UpdateContainer = document.createElement("div");
   UpdateContainer.id = "UC";
