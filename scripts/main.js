@@ -89,7 +89,7 @@ function CreateArtists() {
        NewArtistBtn.id = artistlist[CreationNumber];       
        NewArtistBtn.classList.toggle("column");
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
-       NewArtistBtn.onclick = function() {PlayArtists(NewArtistBtn.id);};
+       //NewArtistBtn.onclick = function() {PlayArtists(NewArtistBtn.id);};
        let ArtistIMG = document.createElement("img");
        if (ArtistsImg[CreationNumber] == "") {
          ArtistIMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p298.png";
@@ -106,25 +106,6 @@ function CreateArtists() {
        NewArtistBtn.appendChild(text);
        document.getElementById("artists").appendChild(NewArtistBtn);
  }}}
-
-function PlayArtists(clicked_id) {
-  Id = clicked_id;
-  var AN;
-  for (AN = 0; AN < NumberOfSongs;) {
-    AN++;
-    let SongBtn = document.getElementById(artistlist[AN])
-    let AB = SongBtn.id;
-    console.log(AB);
-    if (AlbumSongs[AB] == Id) {      
-      SongBtn.style.display = "";
-      SongBtn.style.visibility = "visible";
-    } else {                           
-      console.log("id: " + Id + " AB " + AlbumSongs[AB]);
-      SongBtn.style.display = "none";
-      SongBtn.style.visibility = "hidden";
-    }  
-  }
-}
 
 function Update() {  
   let UpdateContainer = document.createElement("div");
