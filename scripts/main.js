@@ -86,9 +86,10 @@ function CreateArtists() {
    CreationNumber++;
      if (artistlist[CreationNumber] == "") {} else {      
        let NewArtistBtn = document.createElement("div");
-       NewArtistBtn.id = artistlist[CreationNumber];
+       NewArtistBtn.id = artistlist[CreationNumber];       
        NewArtistBtn.classList.toggle("column");
        NewArtistBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");           
+       NewArtistBtn.onclick = function() {PlayArtists(NewArtistBtn.id);};
        let ArtistIMG = document.createElement("img");
        if (ArtistsImg[CreationNumber] == "") {
          ArtistIMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p298.png";
