@@ -111,10 +111,10 @@ function PlayArtists(clicked_id) {
   var AN;
   for (AN = 0; AN < NumberOfSongs;) {
     AN++;
-    let SongBtn = document.getElementById("SongButton" + AN)
-    let AB = SongBtn.id.replace("SongButton", "");
+    let SongBtn = document.getElementById(artistlist[AN])
+    let AB = SongBtn.id;
     console.log(AB);
-    if (AlbumSongs[AB] == Id) {      
+    if (AlbumArtistList[AB] == Id) {      
       SongBtn.style.display = "";
       SongBtn.style.visibility = "visible";
     } else {                           
