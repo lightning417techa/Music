@@ -50,7 +50,11 @@ function createAlbums() {
       //NewAlbumBtn.innerHTML = AlbumName[AB];
       NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
       let IMG = document.createElement("img");
-      IMG.src = AlbumIMG[AB];
+      if (AlbumIMG[AB] == ""){
+        IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
+      } else {
+        IMG.src = AlbumIMG[AB];
+      }
       IMG.style.width = "100%";
       NewAlbumBtn.appendChild(IMG);
       let text = document.createElement("p");
