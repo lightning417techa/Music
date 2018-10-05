@@ -228,7 +228,7 @@ var albumlist = {
   7 : "Beerbongs & Bentleys",
   8 : "Evolve",
   9 : "Light Of Day",
-  10 : "",
+  10 : "Vomiting Pug",
   11 : "",
   12 : "",
   13 : "",
