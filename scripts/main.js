@@ -26,7 +26,7 @@ function startUI() {
         let NewSongBtn = document.createElement("a");
         NewSongBtn.id = "SongButton" + SB;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
-        NewSongBtn.innerHTML = titles[SB] + " -- " + artists[SB];
+        NewSongBtn.innerHTML = titles[SB] + " -- " + AlbumSongs[SB];
         NewSongBtn.onclick = function() {Playbutton(NewSongBtn.id);};
         let LI = document.createElement("li");
         LI.appendChild(NewSongBtn);
