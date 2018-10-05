@@ -262,7 +262,10 @@ var AlbumIMG = {
   4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
   5 : "",
   6 : "",
-  7 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
+  7 : "",
+  8 : "",
+  9 : "",
+  10 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
 }
 
 //songs in album
