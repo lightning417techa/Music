@@ -444,7 +444,7 @@ function playAudio() {
       num = 0;
       d = dateFormat + "playing";
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-pause"></i>';
-      document.getElementById("backgroundimg").src =  albumart[SongNumber];
+      document.body.style.backgroundImage = "url("+albumart[SongNumber]+")";      
     } else {
       x.pause();
       //text.innerHTML = "play";
@@ -453,9 +453,8 @@ function playAudio() {
       input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
-
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-play"></i>';
-      document.getElementById("backgroundimg").src =  albumart[SongNumber];
+      document.body.style.backgroundImage = "url("+albumart[SongNumber]+")";            
     }}
 
 window.addEventListener('load', function() {
