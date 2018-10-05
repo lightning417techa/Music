@@ -49,7 +49,8 @@ img {
 .UpdateCB {
   z-index: 7; position: fixed; left: 50%; top: 85%;
   transform: translate(-50%, -50%); width: 300px;
-  height: 50px; color: white; background-color: #0144FE;
+  height: 50px; color: white; /*background-color: #0144FE;*/
+  background-image: linear-gradient(cyan, lightblue);
   border-radius: 10px; font-size: 24px;
 }
 .UpdateIMG {
