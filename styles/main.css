@@ -8,7 +8,12 @@ html {
 body {
     z-index: -1;
     background: black;
-    -webkit-filter: blur(20px); filter: blur(20px);
+    -webkit-filter: blur(20px); filter: blur(20px);    
+}
+.PlayerBackground {
+    z-index: 1;
+    background: black;
+    -webkit-filter: blur(20px); filter: blur(20px);    
 }
 img {
     margin-top: 5%;
