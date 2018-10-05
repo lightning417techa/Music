@@ -6,9 +6,7 @@ html {
     margin: 0;
 }
 body {
-    z-index: -1;
-    background: black;
-    -webkit-filter: blur(20px); filter: blur(20px);    
+    background: black;    
 }
 .PlayerBackground {
     z-index: 1;
