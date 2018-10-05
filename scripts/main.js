@@ -1,7 +1,7 @@
 var btnv = 0;
 var update = 0;
 var NumberOfSongs = 39;
-var NumberOfAlbums = 6;
+var NumberOfAlbums = 20;
 var NumberOfArtists = 23;
 function Dropdown() {
 var i = 0;
