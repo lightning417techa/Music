@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    -webkit-filter: blur(20px); filter: blur(20px);    
+    /*-webkit-filter: blur(20px); filter: blur(20px);    */
 }
 .PlayerBackground {
     z-index: -1;
