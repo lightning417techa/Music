@@ -260,7 +260,7 @@ var AlbumIMG = {
   2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
   3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",        
   4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
-  5 : "",
+  5 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png",
   6 : ""
 }
 
