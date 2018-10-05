@@ -192,11 +192,11 @@ var artistlist = {
 
 //profile iages for the artists
 var ArtistsImg = {
-  1 : "https://pbs.twimg.com/media/DT8VhIvX0AEOkRN.jpg",
-  2 : "https://i1.sndcdn.com/avatars-000404451534-thnhi5-t500x500.jpg",
-  3 : "",
-  4 : "https://avatarfiles.alphacoders.com/625/62576.jpg",
-  5 : "",
+  1 : "https://pbs.twimg.com/media/DT8VhIvX0AEOkRN.jpg", //fall out boy
+  2 : "https://i1.sndcdn.com/avatars-000404451534-thnhi5-t500x500.jpg", //post malone
+  3 : "", //logic
+  4 : "https://avatarfiles.alphacoders.com/625/62576.jpg", //marshmello
+  5 : "", 
   6 : "",
   7 : "",
   8 : "",
@@ -211,10 +211,10 @@ var ArtistsImg = {
   17 : "",
   18 : "",
   19 : "",
-  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p296.png",
-  21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p294.png",
+  20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p296.png", //lightning417techa
+  21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p294.png", //banana tazer
   22 : "",
-  23 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
+  23 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png" //vomiting pug
 }
 
 //list of evrey album in LanyxSoft Music
@@ -256,16 +256,15 @@ var albumlist = {
 
 //Album art for the albums
 var AlbumIMG = {
-  1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",  
-  2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png",
-  3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg",        
-  4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png",
-  5 : "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAGAAYAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwQGBwEABf/EAD0QAAEDAgQCBwQFDQEAAAAAAAEAAgMEEQUSITEGEwcUQVFhcaEigZHCI2KCwdEWMkJDUlNykpOistPwFf/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgUEA//EACkRAAICAQEGBQUAAAAAAAAAAAABAgMRBBIhMVGBkQUTI2HwIjIzQUL/2gAMAwEAAhEDEQA/ANJjhv2KSyHwTY2BSGtVCEMisj5akBmiIMQMjhhXcqkBlguFqWQEFoKU5ilFuiAhICG5iW6NTXAJdgkBAdGkOh1X0yEp8YISwS0TGN8E9oQAJzBovQaCAXQuroCkZ8/FMawzCeWMTroKUy3yc11s1rXt8R8VIpqiGsp46mllZLBK0OZIw3Dge0Ki9NFHzcAo6sDWnqcpP1XNP3hqoVDxjj7cGpMAwnMwtzNa6nYXTSAkmw7rXOwv4rSp0HnUKyD35354HLPU+XY4yRsuM8RYNgz2x4niMFPI7URk3dbvsNbeKZhWJ0OMUnW8NqG1EGYsztBGo3GvmsB4gwHFMHbTz4xHy5qzO8Ne/NJ7Nrl3nfvv5LZujOk6pwRhjT+dK18x+28kehCWq0ddNKnGWcvoOq6U5tNYLC5qWW2UlwS3BZx0kchA73pzh3IHC6QEkJ7NkgJzNlTAbZdQhEkBXOkOi6/wZisQBLmQ85tt7sIf8qpXQhLGZcXhLG83LE9r7e1l9oEX7tlqlRE2eCSGQXZI0tcPAixWKdFUr8N45fQTOs58UtO4d7mm/wAhWppXt6O2vlv+djktWLoS6B9NlTn4hpKca8mkBt4uc78AtcwikFBhNFRtFhBTsj/laB9yxvi6+MdKvVQ3MzrdPBb6oy5vmW4HdLW/TRTD2z3HRvsnIB2yUU52yUVmHULdohRuQkXQAxNYk3RtKpgSAuoW7LoUgdKw3HB/4PS0JxZkRr45r/Vktn/yctxKxvprogzHMPrBp1imcw+bHfg8LS8LfrOD/pNHNqvs2uRB4JacV6UXVTiSBUVFSfL2rergtv7VkHQrRh2N4jV/uaVsd/43X+QrX0eKP19lfpJBpPx55guSymnVKKzTpAQuRFCSgDoKNpSwUbVQh7DojBSWo8yTGGVUOknh6XiDCqZtK9jKinmzNz7OBFiL9nYfcrbmSqoAwSXF/ZNvgrqslVNTjxRE4qUWmVPo2wCTAsNqjNMyWWola45AQAA3Qa77lXAqHhYyUTG2PvUouTuslZY5y4sK4qMUkecUBK8ULivIsFxQOK84oCUAebJ4H4JzHX2BWVU+L1DHtd12suHX0qLgnyIItrtsvs03E0kbstTV1rjf9Vybjw1YrEX/ADADVEHXVCm4mbe8FViIv+26EegjKGDiWobm5lTVkFotZ0Qsf6Zv6J7LFkv19e1emGeMsBsXC2ypVJxJNnPMq6gjcA8s+7SNFJxTMDaOSoNzfV0Yv/YvMZa6R30Pbv3JhcA7Mc3qqVFxNUgW5koY0HQOivpe+7P+so7+KKl7tJ6oNJ19uEX+MWiTYkX0SB23rovHXZZwMfr3HK3E6ln2Yf8AWpTeJpKYND8Qrqg3ObKIW+VvokZGXd9huUrmAjf4iyq/5RxTxOf1/FI2jtEMDrHy5W3ke0d6+TWcT1MDmiDEHysOmZ9O0WI3/RF0ZDJ//9k=",
-  6 : "",
-  7 : "data:image/jpeg;base64,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",
-  8 : "data:image/jpeg;base64,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",
-  9 : "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/71/22/63/71226376-a3be-fe3e-1717-ae67c10b419a/886447075029.jpg/268x0w.jpg",
-  10 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
+  1 : "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg", //mania
+  2 : "https://upload.wikimedia.org/wikipedia/en/b/b6/American_Beauty_American_Psycho_cover.png", //american beauty/american psycho
+  3 : "https://images-na.ssl-images-amazon.com/images/I/41%2BCuqqyyvL.jpg", //vessel
+  4 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p184.png", //watching the sky
+  5 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p302.png", //i met you when i was 18
+  6 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p303.png", //beerbongs and bentleys
+  7 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p304.png", //evolve
+  8 : "https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/71/22/63/71226376-a3be-fe3e-1717-ae67c10b419a/886447075029.jpg/268x0w.jpg", //light of day
+  9 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png" //Vomiting Pug
 }
 
 //songs in album
