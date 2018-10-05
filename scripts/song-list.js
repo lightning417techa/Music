@@ -77,7 +77,7 @@ var titles = {
   35 : "Blood Sweat and Tears",
   36 : "I Need U",
   37 : "Save Me",
-  38 : "esskeetit"
+  38 : "esskeetit"  
 }
 
 var albumart = {
@@ -118,7 +118,8 @@ var albumart = {
   35 : "",
   36 : "",
   37 : "",
-  38 : ""
+  38 : "",
+  39 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
 }
 
 var artists = {
@@ -159,7 +160,7 @@ var artists = {
   35 : "BTS",
   36 : "BTS",
   37 : "BTS",
-  38 : "Lil Pump"
+  38 : "Lil Pump",
 }
 
 //list of the artists (no repeats)
@@ -184,8 +185,9 @@ var artistlist = {
   18 : "Ridley Nelson",
   19 : "blank",
   20 : "Lightning417techa",
-  21 : "Banana Tazer",
-  22 : "Lil Pump"
+  21 : "Banana Tazer",  
+  22 : "Lil Pump",
+  23 : "Vomiting Pug"
 }
 
 //profile iages for the artists
@@ -211,7 +213,8 @@ var ArtistsImg = {
   19 : "",
   20 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p296.png",
   21 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p294.png",
-  22 : ""
+  22 : "",
+  23 : "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p300.png"
 }
 
 //list of evrey album in LanyxSoft Music
