@@ -123,44 +123,7 @@ var albumart = {
 }
 
 var artists = {
-  1 : artistlist[17],
-  2 : artistlist[4],
-  3 : artistlist[4],
-  4 : artistlist[4],
-  5 : artistlist[1],
-  6 : artistlist[4],
-  7 : artistlist[7],
-  8 : "(undefined)",
-  9 : artistlist[1],
-  10 : artistlist[16],
-  11 : artistlist[13],
-  12 : artistlist[11],
-  13 : artistlist[13],
-  14 : artistlist[1],
-  15 : artistlist[4],
-  16 : artistlist[2],
-  17 : artistlist[15],
-  18 : artistlist[24],
-  19 : artistlist[6],
-  20 : artistlist[14],
-  21 : artistlist[12],
-  22 : artistlist[2],
-  23 : artistlist[13],
-  24 : artistlist[11],
-  25 : artistlist[3],
-  26 : artistlist[11],
-  27 : artistlist[8],
-  28 : artistlist[10],
-  29 : artistlist[25],
-  30 : artistlist[11],
-  31 : artistlist[9],
-  32 : artistlist[4],
-  33 : artistlist[1],
-  34 : artistlist[8],
-  35 : artistlist[5],
-  36 : artistlist[5],
-  37 : artistlist[5],
-  38 : artistlist[22]
+  
 }
 
 //list of the artists (no repeats)
