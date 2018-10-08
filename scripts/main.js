@@ -91,9 +91,9 @@ function CreateAlbumsTwo() {
   for (b = 0; b < 3; b++) {
     let music = document.createElement("div");
     music.classList.toggle("column");
-    music.id = DatabaseMusic[b].title;
+    music.id = "BetaAlbum" + b;
     music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-    music.onclick = function() {alert(DatabaseMusic[0].tracks[0].title); PlayAlbum(music.id);};
+    music.onclick = function() {alert(DatabaseMusic[0].tracks[0].title); OpenAlbum(music.id);};
     let IMG = document.createElement("img");
     if (DatabaseMusic[b].artwork == ""){
       IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
@@ -106,6 +106,16 @@ function CreateAlbumsTwo() {
     text.innerHTML = "BETA " + DatabaseMusic[b].title;
     music.appendChild(text);
     document.getElementById("albums").appendChild(music);    
+  }
+}
+
+function OpenAlbum(clicked_id) {
+  id = clicked_id;
+  var a;
+  let officialaid = id.replace("BetaAlbum", "");
+  for (a = 0; a < DatabaseMusic[officialaid].tracks.length; a++) {  
+    let hey = DatabaseMusic[officialaid].tracks[a].title;
+    console.log(hey);
   }
 }
 
