@@ -28,19 +28,21 @@ var DatabaseArtists = {
 }
 
 //ALBUMS
-var DatabaseMusic = {
-  1 : {"title": "Mania", "artist": Artists[1],
-  "artwork": "artwork", "tracks": [
-    "title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"	
-  ]}, 
-  2 : {
-  "title": "American Beatuty/American Psycho", "artist": Artists[1], 
-  "artwork": "artwork", "tracks": [
-    "title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"	
-  ]}, 
-  3 : {
-  "title": "title", "artist": "artist",
-  "artwork": "artwork", "tracks": [
-    "title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"}, {"title": "song title", "source": "test.mp3"	
-  ]}
-};
+var DatabaseMusic =  [{
+	"title": "Mania",
+	"artist": "Fall Out Boy",
+	"artwork": "h",
+	"tracks": [{
+		"title": "Wilson Expensive Mistakes",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Wilson Expensive Mistakes",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Wilson Expensive Mistakes",
+		"Source": "test",
+		"SongArt": "none"
+	}]
+}];
