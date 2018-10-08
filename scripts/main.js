@@ -43,7 +43,7 @@ function CreateAlbums() {
   for(var a=0; abum.length;a++){
     let NewAlbumBtn = document.createElement("div");                
     NewAlbumBtn.classList.toggle("column");
-    NewAlbumBtn.id = "hi"; alert(abum[a]);
+    NewAlbumBtn.id = abum[a].title;
     NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
     NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};        
     let IMG = document.createElement("img");
@@ -55,7 +55,7 @@ function CreateAlbums() {
     IMG.style.width = "100%";
     NewAlbumBtn.appendChild(IMG);
     let text = document.createElement("p");
-    text.innerHTML = abum[a];
+    text.innerHTML = abum[a].title;
     NewAlbumBtn.appendChild(text);
     document.getElementById("albums").appendChild(NewAlbumBtn);    
   }
