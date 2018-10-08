@@ -34,36 +34,38 @@ function startUI() {
     }
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
-    //createAlbums();
-    CreateAlbums();
-    //CreateArtists();
+    createAlbums();
+    CreateArtists();
 }
 
-function CreateAlbums() {
-  for(var a=0; abum.length;a++){
-    let NewAlbumBtn = document.createElement("div");                
-    NewAlbumBtn.classList.toggle("column");
-    NewAlbumBtn.id = abum[a].title;
-    NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-    NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};        
-    let IMG = document.createElement("img");
-    if (abum[a].artwork == ""){
-      IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-    } else {
-      IMG.src = "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg";
-    }    
-    IMG.style.width = "100%";
-    NewAlbumBtn.appendChild(IMG);
-    let text = document.createElement("p");
-    text.innerHTML = abum[a].title;
-    NewAlbumBtn.appendChild(text);
-    document.getElementById("albums").appendChild(NewAlbumBtn);    
-  }
+function createAlbums() {    
+  var AB;       
+  for (AB = 0; AB < NumberOfAlbums;) {
+  AB++;
+    if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {      
+      let NewAlbumBtn = document.createElement("div");                
+      NewAlbumBtn.classList.toggle("column");
+      NewAlbumBtn.id = albumlist[AB];
+      NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
+      //NewAlbumBtn.innerHTML = AlbumName[AB];
+      NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
+      let IMG = document.createElement("img");
+      if (AlbumIMG[AB] == ""){
+        IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
+      } else {
+        IMG.src = AlbumIMG[AB];
+      }
+      IMG.style.width = "100%";
+      NewAlbumBtn.appendChild(IMG);
+      let text = document.createElement("p");
+      text.innerHTML = albumlist[AB];
+      NewAlbumBtn.appendChild(text);
+      document.getElementById("albums").appendChild(NewAlbumBtn);
+    }
+  }   
 }
 
 function PlayAlbum(clicked_id) {
-  alert("hi");
-  console.log("hi");
   Id = clicked_id;
   var AN;
   for (AN = 0; AN < NumberOfSongs;) {
@@ -71,7 +73,7 @@ function PlayAlbum(clicked_id) {
     let SongBtn = document.getElementById("SongButton" + AN)
     let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
-    if (abum[AB].tracks[AB].title == Id) {      
+    if (AlbumSongs[AB] == Id) {      
       SongBtn.style.display = "";
       SongBtn.style.visibility = "visible";
     } else {                           
