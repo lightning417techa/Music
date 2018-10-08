@@ -282,7 +282,7 @@ var abum = [{
 }, {
   title : "Mania",
   artist : "Fall Out Boy",
-  artwork : AlbumIMG[1],
+  artwork : AlbumIMG[3],
   "tracks": [{
     "title": titles[5],"source": songs[5]
   }, {  
