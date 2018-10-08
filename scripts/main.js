@@ -85,7 +85,7 @@ function PlayAlbum(clicked_id) {
   }
 }
 
-let Length = DatabaseMusic.length;
+let Length = DatabaseMusic;
 function CreateAlbumsTwo() {
   var b;  
   for (b = 0; b < Length;) {
