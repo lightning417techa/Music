@@ -41,7 +41,7 @@ function startUI() {
 
 function CreateAlbums() {
   for(var a=0; abum.length;a++){
-    if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {  
+    if (abum[a] == "" || abum[a].artwork == "") {} else {  
     let NewAlbumBtn = document.createElement("div");                
     NewAlbumBtn.classList.toggle("column");
     NewAlbumBtn.id = abum[a].title;
@@ -64,7 +64,7 @@ function CreateAlbums() {
   }
 }
 
-function createAlbums() {    
+/*function createAlbums() {    
   var AB;       
   for (AB = 0; AB < NumberOfAlbums;) {
   AB++;
@@ -89,7 +89,7 @@ function createAlbums() {
       document.getElementById("albums").appendChild(NewAlbumBtn);
     }
   }   
-}
+}*/
 
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
