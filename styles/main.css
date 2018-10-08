@@ -12,9 +12,10 @@ html {
   right: 5%;
   bottom: 5%;
   z-index: 25;
+  text-align: center;  
   position: fixed;
-  width: 25px;
-  height: 25px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
 }
 body {
