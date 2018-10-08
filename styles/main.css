@@ -212,7 +212,7 @@ img {
 .PlaylistContainer {
   position: relative;
   width: 65%;
-  min-height:600px; /*550px*/
+  min-height:90vh; /*550px*/
   background: #333;
   overflow: auto;
   right: 5px;
