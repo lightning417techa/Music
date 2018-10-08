@@ -88,12 +88,12 @@ function PlayAlbum(clicked_id) {
 
 function CreateAlbumsTwo() {
   var b; 
-  for (b = 0; b < 3; b++) {
+  for (b = 0; b < DatabaseMusic.length; b++) {
     let music = document.createElement("div");
     music.classList.toggle("column");
     music.id = "BetaAlbum" + b;
     music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-    music.onclick = function() {alert(DatabaseMusic[0].tracks[0].title); OpenAlbum(music.id);};
+    music.onclick = function() {OpenAlbum(music.id);};
     let IMG = document.createElement("img");
     if (DatabaseMusic[b].artwork == ""){
       IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
