@@ -43,7 +43,7 @@ function CreateAlbums() {
   for(var a=0; abum.length;a++){
     let NewAlbumBtn = document.createElement("div");                
     NewAlbumBtn.classList.toggle("column");
-    NewAlbumBtn.id = abum[a].title;
+    NewAlbumBtn.id = abum[a].title[a];
     NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
     NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};        
     let IMG = document.createElement("img");
