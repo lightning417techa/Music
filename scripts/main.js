@@ -87,10 +87,8 @@ function PlayAlbum(clicked_id) {
 
 
 function CreateAlbumsTwo() {
-  var b;  
-  let Length = Object.keys(DatabaseMusic);
-  console.log(Length);
-  for (b = 0; b < Length;) {
+  var b; 
+  for (b = 0; b < 3;) {
     b++;
     let music = document.createElement("div");
     music.classList.toggle("column");
