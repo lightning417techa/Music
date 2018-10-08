@@ -35,7 +35,7 @@ function startUI() {
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
     createAlbums();
-    CreateAlbumsTwo();
+    //CreateAlbumsTwo();
     //CreateArtists();
 }
 
@@ -91,7 +91,7 @@ function CreateAlbumsTwo() {
   for (b = 0; b < DatabaseMusic.length; b++) {
     let music = document.createElement("div");
     music.classList.toggle("column");
-    music.id = "BetaAlbum" + DatabaseMusic[b].title;
+    music.id = "BetaAlbum" + b;
     music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
     music.onclick = function() {OpenAlbum(music.id);};
     let IMG = document.createElement("img");
