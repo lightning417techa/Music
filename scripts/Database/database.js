@@ -31,7 +31,7 @@ var DatabaseArtists = {
 var DatabaseMusic =  [{
 	"title": "Mania",
 	"artist": "Fall Out Boy",
-	"artwork": AlnumIMG[1],
+	"artwork": AlbumIMG[1],
 	"tracks": [{
 		"title": "Wilson Expensive Mistakes",
 		"Source": "test",
