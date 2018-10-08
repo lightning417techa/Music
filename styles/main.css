@@ -265,7 +265,7 @@ img {
 .mscontainer {
   position: relative;
   width: 330px;
-  min-height:550px; /*460px or 450*/
+  min-height:90vh; /*550px*/
   background: #333;
   overflow: auto;
   margin: 20px auto;
