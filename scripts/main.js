@@ -45,8 +45,7 @@ function CreateAlbums() {
     NewAlbumBtn.classList.toggle("column");
     NewAlbumBtn.id = abum[a].title;
     NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-
-        
+    NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};        
     let IMG = document.createElement("img");
     if (abum[a].artwork == ""){
       IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
@@ -62,33 +61,6 @@ function CreateAlbums() {
   }
 }
 
-/*function createAlbums() {    
-  var AB;       
-  for (AB = 0; AB < NumberOfAlbums;) {
-  AB++;
-    if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {      
-      let NewAlbumBtn = document.createElement("div");                
-      NewAlbumBtn.classList.toggle("column");
-      NewAlbumBtn.id = albumlist[AB];
-      NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-      //NewAlbumBtn.innerHTML = AlbumName[AB];
-      NewAlbumBtn.onclick = function() {PlayAlbum(NewAlbumBtn.id);};
-      let IMG = document.createElement("img");
-      if (AlbumIMG[AB] == ""){
-        IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
-      } else {
-        IMG.src = AlbumIMG[AB];
-      }
-      IMG.style.width = "100%";
-      NewAlbumBtn.appendChild(IMG);
-      let text = document.createElement("p");
-      text.innerHTML = albumlist[AB];
-      NewAlbumBtn.appendChild(text);
-      document.getElementById("albums").appendChild(NewAlbumBtn);
-    }
-  }   
-}*/
-
 function PlayAlbum(clicked_id) {
   Id = clicked_id;
   var AN;
@@ -97,7 +69,7 @@ function PlayAlbum(clicked_id) {
     let SongBtn = document.getElementById("SongButton" + AN)
     let AB = SongBtn.id.replace("SongButton", "");
     console.log(AB);
-    if (AlbumSongs[AB] == Id) {      
+    if (abum[AB].tracks[AB].title == Id) {      
       SongBtn.style.display = "";
       SongBtn.style.visibility = "visible";
     } else {                           
