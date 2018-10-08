@@ -85,10 +85,11 @@ function PlayAlbum(clicked_id) {
   }
 }
 
-let Length = Object.keys(DatabaseMusic);
-console.log(Length);
+
 function CreateAlbumsTwo() {
   var b;  
+  let Length = Object.keys(DatabaseMusic);
+  console.log(Length);
   for (b = 0; b < Length;) {
     b++;
     let music = document.createElement("div");
