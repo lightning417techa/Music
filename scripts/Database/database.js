@@ -33,15 +33,43 @@ var DatabaseMusic =  [{
 	"artist": "Fall Out Boy",
 	"artwork": "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
 	"tracks": [{
-		"title": "Wilson Expensive Mistakes",
+		"title": "Stay Frosty Royal Milk Tea",
 		"Source": "test",
 		"SongArt": "none"
 	 }, {
-		"title": "Wilson Expensive Mistakes",
+		"title": "The Last of the Real Ones",
 		"Source": "test",
 		"SongArt": "none"
 	 }, {
-		"title": "Wilson Expensive Mistakes",
+		"title": "Hold Me Tight or Don't",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Wilson (Expensive Mistakes)",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Church",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Heaven's Gate",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Champion",
+		"Source": "test",
+		"SongArt": "none"
+         }, {
+		"title": "Sunshine Riptide",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Young and Menace",
+		"Source": "test",
+		"SongArt": "none"
+	 }, {
+		"title": "Bishops Knife Trick",
 		"Source": "test",
 		"SongArt": "none"
 	}]
