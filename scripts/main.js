@@ -36,12 +36,11 @@ function startUI() {
     for (n = 0; n < NumberOfSongs; n++) {}
     //createAlbums();
     CreateAlbums();
-    CreateArtists();
+    //CreateArtists();
 }
 
 function CreateAlbums() {
   for(var a=0; abum.length;a++){
-    if (abum[a] == "" || abum[a].artwork == "") {} else {  
     let NewAlbumBtn = document.createElement("div");                
     NewAlbumBtn.classList.toggle("column");
     NewAlbumBtn.id = abum[a].title;
@@ -59,8 +58,7 @@ function CreateAlbums() {
     let text = document.createElement("p");
     text.innerHTML = abum[a];
     NewAlbumBtn.appendChild(text);
-    document.getElementById("albums").appendChild(NewAlbumBtn);
-    }
+    document.getElementById("albums").appendChild(NewAlbumBtn);    
   }
 }
 
