@@ -5,6 +5,18 @@ html {
     align-items: center;
     margin: 0;
 }
+.reset {
+  align-items: center;
+  background: yellow;
+  font-color: white;
+  right: 5%;
+  bottom: 5%;
+  z-index: 25;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
 body {
     background: black;    
     background-repeat: no-repeat;
