@@ -120,7 +120,7 @@ function OpenAlbum(clicked_id) {
     let NewSongBtn = document.createElement("a");
         NewSongBtn.id = "SongButton" + a;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
-        NewSongBtn.innerHTML = DatabaseMusic[officialaid].tracks[a].title + " -- " + DatabaseMusic[officialaid].tracks[a].artist[a];
+        NewSongBtn.innerHTML = DatabaseMusic[officialaid].tracks[a].title + " -- " + DatabaseMusic[officialaid].tracks[a].artist;
         NewSongBtn.onclick = function() {Playbutton(NewSongBtn.id);};
         let LI = document.createElement("li");
         LI.appendChild(NewSongBtn);
