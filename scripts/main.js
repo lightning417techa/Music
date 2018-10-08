@@ -91,7 +91,7 @@ function CreateAlbumsTwo() {
   for (b = 0; b < DatabaseMusic.length; b++) {
     let music = document.createElement("div");
     music.classList.toggle("column");
-    music.id = "BetaAlbum" + b;
+    music.id = "BetaAlbum" + DatabaseMusic[b].title;
     music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
     music.onclick = function() {OpenAlbum(music.id);};
     let IMG = document.createElement("img");
@@ -118,7 +118,7 @@ function OpenAlbum(clicked_id) {
     console.log(hey);
     
     let NewSongBtn = document.createElement("a");
-        NewSongBtn.id = "SongButton" + a;
+        NewSongBtn.id = DatabaseMusic[officialaid].id;
         NewSongBtn.setAttribute("style", "color: white; padding: 10px 50px; text-decoration: none; text-align: left; display: block; border-top: 0.9px solid #9B9898;");     
         NewSongBtn.innerHTML = DatabaseMusic[officialaid].tracks[a].title + " -- " + DatabaseMusic[officialaid].tracks[a].artist;
         NewSongBtn.onclick = function() {Playbutton(NewSongBtn.id);};
