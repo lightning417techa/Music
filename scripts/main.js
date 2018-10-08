@@ -62,6 +62,8 @@ function CreateAlbums() {
 }
 
 function PlayAlbum(clicked_id) {
+  alert("hi");
+  console.log("hi");
   Id = clicked_id;
   var AN;
   for (AN = 0; AN < NumberOfSongs;) {
