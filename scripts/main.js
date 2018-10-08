@@ -17,7 +17,7 @@ function Dropdown() {
     document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
-function reset() {location.reload();}
+function reset() {window.location.href = window.location.href;}
 window.onerror = function(error) {console.log(error, error.stack, error.lineNumber);};
 
 function startUI() {    
