@@ -105,6 +105,7 @@ function CreateAlbumsTwo() {
     text.innerHTML = "BETA " + DatabaseMusic[b].title;
     music.appendChild(text);
     document.getElementById("albums").appendChild(music);
+    b++;
   }
 }
 
