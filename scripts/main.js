@@ -85,9 +85,9 @@ function PlayAlbum(clicked_id) {
   }
 }
 
+let Length = DatabaseMusic.length;
 function CreateAlbumsTwo() {
-  var b;
-  var Length = DatabaseMusic[].length;
+  var b;  
   for (b = 0; b < Length;) {
     let music = document.createElement("div");
     music.classList.toggle("column");
