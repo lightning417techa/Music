@@ -31,7 +31,7 @@ var DatabaseArtists = {
 var DatabaseMusic =  [{
 	"title": "Mania",
 	"artist": "Fall Out Boy",
-	"artwork": AlbumIMG[1],
+	"artwork": "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
 	"tracks": [{
 		"title": "Wilson Expensive Mistakes",
 		"Source": "test",
