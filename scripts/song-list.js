@@ -270,22 +270,43 @@ var AlbumIMG = {
 }
 
 //songs in album
-var abum = [{
-  title : "Mania",
-  artist : "Fall Out Boy",
-  artwork : AlbumIMG[1],
-  "tracks": [{
-    "title": titles[5],"source": songs[5]
-  }, {  
-    "title": titles[33],"source": songs[33] 
-  }]
-}, {
-  title : "Mania",
-  artist : "Fall Out Boy",
-  artwork : AlbumIMG[3],
-  "tracks": [{
-    "title": titles[5],"source": songs[5]
-  }, {  
-    "title": titles[33],"source": songs[33] 
-  }]
-}];
+var AlbumSongs = {
+  1 : albumlist[5],
+  2 : albumlist[33],
+  3 : albumlist[33],
+  4 : albumlist[33],
+  5 : albumlist[1],
+  6 : albumlist[33],
+  7 : albumlist[33],
+  8 : albumlist[33],
+  9 : albumlist[2],
+  10 : albumlist[33],
+  11 : albumlist[3],
+  12 : albumlist[33],
+  13 : albumlist[3],
+  14 : albumlist[2],
+  15 : albumlist[33],
+  16 : albumlist[7],
+  17 : albumlist[8],
+  18 : albumlist[33],
+  19 : albumlist[6],
+  20 : albumlist[6],
+  21 : albumlist[6],
+  22 : albumlist[9],
+  23 : albumlist[3],
+  24 : albumlist[6],
+  25 : albumlist[33],
+  26 : albumlist[6],
+  27 : albumlist[4],
+  28 : albumlist[33],
+  29 : albumlist[33],
+  30 : albumlist[33],
+  31 : albumlist[33],
+  32 : albumlist[33],
+  33 : albumlist[1],
+  34 : albumlist[4],
+  35 : albumlist[33],
+  36 : albumlist[33],
+  37 : albumlist[33],
+  39 : albumlist[33]
+}
