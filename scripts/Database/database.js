@@ -35,42 +35,52 @@ var DatabaseMusic =  [{
 	"tracks": [{
 		"title": "Stay Frosty Royal Milk Tea",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "The Last of the Real Ones",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Hold Me Tight or Don't",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Wilson (Expensive Mistakes)",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Church",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Heaven's Gate",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Champion",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
          }, {
 		"title": "Sunshine Riptide",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Young and Menace",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	 }, {
 		"title": "Bishops Knife Trick",
 		"Source": "test",
-		"SongArt": "none"
+		"SongArt": "none",
+		"artist": "Fall Out Boy"
 	}]
 }];
