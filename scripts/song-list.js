@@ -272,8 +272,8 @@ var AlbumIMG = {
 //songs in album
 var abum = [{
   title : "Mania",
-  "artist": "Fall Out Boy",
-  "artwork": AlbumIMG[1],
+  artist : "Fall Out Boy",
+  artwork : AlbumIMG[1],
   "tracks": [{
     "title": titles[5],"source": songs[5]
   }, {  
@@ -281,17 +281,8 @@ var abum = [{
   }]
 }, {
   title : "Mania",
-  "artist": "Fall Out Boy",
-  "artwork": AlbumIMG[1],
-  "tracks": [{
-    "title": titles[5],"source": songs[5]
-  }, {  
-    "title": titles[33],"source": songs[33] 
-  }]
-}, {
-  "title": "Mania",
-  "artist": "Fall Out Boy",
-  "artwork": AlbumIMG[1],
+  artist : "Fall Out Boy",
+  artwork : AlbumIMG[1],
   "tracks": [{
     "title": titles[5],"source": songs[5]
   }, {  
