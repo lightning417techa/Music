@@ -50,7 +50,7 @@ function CreateAlbums() {
     if (abum[a].artwork == ""){
       IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
     } else {
-      IMG.src = abum[a].artwork;
+      IMG.src = "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg";
     }    
     IMG.style.width = "100%";
     NewAlbumBtn.appendChild(IMG);
