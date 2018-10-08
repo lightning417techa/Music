@@ -93,7 +93,7 @@ function CreateAlbumsTwo() {
     music.classList.toggle("column");
     music.id = DatabaseMusic[b].title;
     music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
-    music.onclick = function() {alert(DatabaseMusic[b].tracks.title[b]); PlayAlbum(music.id);};
+    music.onclick = function() {alert(DatabaseMusic[b].tracks[b].title); PlayAlbum(music.id);};
     let IMG = document.createElement("img");
     if (DatabaseMusic[b].artwork == ""){
       IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
