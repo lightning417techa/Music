@@ -34,8 +34,34 @@ function startUI() {
     }
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
-    createAlbums();
+    //createAlbums();
+    CreateAlbums();
     CreateArtists();
+}
+
+function CreateAlbums() {
+  for(var a=0; abum.length;a++){
+    if (albumlist[AB] == "" || AlbumIMG[AB] == "") {} else {  
+    let NewAlbumBtn = document.createElement("div");                
+    NewAlbumBtn.classList.toggle("column");
+    NewAlbumBtn.id = abum[a].title;
+    NewAlbumBtn.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
+
+        
+    let IMG = document.createElement("img");
+    if (abum[a].artwork == ""){
+      IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
+    } else {
+      IMG.src = abum[a].artwork;
+    }    
+    IMG.style.width = "100%";
+    NewAlbumBtn.appendChild(IMG);
+    let text = document.createElement("p");
+    text.innerHTML = abum[a];
+    NewAlbumBtn.appendChild(text);
+    document.getElementById("albums").appendChild(NewAlbumBtn);
+    }
+  }
 }
 
 function createAlbums() {    
