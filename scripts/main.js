@@ -56,7 +56,7 @@ function CreateAlbums() {
     IMG.style.width = "100%";
     NewAlbumBtn.appendChild(IMG);
     let text = document.createElement("p");
-    text.innerHTML = abum[a];
+    text.innerHTML = abum[a].title;
     NewAlbumBtn.appendChild(text);
     document.getElementById("albums").appendChild(NewAlbumBtn);    
   }
