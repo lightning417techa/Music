@@ -85,10 +85,12 @@ function PlayAlbum(clicked_id) {
   }
 }
 
-let Length = DatabaseMusic;
+let Length = Object.keys(DatabaseMusic);
+console.log(Length);
 function CreateAlbumsTwo() {
   var b;  
   for (b = 0; b < Length;) {
+    b++;
     let music = document.createElement("div");
     music.classList.toggle("column");
     music.id = DatabaseMusic[b].title;
@@ -105,8 +107,7 @@ function CreateAlbumsTwo() {
     let text = document.createElement("p");
     text.innerHTML = "BETA " + DatabaseMusic[b].title;
     music.appendChild(text);
-    document.getElementById("albums").appendChild(music);
-    b++;
+    document.getElementById("albums").appendChild(music);    
   }
 }
 
