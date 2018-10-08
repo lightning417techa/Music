@@ -88,7 +88,7 @@ function PlayAlbum(clicked_id) {
 
 function CreateAlbumsTwo() {
   var b;  
-  let Length = DatabaseMusic.keys(DatabaseMusic);
+  let Length = object.keys(DatabaseMusic);
   console.log(Length);
   for (b = 0; b < Length;) {
     b++;
