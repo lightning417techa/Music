@@ -4,17 +4,17 @@ var NumberOfSongs = 39;
 var NumberOfAlbums = 20;
 var NumberOfArtists = 23;
 function Dropdown() {
-var i = 0;
-if (i == 0) {
-i++;
-document.getElementById("Dropbutton").classList.toggle("dropbtnclick");
-document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
-document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("PlaylistDropdown").classList.toggle("show");
-  document.getElementById("SearchBox").setAttribute("style", "height: 30px;");
-} else {
-i--;
-document.getElementById("Dropbutton").classList.remove("dropbtnclick");
+  var i = 0;
+  if (i == 0) {
+    i++;
+    document.getElementById("Dropbutton").classList.toggle("dropbtnclick");
+    document.getElementById("Dropbutton").classList.toggle("dropbtnpos");
+    document.getElementById("myDropdown").classList.toggle("show");
+    document.getElementById("PlaylistDropdown").classList.toggle("show");
+    document.getElementById("SearchBox").setAttribute("style", "height: 30px;");
+  } else {
+    i--;
+    document.getElementById("Dropbutton").classList.remove("dropbtnclick");
 }}
 
 window.onerror = function(error) {console.log(error, error.stack, error.lineNumber);};
@@ -35,7 +35,8 @@ function startUI() {
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
     createAlbums();
-    CreateArtists();
+    CreateAlbumsTwo();
+    //CreateArtists();
 }
 
 function createAlbums() {    
@@ -81,6 +82,29 @@ function PlayAlbum(clicked_id) {
       SongBtn.style.display = "none";
       SongBtn.style.visibility = "hidden";
     }  
+  }
+}
+
+function CreateAlbumsTwo() {
+  var b;
+  for (b = 0; b < DatabaseMusic.length;) {
+    let music = document.createElement("div");
+    music.classList.toggle("column");
+    music.id = DatabaseMusic[b].title;
+    music.setAttribute("style", "float: left; width: 25%; padding: 0 8px; text-align:center;align-items:center; display: inline-block; float: none;  white-space: nowrap; overflow: hidden; text-overflow:ellipsis;");     
+    music.onclick = function() {PlayAlbum(music.id);};
+    let IMG = document.createElement("img");
+    if (DatabaseMusic[b].artwork == ""){
+      IMG.src = "https://iplock.weebly.com/uploads/9/5/7/3/95731436/p164.png";
+    } else {
+      IMG.src = DatabaseMusic[b].artwork;
+    }
+    IMG.style.width = "100%";
+    music.appendChild(IMG);
+    let text = document.createElement("p");
+    text.innerHTML = "BETA " + DatabaseMusic[b].title;
+    music.appendChild(text);
+    document.getElementById("albums").appendChild(music);
   }
 }
 
