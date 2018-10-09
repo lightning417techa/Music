@@ -408,15 +408,6 @@ function Shuffle() {
   playAudio();
 }
 
-function ToggleLoop() {  
-}
-
-function keys() {     
-   if (x.currentTime == x.duration) {
-     next();
-   }
-}
-
 function MiniPlayPauseBTN() {
   let MiniBTN = document.getElementById("MiniPlayPause");
   if (num == 1) {
@@ -478,50 +469,39 @@ function Playbutton(clicked_id) {
      playAudio();  
 }
 
-function startup() {
+/*function startup() {
     input2.style.display="none";
 }
-startup()
+startup()*/
 
 function playAudio() { 
     if (num == 1) {
-      x.play();
-      //text.innerHTML = "pause";
+      x.play()
       input.style.display="none";
-      input2.style="visibility:visible;";
-      input2.style.display="block";
+      input2.style.display="";
       num = 0;
       d = dateFormat + "playing";
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-pause"></i>';
       document.body.style.backgroundImage = "url("+albumart[SongNumber]+")";      
     } else {
       x.pause();
-      //text.innerHTML = "play";
-      input2.style="visibility:hidden;";
       input2.style.display="none";
-      input.style="visibility:visable;";
+      input.style.display="";      
       num = 1;
       d = dateFormat + "paused";
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-play"></i>';
       document.body.style.backgroundImage = "url("+albumart[SongNumber]+")";            
     }}
 
-window.addEventListener('load', function() {
-  var cur = document.querySelector('#perc'),
-      vid = document.querySelector('#myAudio')
-      dur = document.getElementById("durationlbl");
-      per = document.getElementById("currentlbl");
-})
-    
 myAudio.addEventListener('timeupdate', function(e) {
   //current time
-  per.textContent = sToTime(e.target.currentTime);
+  document.getElementById("currentlbl").textContent = sToTime(e.target.currentTime);
   //duraion
-  dur.textContent = sToTime(e.target.duration);
+  document.getElementById("durationlbl").textContent = sToTime(e.target.duration);
   slider.value = x.currentTime;
   //percent.innerHTML = x.currentTime;
   slider.max = x.duration;
-  keys();
+  if (x.currentTime == x.duration) {next();}
 })
 
 //THE TIME CONVERTER
