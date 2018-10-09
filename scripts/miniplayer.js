@@ -8,12 +8,13 @@ function MiniPlayerSmall() {
   //let MiniPlayer = document.getElementById("MiniPlayer").children;  
   //MiniPlayer.style.display = "none";
   $("#MiniPlayer").children().hide(); 
+  $("#MiniPlayerArrow").show(); 
 }
 
 function MiniPlayerBig() {
   //let MiniPlayer = document.getElementById("MiniPlayer").children;
   //MiniPlayer.style.display = "";
-  $("#MiniPlayer").children().show(); 
+  $("#MiniPlayer").children().show();  
 }
 
 
