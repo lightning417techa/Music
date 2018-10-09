@@ -1,18 +1,13 @@
-.MPPlayButtonClass {
+.MPAlbumArt {
     background-color: black;
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
     border: 1px solid white;
-    color: white;
-    padding: 20px 20px;
-    cursor: pointer;
-    font-size: 20px;
+    padding: 20px 20px;        
     border-radius: 40px;
     text-align: right;
     float: center;
     overflow: auto;
-    margin-left: auto;
-    margin-right:auto;
     margin-top: 10%; /*10%*/
     position: fixed;
     align-items: center; 
