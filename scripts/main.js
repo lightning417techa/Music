@@ -36,8 +36,8 @@ function startUI() {
     var n;
     for (n = 0; n < NumberOfSongs; n++) {}
     createAlbums();
-    //CreateAlbumsTwo();
-    //CreateArtists();
+    CreateAlbumsTwo();
+    CreateArtists();
 }
 
 function createAlbums() {    
