@@ -15,6 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <!--Styles-->    
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/MiniPlayerStyles.css/main.css">	  
 <!--JQuery template-->	  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!--Mobile friendly-->	  
@@ -110,17 +111,16 @@
   </div>
   
   
-  <div id="NavigationBar" class="MiniPlayerContainer">      
-    <div><i class="fa fa-plus-square"></i></div>	
-    <div type="button" onclick="MPPlay()" id="MPPlayButton" class="MPPlayButtonClass"></div>
-    
-
-	  
-  </div>
+  <!--<div id="NavigationBar" class="MiniPlayerContainer">
+  </div>-->
     <!--AudioVisContainer-->
     <div id="MiniPlayer" onclick="MinimizeMiniPlayer()" class="MiniPlayerContainer">
       <div class="MiniPlayer-EMBTN"><i id="MiniPlayerArrow" class="fa fa-angle-up"></i></div>
       <div onclcik="MiniPlayPauseBTN" id="MiniPlayPause" font-size="30px" color="white"></div>
+	    
+      <div><i class="fa fa-plus-square"></i></div>	
+      <div type="button" onclick="MPPlay()" id="MPPlayButton" class="MPPlayButtonClass"></div>
+    
     </div>
 </body>
 </html>
