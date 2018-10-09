@@ -5,12 +5,12 @@ function MinimizeMiniPlayer() {
 }
 
 function MiniPlayerSmall() {
-  let MiniPlayer = document.getElementById("MiniPlayer").querySelectorAll("div");
+  let MiniPlayer = document.getElementById("MiniPlayer").children;
   MiniPlayer.style.display = "none";
 }
 
 function MiniPlayerBig() {
-  let MiniPlayer = document.getElementById("MiniPlayer").querySelectorAll("div");
+  let MiniPlayer = document.getElementById("MiniPlayer").children;
   MiniPlayer.style.display = "";
 }
 
