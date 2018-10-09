@@ -5,13 +5,15 @@ function MinimizeMiniPlayer() {
 }
 
 function MiniPlayerSmall() {
-  let MiniPlayer = document.getElementById("MiniPlayer").children;
-  MiniPlayer.style.display = "none";
+  //let MiniPlayer = document.getElementById("MiniPlayer").children;  
+  //MiniPlayer.style.display = "none";
+  $("#MiniPlayer").children().hide(); 
 }
 
 function MiniPlayerBig() {
-  let MiniPlayer = document.getElementById("MiniPlayer").children;
-  MiniPlayer.style.display = "";
+  //let MiniPlayer = document.getElementById("MiniPlayer").children;
+  //MiniPlayer.style.display = "";
+  $("#MiniPlayer").children().show(); 
 }
 
 
