@@ -9,6 +9,8 @@ function MiniPlayerSmall() {
   //MiniPlayer.style.display = "none";
   $("#MiniPlayer").children().hide(); 
   $("#MiniPlayerArrow").show(); 
+  $("#MPAlbumArt").show(); 
+  document.getElementById("MPAlbumArt").src="https://iplock.weebly.com/uploads/9/5/7/3/95731436/p157.png";
 }
 
 function MiniPlayerBig() {
