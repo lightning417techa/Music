@@ -33,54 +33,95 @@ var DatabaseMusic =  [{
 	"artist": "Fall Out Boy",
 	"artwork": "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
 	"tracks": [{
-		"title": "Stay Frosty Royal Milk Tea",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Stay Frosty Royal Milk Tea", "Source": "https://iplock.weebly.com/uploads/9/5/7/3/95731436/fall_out_boy_-_bishops_knife_trick__lyrics_lyric_video_.mp3", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "The Last of the Real Ones",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "The Last of the Real Ones", "Source": "", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false		 
 	 }, {
-		"title": "Hold Me Tight or Don't",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Hold Me Tight or Don't", "Source": "", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Wilson (Expensive Mistakes)",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Wilson (Expensive Mistakes)", "Source": "https://iplock.weebly.com/uploads/9/5/7/3/95731436/wilson__expensive_mistakes_.mp3", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Church",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Church", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Heaven's Gate",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Heaven's Gate", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Champion",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Champion", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
          }, {
-		"title": "Sunshine Riptide",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Sunshine Riptide", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Young and Menace",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Young and Menace", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	 }, {
-		"title": "Bishops Knife Trick",
-		"Source": "test",
-		"SongArt": "none",
-		"artist": "Fall Out Boy"
+		"title": "Bishops Knife Trick", "Source": "test", "SongArt": "none", "artist": "Fall Out Boy", "explicit": false
 	}]
+}, {
+	"title": "American Beauty/American Psycho",
+	"artist": "Fall Out Boy",
+	"artwork": "https://images-na.ssl-images-amazon.com/images/I/41K3SuHNQpL._SS500.jpg",
+	"tracks": [{
+		"title": "Irresistible",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+		"title": "American Beauty/American Psycho",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false		 
+	 }, {
+		"title": "Centuries",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+	        "title": "The Kids Aren't Alright",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+	        "title": "Uma Thurman",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+		"title": "Jet Pack Blues",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false		 
+	 }, {
+		"title": "Novocaine",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+		 "title": "Fourth of July",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+	        "title": "Favorite Record",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false		 
+	 }, {
+		"title": "Immortals",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }, {
+		 "title": "Twin Skeleton's (Hotel in NYC)",
+		"Source": "",
+		"SongArt": "",
+		"artist": "Fall Out Boy",
+		"explicit": false
+	 }]
 }];
