@@ -1,6 +1,6 @@
 var btnv = 0;
 var update = 0;
-var NumberOfSongs = 39;
+var NumberOfSongs = 38;
 var NumberOfAlbums = 20;
 var NumberOfArtists = 23;
 function Dropdown() {
@@ -195,8 +195,8 @@ function Update() {
   
   let Updatetxt3 = document.createElement("div");
   Updatetxt3.id = "UTXT3";
-  var UTXT3B = "Automatic Update notifications";  
-  Updatetxt3.innerHTML = UTXT3B.bold() + " makes sure that when there's a new update, you will be notified.";
+  var UTXT3B = "Artists Buttons";  
+  Updatetxt3.innerHTML = UTXT3B.bold() + " New Artists Buttons to show you all the artists on LanyxSoft Music. Note the buttons sometimes don’t work.";
   Updatetxt3.setAttribute("style", "position: relative; text-align: left; color: black; font-size: 20px; width: 430px;")
   UpdateScrollController.appendChild(Updatetxt3);
   
@@ -469,24 +469,26 @@ function Playbutton(clicked_id) {
      playAudio();  
 }
 
-/*function startup() {
+function startup() {
     input2.style.display="none";
 }
-startup()*/
+startup()
 
 function playAudio() { 
     if (num == 1) {
       x.play()
       input.style.display="none";
-      input2.style.display="";
+      input2.style="visibility:visible;";
+      input2.style.display="block";
       num = 0;
       d = dateFormat + "playing";
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-pause"></i>';
       document.body.style.backgroundImage = "url("+albumart[SongNumber]+")";      
     } else {
       x.pause();
+      input2.style="visibility:hidden;";
       input2.style.display="none";
-      input.style.display="";      
+      input.style="visibility:visable;";
       num = 1;
       d = dateFormat + "paused";
       document.getElementById("MiniPlayPause").innerHTML='<i class="fa fa-play"></i>';
